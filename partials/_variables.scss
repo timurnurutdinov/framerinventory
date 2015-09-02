@@ -129,12 +129,15 @@ a:hover {
 }
 
 
-.button {
+.button a {
 	font-family: $primary-font;
 	color: $color-white;
 	line-height: 1.2;
 	font-weight: 700;
 	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
 	
 	@include MQ(M) {
 

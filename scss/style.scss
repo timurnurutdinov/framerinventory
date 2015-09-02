@@ -35,3 +35,66 @@ header {
 	margin-right: 50px;
 	margin-top: 36px;
 }
+
+.button {
+	width: 174px;
+	height: 44px;
+	background-color: $color-tint;
+	border-radius: 22px;
+	margin-left: 20px;
+	float: left;
+	
+	a {
+		display: inline-block;
+		width: 174px;
+		padding-top: 16px;
+		margin: auto;
+	}
+}
+
+#welcome-download-button {
+	width: 146px;
+	
+	a {
+		width: 146px;
+	}
+}
+
+#welcome-buttons {
+	margin: auto;
+	padding-top: 60px;
+	width: 340px;
+	
+	:first-child {
+		margin-left: 0;
+	}
+}
+
+
+#welcome-section {
+	height: 800px;
+	background-color: $color-dark;
+	
+	h1 {
+		margin: auto;
+		padding-top: 160px;
+		text-align: center;
+	}
+	
+	p {
+		text-align: center;
+		margin: auto;
+		width: 480px;
+		padding-top: 16px;
+		color: $color-semi-grey;
+	}
+	
+
+	
+	#tutorial-video {
+		width: 480px;
+		margin: auto;
+		padding-top: 90px;
+//		background-color: red;
+	}
+}
