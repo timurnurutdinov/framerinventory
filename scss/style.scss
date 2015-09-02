@@ -39,21 +39,22 @@ header {
 .button {
 	width: 174px;
 	height: 44px;
-	background-color: $color-tint;
 	border-radius: 22px;
 	margin-left: 20px;
 	float: left;
+	background-color: $color-semi-dark;
 	
 	a {
 		display: inline-block;
 		width: 174px;
-		padding-top: 16px;
+		padding-top: 18px;
 		margin: auto;
 	}
 }
 
 #welcome-download-button {
 	width: 146px;
+	background-color: $color-tint;
 	
 	a {
 		width: 146px;
