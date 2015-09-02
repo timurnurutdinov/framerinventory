@@ -54,19 +54,107 @@ p {
       font-size: 2.2rem; } }
 
 a {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
   text-decoration: none;
   color: #72C3F8; }
 
-.button {
+a:hover {
+  color: #F5A623; }
+
+.button a {
   font-family: "Josefin Sans", sans-serif;
   color: #FFF;
   line-height: 1.2;
   font-weight: 700;
-  letter-spacing: 1.2px; }
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle; }
   @media only screen and (min-width: 980px) {
-    .button {
+    .button a {
       font-family: "Josefin Sans", sans-serif;
       font-size: 1.2rem; } }
 
+#header-links a {
+  color: #999;
+  letter-spacing: 1px;
+  line-height: 1.2; }
+  @media only screen and (min-width: 980px) {
+    #header-links a {
+      font-size: 1.6rem; } }
+
+#header-links a:hover {
+  color: #FFF; }
+
 html {
   font-size: 62.5%; }
+
+body {
+  margin: 0; }
+
+header {
+  width: 100%;
+  height: 82px;
+  position: fixed;
+  top: 0px;
+  background: #222; }
+
+.container {
+  width: 960px;
+  margin: auto; }
+
+#logo {
+  width: 260px;
+  height: 82px;
+  background-image: url("img/logo.png");
+  float: left; }
+
+#header-links a {
+  float: right;
+  margin-right: 50px;
+  margin-top: 36px; }
+
+.button {
+  width: 174px;
+  height: 44px;
+  border-radius: 22px;
+  margin-left: 20px;
+  float: left;
+  background-color: #444; }
+  .button a {
+    display: inline-block;
+    width: 174px;
+    padding-top: 18px;
+    margin: auto; }
+
+#welcome-download-button {
+  width: 146px;
+  background-color: #72C3F8; }
+  #welcome-download-button a {
+    width: 146px; }
+
+#welcome-buttons {
+  margin: auto;
+  padding-top: 60px;
+  width: 340px; }
+  #welcome-buttons :first-child {
+    margin-left: 0; }
+
+#welcome-section {
+  height: 800px;
+  background-color: #222; }
+  #welcome-section h1 {
+    margin: auto;
+    padding-top: 160px;
+    text-align: center; }
+  #welcome-section p {
+    text-align: center;
+    margin: auto;
+    width: 480px;
+    padding-top: 16px;
+    color: #CCC; }
+  #welcome-section #tutorial-video {
+    width: 480px;
+    margin: auto;
+    padding-top: 90px; }

@@ -118,17 +118,26 @@ p {
 
 
 a {
+	font-family: $primary-font;
+	font-weight: 700;
 	text-decoration: none;
-	color: $color-tint;
+	color: $color-tint;	
+}
+
+a:hover {
+	color: $color-complementary;
 }
 
 
-.button {
+.button a {
 	font-family: $primary-font;
 	color: $color-white;
 	line-height: 1.2;
 	font-weight: 700;
 	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
 	
 	@include MQ(M) {
 
@@ -141,4 +150,20 @@ a {
 	}
 }
 
+
+
+#header-links a {
+	color: $color-grey;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	
+	@include MQ(L) {
+		font-size: 1.6rem;
+	}	
+}
+
+
+#header-links a:hover {
+	color: $color-white;
+}
 
