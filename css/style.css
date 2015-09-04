@@ -77,7 +77,7 @@ h5 {
 
 p {
   font-family: "Josefin Sans", sans-serif;
-  color: #444;
+  color: #666;
   line-height: 1.36;
   font-weight: 700;
   letter-spacing: 1px; }
@@ -251,13 +251,13 @@ header {
     height: 300px;
     float: left; }
   #scale-section #states-column-one {
-    width: 640px; }
+    width: 540px; }
     #scale-section #states-column-one h2 {
       padding-top: 94px; }
     #scale-section #states-column-one p {
       padding-top: 12px; }
   #scale-section #states-column-two {
-    width: 146px; }
+    width: 246px; }
   #scale-section #states-column-three {
     width: 174px; }
     #scale-section #states-column-three .button {
@@ -277,7 +277,7 @@ header {
     text-align: center;
     margin: auto; }
   #goodbuy-section p {
-    padding-top: 16px;
+    padding-top: 8px;
     text-align: center;
     margin: auto;
     width: 540px;
@@ -286,6 +286,20 @@ header {
     background-color: #72C3F8;
     margin: auto;
     margin-top: 40px; }
+  #goodbuy-section #goodbuy-buttons {
+    margin: auto;
+    width: 340px; }
+    #goodbuy-section #goodbuy-buttons .button {
+      margin-left: 20px;
+      float: left;
+      background-color: #444; }
+    #goodbuy-section #goodbuy-buttons :first-child {
+      margin-left: 0; }
+    #goodbuy-section #goodbuy-buttons #goodbuy-download-button {
+      width: 146px;
+      background-color: #72C3F8; }
+      #goodbuy-section #goodbuy-buttons #goodbuy-download-button a {
+        width: 146px; }
 
 #read-section {
   height: 220px;
@@ -297,7 +311,8 @@ header {
   #read-section #states-column-one {
     width: 490px; }
     #read-section #states-column-one h2 {
-      padding-top: 50px; }
+      padding-top: 50px;
+      color: #444; }
     #read-section #states-column-one p {
       padding-top: 16px; }
   #read-section #states-column-two {
