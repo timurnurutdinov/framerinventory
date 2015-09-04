@@ -5,8 +5,10 @@
 $color-black: #000;
 $color-dark: #222;
 $color-semi-dark: #444;
+$color-pre-grey: #666;
 $color-grey: #999;
 $color-semi-grey: #CCC;
+$color-pre-white: #EEE;
 $color-white: #FFF;
 
 $color-tint: #72C3F8;
@@ -99,7 +101,7 @@ h5 {
 
 p {
 	font-family: $primary-font;
-	color: $color-semi-dark;
+	color: $color-pre-grey;
 	line-height: 1.36;
 	font-weight: 700;
 	letter-spacing: 1px;
