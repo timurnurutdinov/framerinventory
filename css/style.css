@@ -343,6 +343,9 @@ header {
 @media only screen and (min-width: 980px) {
   #keynote-section {
     height: 680px; } }
+@media only screen and (min-width: 980px) {
+  #keynote-section .container {
+    box-shadow: inset 0px -1px 0px 0px #CCC; } }
 #keynote-section h2 {
   text-align: center;
   margin: auto;
@@ -479,29 +482,54 @@ header {
       background-color: #666; }
 
 #read-section {
-  height: 220px;
   background-color: #EEE;
-  display: none; }
+  box-shadow: inset 0px -1px 0px 0px #CCC; }
   @media only screen and (min-width: 980px) {
     #read-section {
-      display: block; } }
-  #read-section .states-column {
-    height: 220px;
-    float: left;
-    box-shadow: inset 0px -1px 0px 0px #CCC; }
-  #read-section #states-column-one {
-    width: 490px; }
-    #read-section #states-column-one h2 {
-      padding-top: 50px;
-      color: #444; }
-    #read-section #states-column-one p {
-      padding-top: 16px; }
-  #read-section #states-column-two {
-    width: 296px; }
-  #read-section #states-column-three {
-    width: 174px; }
-    #read-section #states-column-three .button {
-      margin-top: 65px; }
+      height: 300px;
+      box-shadow: inset 0px 0px 0px 0px transparent; } }
+  @media only screen and (min-width: 980px) {
+    #read-section .states-column {
+      height: 300px;
+      float: left;
+      box-shadow: inset 0px -1px 0px 0px #CCC; } }
+  @media only screen and (min-width: 980px) {
+    #read-section #read-column-one {
+      width: 540px; } }
+  #read-section #read-column-one h2 {
+    padding-top: 40px; }
+    @media only screen and (min-width: 980px) {
+      #read-section #read-column-one h2 {
+        padding-top: 94px; } }
+  #read-section #read-column-one p {
+    padding-top: 8px; }
+    @media only screen and (min-width: 980px) {
+      #read-section #read-column-one p {
+        padding-top: 12px; } }
+  @media only screen and (min-width: 980px) {
+    #read-section #read-column-two {
+      width: 246px; } }
+  @media only screen and (min-width: 980px) {
+    #read-section #read-column-three {
+      width: 174px; } }
+  #read-section #read-column-three .button {
+    margin-top: 20px;
+    float: left; }
+    @media only screen and (min-width: 980px) {
+      #read-section #read-column-three .button {
+        margin-top: 100px; } }
+  #read-section #read-column-three h5 {
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    padding-left: 10px;
+    padding-top: 23px;
+    margin-bottom: 43px; }
+    @media only screen and (min-width: 980px) {
+      #read-section #read-column-three h5 {
+        padding-top: 14px;
+        padding-left: 27px;
+        margin-bottom: 0px; } }
 
 footer {
   background-color: #EEE; }

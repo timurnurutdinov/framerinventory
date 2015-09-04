@@ -339,6 +339,12 @@ header {
 		height: 680px;
 	}
 	
+	.container {
+		@include MQ(L) {
+			box-shadow: inset 0px -1px 0px 0px $color-semi-grey;
+		}
+	}
+	
 	
 	h2 {
 		text-align: center;
@@ -493,72 +499,7 @@ header {
 		}
 	}
 	
-	//.button {
-//		background-color: $color-tint;
-//		margin: auto;
-//
-//		@include MQ(L) {
-//			margin-top: 40px;
-//		}
-//	}
-//
-//	#goodbuy-buttons {
-//		margin: auto;
-//		width: 280px;
-//
-//		@include MQ(L) {
-//			width: 340px;
-//		}
-//
-//		.button {
-//			background-color: $color-dark;
-//			margin-top: 10px;
-//			padding-bottom: 20px;
-//
-//			@include MQ(L) {
-//				background-color: $color-semi-dark;
-//				margin-top: 48px;
-//				margin-left: 20px;
-//				float: left;
-//				padding-bottom: 0;
-//			}
-//
-//			a {
-//				color: $color-tint;
-//
-//				@include MQ(L) {
-//					color: $color-white;
-//				}
-//			}
-//		}
-//
-//		:first-child {
-//			margin-bottom: 0;
-//
-//			@include MQ(L) {
-//				margin-left: 0;
-//			}
-//		}
-//
-//		#goodbuy-download-button {
-//			background-color: $color-tint;
-//			margin-top: 30px;
-//			padding-bottom: 0;
-//
-//			@include MQ(L) {
-//				margin-top: 48px;
-//				width: 146px;
-//			}
-//
-//			a {
-//				color: $color-white;
-//
-//				@include MQ(L) {
-//					width: 146px;
-//				}
-//			}
-//		}
-//	}
+
 
 	#goodbuy-buttons {
 		margin: auto;
@@ -604,45 +545,83 @@ header {
 }
 
 
+
 #read-section {
-	height: 220px;
 	background-color: $color-pre-white;
-	display: none;
+	box-shadow: inset 0px -1px 0px 0px $color-semi-grey;
 	
 	@include MQ(L) {
-		display: block;
+		height: 300px;
+		box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0);
 	}
 	
 	.states-column {
-		height: 220px;
-		float: left;
-		box-shadow: inset 0px -1px 0px 0px $color-semi-grey;
+		@include MQ(L) {
+			height: 300px;
+			float: left;
+			box-shadow: inset 0px -1px 0px 0px $color-semi-grey;
+		}
 	}
 	
-	#states-column-one {
-		width: 490px;
+	#read-column-one {
+		
+		@include MQ(L) {
+			width: 540px;
+		}
 		
 		h2 {
-			padding-top: 50px;
-			color: $color-semi-dark;
+			padding-top: 40px;
+			
+			@include MQ(L) {
+				padding-top: 94px;
+			}
 		}
 		
 		p {
-			padding-top: 16px;
+			padding-top: 8px;
+			
+			@include MQ(L) {
+				padding-top: 12px;
+			}
 		}
 	}
 	
-	#states-column-two {
-		width: 296px;
-	}
-	
-	#states-column-three {
-		width: 174px;
-		
-		.button {
-			margin-top: 65px;
+	#read-column-two {
+		@include MQ(L) {
+			width: 246px;
 		}
 
+	}
+	
+	#read-column-three {
+		@include MQ(L) {
+			width: 174px;
+		}
+		
+		.button {
+			margin-top: 20px;
+			float: left;
+			
+			@include MQ(L) {
+				margin-top: 100px;
+			}
+		}
+		
+		
+		h5 {
+			display: inline-block;
+			text-align: center;
+			width: 120px;
+			padding-left: 10px;
+			padding-top: 23px;
+			margin-bottom: 43px;
+			
+			@include MQ(L) {
+				padding-top: 14px;
+				padding-left: 27px;
+				margin-bottom: 0px;
+			}
+		}
 	}
 }
 
