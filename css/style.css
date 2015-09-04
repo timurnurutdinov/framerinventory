@@ -38,17 +38,18 @@ h1 {
   font-family: "Josefin Sans", sans-serif;
   color: #FFF;
   line-height: 1.2;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 2.8rem; }
   @media only screen and (min-width: 980px) {
     h1 {
-      font-family: "Josefin Sans", sans-serif;
       font-size: 4.8rem; } }
 
 h2 {
   font-family: "Josefin Sans", sans-serif;
   color: #222;
   line-height: 1.2;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 2.4rem; }
   @media only screen and (min-width: 980px) {
     h2 {
       font-family: "Josefin Sans", sans-serif;
@@ -69,7 +70,8 @@ h5 {
   font-family: "Josefin Sans", sans-serif;
   color: #999;
   line-height: 1.3;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 1.2rem; }
   @media only screen and (min-width: 980px) {
     h5 {
       font-family: "Josefin Sans", sans-serif;
@@ -78,13 +80,17 @@ h5 {
 p {
   font-family: "Josefin Sans", sans-serif;
   color: #666;
-  line-height: 1.36;
+  line-height: 1.44;
   font-weight: 700;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  max-width: 430px; }
   @media only screen and (min-width: 980px) {
     p {
       font-family: "Josefin Sans", sans-serif;
-      font-size: 2.2rem; } }
+      font-size: 2.2rem;
+      line-height: 1.36;
+      max-width: 100%; } }
 
 a {
   font-family: "Josefin Sans", sans-serif;
@@ -103,19 +109,12 @@ a:hover {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   text-align: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+  font-size: 1rem; }
   @media only screen and (min-width: 980px) {
     .button a {
       font-family: "Josefin Sans", sans-serif;
       font-size: 1.2rem; } }
-
-#header-links a {
-  color: #999;
-  letter-spacing: 1px;
-  line-height: 1.2; }
-  @media only screen and (min-width: 980px) {
-    #header-links a {
-      font-size: 1.6rem; } }
 
 #header-links a:hover {
   color: #FFF; }
@@ -129,181 +128,354 @@ body {
 
 header {
   width: 100%;
-  height: 82px;
+  background: #222;
   position: fixed;
-  top: 0px;
-  background: #222; }
+  height: 116px; }
+  @media only screen and (min-width: 980px) {
+    header {
+      height: 82px; } }
   header #logo {
     width: 260px;
     height: 82px;
+    background-color: red;
     background-image: url("img/logo.png");
-    float: left; }
+    background-repeat: no-repeat;
+    margin: auto; }
+    @media only screen and (min-width: 980px) {
+      header #logo {
+        float: left;
+        margin-left: 0; } }
+  header #header-links {
+    width: 260px;
+    margin: auto;
+    background-color: blue; }
+    @media only screen and (min-width: 980px) {
+      header #header-links {
+        width: 100%; } }
   header #header-links a {
-    float: right;
-    margin-right: 50px;
-    margin-top: 36px; }
+    color: #999;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-size: 1.6rem;
+    margin-left: 20px; }
+    @media only screen and (min-width: 980px) {
+      header #header-links a {
+        float: right;
+        margin-right: 50px;
+        margin-top: 36px;
+        margin-left: 0; } }
+  header #header-links a:first-child {
+    margin-right: 0;
+    margin-left: 0; }
 
 .container {
-  width: 960px;
-  margin: auto; }
+  margin: auto;
+  width: 90%; }
+  @media only screen and (min-width: 980px) {
+    .container {
+      width: 960px; } }
 
 .button {
-  width: 174px;
-  height: 44px;
-  border-radius: 22px;
+  width: 150px;
+  height: 34px;
+  border-radius: 17px;
   background-color: #444;
   transition: all 0.3s; }
+  @media only screen and (min-width: 980px) {
+    .button {
+      width: 174px;
+      height: 44px;
+      border-radius: 22px; } }
   .button a {
     display: inline-block;
-    width: 174px;
-    padding-top: 18px;
+    width: 150px;
+    padding-top: 13px;
     margin: auto; }
+    @media only screen and (min-width: 980px) {
+      .button a {
+        width: 174px;
+        padding-top: 18px; } }
 
 .button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   background-color: #222; }
 
 #welcome-section {
-  height: 800px;
   background-color: #222; }
+  @media only screen and (min-width: 980px) {
+    #welcome-section {
+      height: 800px; } }
+  #welcome-section .mobile-container {
+    width: 90%;
+    margin: auto; }
+    @media only screen and (min-width: 980px) {
+      #welcome-section .mobile-container {
+        width: 100%; } }
   #welcome-section h1 {
-    margin: auto;
     padding-top: 160px;
-    text-align: center; }
-  #welcome-section p {
     text-align: center;
-    margin: auto;
-    width: 480px;
+    background-color: yellow; }
+  #welcome-section p {
+    width: 100%;
+    text-align: center;
     padding-top: 16px;
-    color: #CCC; }
+    color: #CCC;
+    background-color: green; }
+    @media only screen and (min-width: 980px) {
+      #welcome-section p {
+        width: 480px;
+        margin: auto; } }
   #welcome-section #welcome-buttons {
     margin: auto;
-    padding-top: 60px;
-    width: 340px; }
+    padding-top: 36px;
+    width: 280px; }
+    @media only screen and (min-width: 980px) {
+      #welcome-section #welcome-buttons {
+        padding-top: 60px;
+        width: 340px; } }
     #welcome-section #welcome-buttons .button {
-      margin-left: 20px;
+      margin-left: 10px;
       float: left; }
+      @media only screen and (min-width: 980px) {
+        #welcome-section #welcome-buttons .button {
+          margin-left: 20px; } }
     #welcome-section #welcome-buttons :first-child {
       margin-left: 0; }
     #welcome-section #welcome-buttons #welcome-download-button {
-      width: 146px;
-      background-color: #72C3F8; }
+      background-color: #72C3F8;
+      width: 120px; }
+      @media only screen and (min-width: 980px) {
+        #welcome-section #welcome-buttons #welcome-download-button {
+          width: 146px; } }
       #welcome-section #welcome-buttons #welcome-download-button a {
-        width: 146px; }
+        width: 120px; }
+        @media only screen and (min-width: 980px) {
+          #welcome-section #welcome-buttons #welcome-download-button a {
+            width: 146px; } }
   #welcome-section #tutorial-video {
-    width: 480px;
     margin: auto;
-    padding-top: 90px; }
+    width: 240px; }
+    @media only screen and (min-width: 980px) {
+      #welcome-section #tutorial-video {
+        width: 480px; } }
+  #welcome-section iframe {
+    width: 240px;
+    height: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    @media only screen and (min-width: 980px) {
+      #welcome-section iframe {
+        width: 480px;
+        height: 300px;
+        padding-top: 60px; } }
 
-#states-section {
-  height: 740px; }
+@media only screen and (min-width: 980px) {
+  #states-section {
+    height: 740px; } }
+@media only screen and (min-width: 980px) {
   #states-section .states-column {
     height: 280px;
     padding: 0;
     margin: 0;
-    float: left; }
+    float: left; } }
+@media only screen and (min-width: 980px) {
   #states-section #states-column-one {
-    width: 490px; }
+    width: 490px; } }
+#states-section #states-column-one h2 {
+  padding-top: 30px; }
+  @media only screen and (min-width: 980px) {
     #states-section #states-column-one h2 {
-      padding-top: 100px; }
+      padding-top: 100px; } }
+#states-section #states-column-one p {
+  padding-top: 8px; }
+  @media only screen and (min-width: 980px) {
     #states-section #states-column-one p {
-      padding-top: 12px; }
+      padding-top: 12px; } }
+@media only screen and (min-width: 980px) {
   #states-section #states-column-two {
-    width: 296px; }
+    width: 296px; } }
+@media only screen and (min-width: 980px) {
   #states-section #states-column-three {
-    width: 174px; }
+    width: 174px; } }
+#states-section #states-column-three .button {
+  margin-top: 20px;
+  float: left; }
+  @media only screen and (min-width: 980px) {
     #states-section #states-column-three .button {
-      margin-top: 107px; }
+      margin-top: 107px; } }
+#states-section #states-column-three h5 {
+  display: inline-block;
+  text-align: center;
+  float: left;
+  width: 120px;
+  padding-top: 20px;
+  padding-left: 10px; }
+  @media only screen and (min-width: 980px) {
     #states-section #states-column-three h5 {
-      padding-top: 14px;
-      display: inline-block;
-      text-align: center;
       width: 150px;
-      padding-left: 12px; }
-  #states-section #states-image {
-    clear: both;
-    background-image: url("img/statesbg.png");
-    background-repeat: no-repeat;
-    height: 460px;
-    width: calc(100% - 50% + 480px);
-    margin-left: calc(50% - 480px); }
+      padding-top: 14px;
+      padding-left: 12px; } }
+#states-section #states-image {
+  clear: both;
+  background-image: url("img/statesbg.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 230px; }
+  @media only screen and (min-width: 980px) {
+    #states-section #states-image {
+      height: 460px;
+      width: calc(100% - 50% + 480px);
+      margin-left: calc(50% - 480px); } }
 
-#keynote-section {
-  height: 680px; }
-  #keynote-section h2 {
-    padding-top: 70px;
-    text-align: center;
-    margin: auto; }
-  #keynote-section p {
-    width: 540px;
-    text-align: center;
-    margin: auto;
-    padding-top: 12px; }
-  #keynote-section .container #keynote-image {
-    width: 960px;
-    height: 460px;
-    background-image: url("img/keynotebg.png");
-    background-repeat: no-repeat; }
+@media only screen and (min-width: 980px) {
+  #keynote-section {
+    height: 680px; } }
+#keynote-section h2 {
+  text-align: center;
+  margin: auto;
+  padding-top: 30px; }
+  @media only screen and (min-width: 980px) {
+    #keynote-section h2 {
+      padding-top: 70px; } }
+#keynote-section p {
+  padding-top: 8px;
+  text-align: center;
+  margin: auto; }
+  @media only screen and (min-width: 980px) {
+    #keynote-section p {
+      width: 540px;
+      padding-top: 12px; } }
+#keynote-section #keynote-image {
+  background-image: url("img/smallkeynotebg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 134px;
+  width: 100%;
+  padding-top: 20px; }
+  @media only screen and (min-width: 980px) {
+    #keynote-section #keynote-image {
+      background-image: url("img/keynotebg.png");
+      width: 960px;
+      height: 460px;
+      padding-top: 0; } }
 
-#scale-section {
-  height: 300px; }
+@media only screen and (min-width: 980px) {
+  #scale-section {
+    height: 300px; } }
+@media only screen and (min-width: 980px) {
   #scale-section .states-column {
     height: 300px;
-    float: left; }
+    float: left; } }
+@media only screen and (min-width: 980px) {
   #scale-section #states-column-one {
-    width: 540px; }
+    width: 540px; } }
+#scale-section #states-column-one h2 {
+  padding-top: 30px; }
+  @media only screen and (min-width: 980px) {
     #scale-section #states-column-one h2 {
-      padding-top: 94px; }
+      padding-top: 94px; } }
+#scale-section #states-column-one p {
+  padding-top: 8px; }
+  @media only screen and (min-width: 980px) {
     #scale-section #states-column-one p {
-      padding-top: 12px; }
+      padding-top: 12px; } }
+@media only screen and (min-width: 980px) {
   #scale-section #states-column-two {
-    width: 246px; }
+    width: 246px; } }
+@media only screen and (min-width: 980px) {
   #scale-section #states-column-three {
-    width: 174px; }
+    width: 174px; } }
+#scale-section #states-column-three .button {
+  margin-top: 20px;
+  float: left; }
+  @media only screen and (min-width: 980px) {
     #scale-section #states-column-three .button {
-      margin-top: 100px; }
+      margin-top: 100px; } }
+#scale-section #states-column-three h5 {
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+  padding-left: 10px;
+  padding-top: 23px;
+  margin-bottom: 43px; }
+  @media only screen and (min-width: 980px) {
     #scale-section #states-column-three h5 {
       padding-top: 14px;
-      display: inline-block;
-      text-align: center;
       width: 150px;
-      padding-left: 12px; }
+      padding-left: 12px;
+      margin-bottom: 0px; } }
 
 #goodbuy-section {
-  height: 400px;
   background-color: #222; }
+  @media only screen and (min-width: 980px) {
+    #goodbuy-section {
+      height: 400px; } }
+  #goodbuy-section .mobile-container {
+    margin: auto;
+    width: 90%; }
+    @media only screen and (min-width: 980px) {
+      #goodbuy-section .mobile-container {
+        width: 100%; } }
   #goodbuy-section h1 {
-    padding-top: 80px;
     text-align: center;
-    margin: auto; }
+    margin: auto;
+    padding-top: 40px; }
+    @media only screen and (min-width: 980px) {
+      #goodbuy-section h1 {
+        padding-top: 80px; } }
   #goodbuy-section p {
     padding-top: 8px;
     text-align: center;
     margin: auto;
-    width: 540px;
     color: #CCC; }
+    @media only screen and (min-width: 980px) {
+      #goodbuy-section p {
+        width: 540px; } }
   #goodbuy-section .button {
     background-color: #72C3F8;
     margin: auto;
-    margin-top: 40px; }
+    margin-top: 36px; }
+    @media only screen and (min-width: 980px) {
+      #goodbuy-section .button {
+        margin-top: 40px; } }
   #goodbuy-section #goodbuy-buttons {
     margin: auto;
-    width: 340px; }
+    width: 280px; }
+    @media only screen and (min-width: 980px) {
+      #goodbuy-section #goodbuy-buttons {
+        width: 340px; } }
     #goodbuy-section #goodbuy-buttons .button {
-      margin-left: 20px;
-      float: left;
-      background-color: #444; }
+      background-color: #222;
+      margin-top: 0; }
+      @media only screen and (min-width: 980px) {
+        #goodbuy-section #goodbuy-buttons .button {
+          background-color: #444;
+          margin-top: 48px;
+          margin-left: 20px;
+          float: left; } }
     #goodbuy-section #goodbuy-buttons :first-child {
-      margin-left: 0; }
+      margin-bottom: 0; }
+      @media only screen and (min-width: 980px) {
+        #goodbuy-section #goodbuy-buttons :first-child {
+          margin-left: 0; } }
     #goodbuy-section #goodbuy-buttons #goodbuy-download-button {
-      width: 146px;
-      background-color: #72C3F8; }
-      #goodbuy-section #goodbuy-buttons #goodbuy-download-button a {
-        width: 146px; }
+      background-color: #72C3F8;
+      margin-top: 10px; }
+      @media only screen and (min-width: 980px) {
+        #goodbuy-section #goodbuy-buttons #goodbuy-download-button {
+          margin-top: 48px;
+          width: 146px; } }
+      @media only screen and (min-width: 980px) {
+        #goodbuy-section #goodbuy-buttons #goodbuy-download-button a {
+          width: 146px; } }
 
 #read-section {
   height: 220px;
-  background-color: #EEE; }
+  background-color: #EEE;
+  display: none; }
+  @media only screen and (min-width: 980px) {
+    #read-section {
+      display: block; } }
   #read-section .states-column {
     height: 220px;
     float: left;
@@ -323,30 +495,48 @@ header {
       margin-top: 65px; }
 
 footer {
-  height: 340px;
   background-color: #EEE; }
+  @media only screen and (min-width: 980px) {
+    footer {
+      height: 340px; } }
+  footer .mobile-container {
+    margin: auto;
+    width: 90%; }
+    @media only screen and (min-width: 980px) {
+      footer .mobile-container {
+        width: 100%; } }
   footer h4 {
-    padding-top: 40px;
-    width: 460px;
     text-align: center;
     margin: auto;
-    color: #222; }
+    color: #222;
+    padding-top: 30px; }
+    @media only screen and (min-width: 980px) {
+      footer h4 {
+        padding-top: 40px;
+        width: 460px; } }
   footer h4:first-child {
-    padding-top: 60px;
     color: #999; }
+    @media only screen and (min-width: 980px) {
+      footer h4:first-child {
+        padding-top: 60px; } }
   footer p {
-    padding-top: 3px;
-    width: 460px;
     text-align: center;
     margin: auto;
     font-size: 16px;
     color: #999;
     letter-spacing: 1px;
     line-height: 19px; }
+    @media only screen and (min-width: 980px) {
+      footer p {
+        padding-top: 3px;
+        width: 460px; } }
   footer #social-links {
-    padding-top: 64px;
+    margin: auto;
     width: 220px;
-    margin: auto; }
+    padding-top: 20px; }
+    @media only screen and (min-width: 980px) {
+      footer #social-links {
+        padding-top: 64px; } }
     footer #social-links a {
       font-size: 14px;
       padding-left: 22px; }

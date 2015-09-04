@@ -46,6 +46,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/css\/img\/smallkeynotebg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9123,
+		"inputAbbreviatedPath": "\/css\/img\/smallkeynotebg.png",
+		"outputAbbreviatedPath": "\/css\/img\/smallkeynotebg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/smallkeynotebg@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21378,
+		"inputAbbreviatedPath": "\/css\/img\/smallkeynotebg@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/smallkeynotebg@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/smallstatesbg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10284,
+		"inputAbbreviatedPath": "\/css\/img\/smallstatesbg.png",
+		"outputAbbreviatedPath": "\/css\/img\/smallstatesbg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/smallstatesbg@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26103,
+		"inputAbbreviatedPath": "\/css\/img\/smallstatesbg@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/smallstatesbg@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/img\/statesbg.png": {
 		"fileType": 32768,
 		"ignore": 0,

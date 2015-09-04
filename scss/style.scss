@@ -16,49 +16,99 @@ body {
 
 header {
     width:100%;
-	height:82px;
-    position:fixed;
-    top:0px;
 	background: $color-dark;
+	position:fixed;
+	height:116px;
+	
+	@include MQ(L) {
+		height:82px;
+	}
+	
+	
 	
 	
 	#logo {
 		width: 260px;
 		height: 82px;
+		background-color: red;
 		background-image: url('img/logo.png');
-		float: left;
+		background-repeat: no-repeat;
+		margin: auto;
+		
+		@include MQ(L) {
+			float: left;
+			margin-left: 0;
+		}
+	}
+		
+	#header-links {
+		width: 260px;
+		margin: auto;
+		background-color: blue;
+		
+		@include MQ(L) {
+			width: 100%;
+		}
+	}
+
+	#header-links a {
+		color: $color-grey;
+		letter-spacing: 1px;
+		line-height: 1.2;
+		font-size: 1.6rem;
+		margin-left: 20px;
+		
+		@include MQ(L) {
+			float: right;
+			margin-right: 50px;
+			margin-top: 36px;
+			margin-left: 0;
+		}
 	}
 	
-	
-	#header-links a {
-		float: right;
-		margin-right: 50px;
-		margin-top: 36px;
+	#header-links a:first-child {	
+			margin-right: 0;
+			margin-left: 0;
 	}
 
 }
 
 
 .container {
-	width: 960px;
 	margin: auto;
+	width: 90%;
+	
+	@include MQ(L) {
+		width: 960px;
+	}
 }
 
 
 
 
 .button {
-	width: 174px;
-	height: 44px;
-	border-radius: 22px;
+	width: 150px;
+	height: 34px;
+	border-radius: 17px;
 	background-color: $color-semi-dark;
 	transition: all 0.3s;
+	
+	@include MQ(L) {
+		width: 174px;
+		height: 44px;
+		border-radius: 22px;
+	}
 
 	a {
 		display: inline-block;
-		width: 174px;
-		padding-top: 18px;
+		width: 150px;
+		padding-top: 13px;
 		margin: auto;
+		
+		@include MQ(L) {
+			width: 174px;
+			padding-top: 18px;
+		}
 	}
 }
 
@@ -75,31 +125,58 @@ header {
 
 
 #welcome-section {
-	height: 800px;
 	background-color: $color-dark;
 	
-	h1 {
+	@include MQ(L) {
+		height: 800px;
+	}
+	
+	.mobile-container {
+		width: 90%;
 		margin: auto;
+		
+		@include MQ(L) {
+			width: 100%;
+		}
+	}
+	
+	
+	h1 {
 		padding-top: 160px;
 		text-align: center;
+		background-color: yellow;
 	}
 	
 	p {
+		width: 100%;
 		text-align: center;
-		margin: auto;
-		width: 480px;
 		padding-top: 16px;
 		color: $color-semi-grey;
+		background-color: green;
+		
+		@include MQ(L) {
+			width: 480px;
+			margin: auto;
+		}
 	}
 	
 	#welcome-buttons {
 		margin: auto;
-		padding-top: 60px;
-		width: 340px;
+		padding-top: 36px;
+		width: 280px;
+		
+		@include MQ(L) {
+			padding-top: 60px;
+			width: 340px;
+		}
 		
 		.button {
-			margin-left: 20px;
+			margin-left: 10px;
 			float: left;
+			
+			@include MQ(L) {
+				margin-left: 20px;
+			}
 		}
 		
 		:first-child {
@@ -107,22 +184,45 @@ header {
 		}
 		
 		#welcome-download-button {
-			width: 146px;
 			background-color: $color-tint;
+			width: 120px;
+			
+			@include MQ(L) {
+				width: 146px;
+			}
 	
 			a {
-				width: 146px;
+				width: 120px;
+				
+				@include MQ(L) {
+					width: 146px;
+				}
 			}
 		}
 	}
 	
-
-	
 	#tutorial-video {
-		width: 480px;
 		margin: auto;
-		padding-top: 90px;
+		width: 240px;
+		
+		@include MQ(L) {
+			width: 480px;
+		}
 	}
+	
+	iframe {
+		width: 240px;
+		height: 150px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		@include MQ(L) {
+			width: 480px;
+			height: 300px;
+			padding-top: 60px;
+		}
+	}
+	
 }
 
 
@@ -132,56 +232,97 @@ header {
 
 
 #states-section {
-	height: 740px;
+	@include MQ(L) {
+		height: 740px;
+	}
 	
 	
 	.states-column {
-		height: 280px;
-		padding: 0;
-		margin: 0;
-		float: left;
+		
+		@include MQ(L) {
+			height: 280px;
+			padding: 0;
+			margin: 0;
+			float: left;
+		}
 	}
 	
 	#states-column-one {
-		width: 490px;
+		
+		@include MQ(L) {
+			width: 490px;
+		}
 		
 		h2 {
-			padding-top: 100px;
+			padding-top: 30px;
+			
+			@include MQ(L) {
+				padding-top: 100px;
+			}
 		}
 		
 		p {
-			padding-top: 12px;
+			padding-top: 8px;
+			
+			@include MQ(L) {
+				padding-top: 12px;
+			}
 		}
 	}
 	
 	#states-column-two {
-		width: 960-490-174px;
+		@include MQ(L) {
+			width: 960-490-174px;
+		}
 	}
 	
 	#states-column-three {
-		width: 174px;
+		
+		@include MQ(L) {
+			width: 174px;
+		}
 		
 		.button {
-			margin-top: 107px;
+			margin-top: 20px;
+			float: left;
+			
+			@include MQ(L) {
+				margin-top: 107px;
+			}
 		}
 		
 		h5 {
-			padding-top: 14px;
 			display: inline-block;
 			text-align: center;
-			width: 150px;
-			padding-left: 12px;
+			float: left;
+			width: 120px;
+			padding-top: 20px;
+			padding-left: 10px;
+			
+			
+			@include MQ(L) {
+				width: 150px;
+				padding-top: 14px;		
+				padding-left: 12px;
+			}
 		}
 	}
 	
 	
 	#states-image {
 		clear:both;
+		//background-image: url('img/smallstatesbg.png');
 		background-image: url('img/statesbg.png');
 		background-repeat: no-repeat;
-		height: 460px;
-		width: calc(100% - 50% + 480px);
-		margin-left: calc(50% - 480px);
+		width: 100%;
+		height: 230px;
+		
+		@include MQ(L) {
+//			background-image: url('img/statesbg.png');
+			height: 460px;
+			width: calc(100% - 50% + 480px);
+			margin-left: calc(50% - 480px);
+		}
 	}
 }
 
@@ -189,71 +330,122 @@ header {
 
 
 #keynote-section {
-	height: 680px;
+	
+	@include MQ(L) {
+		height: 680px;
+	}
 	
 	
 	h2 {
-		padding-top: 70px;
 		text-align: center;
 		margin: auto;
+		padding-top: 30px;
+		
+		@include MQ(L) {
+			padding-top: 70px;
+		}
 	}
 	
 	p {
-		width: 540px;
+		padding-top: 8px;
 		text-align: center;
 		margin: auto;
-		padding-top: 12px;
+		
+		@include MQ(L) {
+			width: 540px;
+			padding-top: 12px;
+		}
 	}
-	
-	.container {
-		#keynote-image {
-				width: 960px;
-				height: 460px;
-				background-image: url('img/keynotebg.png');
-				background-repeat: no-repeat;
-			}
+		
+	#keynote-image {
+		background-image: url('img/smallkeynotebg.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 134px;
+		width: 100%;
+		padding-top: 20px;
+		
+		@include MQ(L) {
+			background-image: url('img/keynotebg.png');
+			width: 960px;
+			height: 460px;
+			padding-top: 0;
+		}
 	}
 }
 
 
 
 #scale-section {
-	height: 300px;
+	@include MQ(L) {
+		height: 300px;
+	}
 	
 	.states-column {
-		height: 300px;
-		float: left;
+		@include MQ(L) {
+			height: 300px;
+			float: left;
+		}
 	}
 	
 	#states-column-one {
-		width: 540px;
+		
+		@include MQ(L) {
+			width: 540px;
+		}
 		
 		h2 {
-			padding-top: 94px;
+			padding-top: 30px;
+			
+			@include MQ(L) {
+				padding-top: 94px;
+			}
 		}
 		
 		p {
-			padding-top: 12px;
+			padding-top: 8px;
+			
+			@include MQ(L) {
+				padding-top: 12px;
+			}
 		}
 	}
 	
 	#states-column-two {
-		width: 246px;
+		@include MQ(L) {
+			width: 246px;
+		}
+
 	}
 	
 	#states-column-three {
-		width: 174px;
+		@include MQ(L) {
+			width: 174px;
+		}
 		
 		.button {
-			margin-top: 100px;
+			margin-top: 20px;
+			float: left;
+			
+			@include MQ(L) {
+				margin-top: 100px;
+			}
 		}
 		
 		h5 {
-			padding-top: 14px;
 			display: inline-block;
 			text-align: center;
-			width: 150px;
-			padding-left: 12px;
+			width: 120px;
+			padding-left: 10px;
+			padding-top: 23px;
+			margin-bottom: 43px;
+			
+			@include MQ(L) {
+				padding-top: 14px;
+				width: 150px;
+				padding-left: 12px;
+				margin-bottom: 0px;
+			}
 		}
 	}
 }
@@ -261,49 +453,94 @@ header {
 
 
 #goodbuy-section {
-	height: 400px;
 	background-color: $color-dark;
 	
+	@include MQ(L) {
+		height: 400px;
+	}
+	
+	.mobile-container {
+		margin: auto;
+		width: 90%;
+		
+		@include MQ(L) {
+			width: 100%;
+		}
+	}
+	
 	h1 {
-		padding-top: 80px;
 		text-align: center;
 		margin: auto;
+		padding-top: 40px;
+		
+		@include MQ(L) {
+			padding-top: 80px;
+		}
 	}
 	
 	p {
 		padding-top: 8px;
 		text-align: center;
 		margin: auto;
-		width: 540px;
 		color: $color-semi-grey;
+		
+		@include MQ(L) {
+			width: 540px;
+		}
 	}
 	
 	.button {
 		background-color: $color-tint;
 		margin: auto;
-		margin-top: 40px;
+		margin-top: 36px;
+		
+		@include MQ(L) {
+			margin-top: 40px;
+		}
 	}
 	
 	#goodbuy-buttons {
 		margin: auto;
-		width: 340px;
+		width: 280px;
+		
+		@include MQ(L) {
+			width: 340px;
+		}
 		
 		.button {
-			margin-left: 20px;
-			float: left;
-			background-color: $color-semi-dark;
+			background-color: $color-dark;
+			margin-top: 0;
+			
+			@include MQ(L) {
+				background-color: $color-semi-dark;
+				margin-top: 48px;
+				margin-left: 20px;
+				float: left;
+			}
 		}
 		
 		:first-child {
-			margin-left: 0;
+			margin-bottom: 0;
+			
+			@include MQ(L) {
+				margin-left: 0;
+			}
 		}
 		
 		#goodbuy-download-button {
-			width: 146px;
 			background-color: $color-tint;
+			margin-top: 10px;
+			
+			@include MQ(L) {
+				margin-top: 48px;
+				width: 146px;
+			}
 	
 			a {
-				width: 146px;
+				
+				@include MQ(L) {
+					width: 146px;
+				}
 			}
 		}
 	}
@@ -313,6 +550,11 @@ header {
 #read-section {
 	height: 220px;
 	background-color: $color-pre-white;
+	display: none;
+	
+	@include MQ(L) {
+		display: block;
+	}
 	
 	.states-column {
 		height: 220px;
@@ -349,37 +591,63 @@ header {
 
 
 footer {
-	height: 340px;
 	background-color: $color-pre-white;
 	
+	@include MQ(L) {
+		height: 340px;
+	}
+	
+	.mobile-container {
+		margin: auto;
+		width: 90%;
+		
+		@include MQ(L) {
+			width: 100%;
+		}
+	}
+	
 	h4 {
-		padding-top: 40px;
-		width: 460px;
 		text-align: center;
 		margin: auto;
 		color: $color-dark;
+		padding-top: 30px;
+		
+		@include MQ(L) {
+			padding-top: 40px;
+			width: 460px;
+		}
 	}
 	
 	h4:first-child {
-		padding-top: 60px;
 		color: $color-grey;
+		@include MQ(L) {
+			padding-top: 60px;
+		}
 	}
 	
 	p {
-		padding-top: 3px;
-		width: 460px;
 		text-align: center;
 		margin: auto;
 		font-size: 16px;
 		color: $color-grey;
 		letter-spacing: 1px;
 		line-height: 19px;
+		
+		@include MQ(L) {
+			padding-top: 3px;
+			width: 460px;
+		}
+		
 	}
 	
 	#social-links {
-		padding-top: 64px;
-		width: 220px;
 		margin: auto;
+		width: 220px;
+		padding-top: 20px;
+		
+		@include MQ(L) {
+			padding-top: 64px;
+		}
 		
 		a {
 			font-size: 14px;
