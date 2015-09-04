@@ -628,10 +628,12 @@ footer {
 		margin: auto;
 		color: $color-dark;
 		padding-top: 30px;
+		max-width: 460px;
 		
 		@include MQ(L) {
 			padding-top: 40px;
 			width: 460px;
+			max-width: 100%;
 		}
 	}
 	
@@ -662,10 +664,10 @@ footer {
 	}
 	
 	#paypal-button {
+		padding-top: 12px;
 		margin: auto;
 		width: 180px;
 		height: 40px;
-		background-color: red;
 	}
 	
 	#social-links {

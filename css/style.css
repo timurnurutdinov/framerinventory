@@ -527,11 +527,13 @@ footer {
     text-align: center;
     margin: auto;
     color: #222;
-    padding-top: 30px; }
+    padding-top: 30px;
+    max-width: 460px; }
     @media only screen and (min-width: 980px) {
       footer h4 {
         padding-top: 40px;
-        width: 460px; } }
+        width: 460px;
+        max-width: 100%; } }
   footer h4:first-child {
     color: #999; }
     @media only screen and (min-width: 980px) {
@@ -551,10 +553,10 @@ footer {
         padding-top: 3px;
         width: 460px; } }
   footer #paypal-button {
+    padding-top: 12px;
     margin: auto;
     width: 180px;
-    height: 40px;
-    background-color: red; }
+    height: 40px; }
   footer #social-links {
     margin: auto;
     width: 220px;
