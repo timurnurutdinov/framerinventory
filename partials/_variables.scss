@@ -20,7 +20,7 @@ $color-complementary: #F5A623;
 $primary-font: 'Josefin Sans', sans-serif;
 
 html * {
-	//-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
