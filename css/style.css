@@ -241,16 +241,11 @@ header {
         padding-top: 60px;
         width: 340px; } }
     #welcome-section #welcome-buttons .button {
-      margin-left: 10px;
       float: left; }
-      @media only screen and (min-width: 980px) {
-        #welcome-section #welcome-buttons .button {
-          margin-left: 20px; } }
-    #welcome-section #welcome-buttons :first-child {
-      margin-left: 0; }
     #welcome-section #welcome-buttons #welcome-download-button {
       background-color: #72C3F8;
-      width: 120px; }
+      width: 120px;
+      margin-left: 0; }
       @media only screen and (min-width: 980px) {
         #welcome-section #welcome-buttons #welcome-download-button {
           width: 146px; } }
@@ -259,6 +254,15 @@ header {
         @media only screen and (min-width: 980px) {
           #welcome-section #welcome-buttons #welcome-download-button a {
             width: 146px; } }
+    #welcome-section #welcome-buttons #welcome-download-button:hover {
+      background-color: #4796CB; }
+    #welcome-section #welcome-buttons #welcome-read-button {
+      margin-left: 10px; }
+      @media only screen and (min-width: 980px) {
+        #welcome-section #welcome-buttons #welcome-read-button {
+          margin-left: 20px; } }
+    #welcome-section #welcome-buttons #welcome-read-button:hover {
+      background-color: #666; }
   #welcome-section #tutorial-video {
     margin: auto;
     width: 240px; }
@@ -440,52 +444,39 @@ header {
     @media only screen and (min-width: 980px) {
       #goodbuy-section p {
         width: 540px; } }
-  #goodbuy-section .button {
-    background-color: #72C3F8;
-    margin: auto; }
-    @media only screen and (min-width: 980px) {
-      #goodbuy-section .button {
-        margin-top: 40px; } }
   #goodbuy-section #goodbuy-buttons {
     margin: auto;
+    padding-top: 26px;
+    padding-bottom: 70px;
     width: 280px; }
     @media only screen and (min-width: 980px) {
       #goodbuy-section #goodbuy-buttons {
-        width: 340px; } }
+        padding-top: 60px;
+        width: 340px;
+        padding-bottom: 0; } }
     #goodbuy-section #goodbuy-buttons .button {
-      background-color: #222;
-      margin-top: 10px;
-      padding-bottom: 20px; }
+      float: left;
+      width: 120px; }
       @media only screen and (min-width: 980px) {
         #goodbuy-section #goodbuy-buttons .button {
-          background-color: #444;
-          margin-top: 48px;
-          margin-left: 20px;
-          float: left;
-          padding-bottom: 0; } }
+          width: 146px; } }
       #goodbuy-section #goodbuy-buttons .button a {
-        color: #72C3F8; }
+        width: 120px; }
         @media only screen and (min-width: 980px) {
           #goodbuy-section #goodbuy-buttons .button a {
-            color: #FFF; } }
-    #goodbuy-section #goodbuy-buttons :first-child {
-      margin-bottom: 0; }
-      @media only screen and (min-width: 980px) {
-        #goodbuy-section #goodbuy-buttons :first-child {
-          margin-left: 0; } }
+            width: 146px; } }
     #goodbuy-section #goodbuy-buttons #goodbuy-download-button {
       background-color: #72C3F8;
-      margin-top: 30px;
-      padding-bottom: 0; }
+      margin-left: 0; }
+    #goodbuy-section #goodbuy-buttons #goodbuy-download-button:hover {
+      background-color: #4796CB; }
+    #goodbuy-section #goodbuy-buttons #goodbuy-examples-button {
+      margin-left: 10px; }
       @media only screen and (min-width: 980px) {
-        #goodbuy-section #goodbuy-buttons #goodbuy-download-button {
-          margin-top: 48px;
-          width: 146px; } }
-      #goodbuy-section #goodbuy-buttons #goodbuy-download-button a {
-        color: #FFF; }
-        @media only screen and (min-width: 980px) {
-          #goodbuy-section #goodbuy-buttons #goodbuy-download-button a {
-            width: 146px; } }
+        #goodbuy-section #goodbuy-buttons #goodbuy-examples-button {
+          margin-left: 20px; } }
+    #goodbuy-section #goodbuy-buttons #goodbuy-examples-button:hover {
+      background-color: #666; }
 
 #read-section {
   height: 220px;

@@ -177,33 +177,31 @@ header {
 		}
 		
 		.button {
-			margin-left: 10px;
 			float: left;
-			
-			@include MQ(L) {
-				margin-left: 20px;
-			}
 		}
-		
-		:first-child {
-			margin-left: 0;
-		}
-		
+
 		#welcome-download-button {
 			background-color: $color-tint;
 			width: 120px;
-			
-			@include MQ(L) {
-				width: 146px;
-			}
+			margin-left: 0;
+			@include MQ(L) { width: 146px;}
 	
 			a {
 				width: 120px;
-				
-				@include MQ(L) {
-					width: 146px;
-				}
+				@include MQ(L) { width: 146px; }
 			}
+		}
+		
+		#welcome-download-button:hover {
+			background-color: $color-tint-hover;
+		}
+		
+		#welcome-read-button {
+			margin-left: 10px;
+			@include MQ(L) { margin-left: 20px; }
+		}
+		#welcome-read-button:hover {
+			background-color: $color-pre-grey;
 		}
 	}
 	
@@ -495,70 +493,112 @@ header {
 		}
 	}
 	
-	.button {
-		background-color: $color-tint;
-		margin: auto;
-		
-		@include MQ(L) {
-			margin-top: 40px;
-		}
-	}
-	
+	//.button {
+//		background-color: $color-tint;
+//		margin: auto;
+//
+//		@include MQ(L) {
+//			margin-top: 40px;
+//		}
+//	}
+//
+//	#goodbuy-buttons {
+//		margin: auto;
+//		width: 280px;
+//
+//		@include MQ(L) {
+//			width: 340px;
+//		}
+//
+//		.button {
+//			background-color: $color-dark;
+//			margin-top: 10px;
+//			padding-bottom: 20px;
+//
+//			@include MQ(L) {
+//				background-color: $color-semi-dark;
+//				margin-top: 48px;
+//				margin-left: 20px;
+//				float: left;
+//				padding-bottom: 0;
+//			}
+//
+//			a {
+//				color: $color-tint;
+//
+//				@include MQ(L) {
+//					color: $color-white;
+//				}
+//			}
+//		}
+//
+//		:first-child {
+//			margin-bottom: 0;
+//
+//			@include MQ(L) {
+//				margin-left: 0;
+//			}
+//		}
+//
+//		#goodbuy-download-button {
+//			background-color: $color-tint;
+//			margin-top: 30px;
+//			padding-bottom: 0;
+//
+//			@include MQ(L) {
+//				margin-top: 48px;
+//				width: 146px;
+//			}
+//
+//			a {
+//				color: $color-white;
+//
+//				@include MQ(L) {
+//					width: 146px;
+//				}
+//			}
+//		}
+//	}
+
 	#goodbuy-buttons {
 		margin: auto;
+		padding-top: 26px;
+		padding-bottom: 70px;
 		width: 280px;
-		
+	
 		@include MQ(L) {
+			padding-top: 60px;
 			width: 340px;
+			padding-bottom: 0;
 		}
-		
+	
 		.button {
-			background-color: $color-dark;
-			margin-top: 10px;
-			padding-bottom: 20px;
-			
-			@include MQ(L) {
-				background-color: $color-semi-dark;
-				margin-top: 48px;
-				margin-left: 20px;
-				float: left;
-				padding-bottom: 0;
-			}
+			float: left;
+			width: 120px;
+			@include MQ(L) { width: 146px; }
 			
 			a {
-				color: $color-tint;
-				
-				@include MQ(L) {
-					color: $color-white;
-				}
+				width: 120px;
+				@include MQ(L) { width: 146px; }
 			}
 		}
-		
-		:first-child {
-			margin-bottom: 0;
-			
-			@include MQ(L) {
-				margin-left: 0;
-			}
-		}
-		
+
 		#goodbuy-download-button {
 			background-color: $color-tint;
-			margin-top: 30px;
-			padding-bottom: 0;
+			margin-left: 0;
 			
-			@include MQ(L) {
-				margin-top: 48px;
-				width: 146px;
-			}
+		}
 	
-			a {
-				color: $color-white;
-				
-				@include MQ(L) {
-					width: 146px;
-				}
-			}
+		#goodbuy-download-button:hover {
+			background-color: $color-tint-hover;
+		}
+	
+		#goodbuy-examples-button {
+			margin-left: 10px;
+			@include MQ(L) { margin-left: 20px; }
+		}
+		#goodbuy-examples-button:hover {
+			background-color: $color-pre-grey;
 		}
 	}
 }
