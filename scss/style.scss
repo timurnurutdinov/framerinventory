@@ -177,33 +177,32 @@ header {
 		}
 		
 		.button {
-			margin-left: 10px;
 			float: left;
-			
-			@include MQ(L) {
-				margin-left: 20px;
-			}
 		}
-		
-		:first-child {
-			margin-left: 0;
-		}
+
 		
 		#welcome-download-button {
 			background-color: $color-tint;
 			width: 120px;
-			
-			@include MQ(L) {
-				width: 146px;
-			}
+			margin-left: 0;
+			@include MQ(L) { width: 146px;}
 	
 			a {
 				width: 120px;
-				
-				@include MQ(L) {
-					width: 146px;
-				}
+				@include MQ(L) { width: 146px; }
 			}
+		}
+		
+		#welcome-download-button:hover {
+			background-color: $color-tint-hover;
+		}
+		
+		#welcome-read-button {
+			margin-left: 10px;
+			@include MQ(L) { margin-left: 20px; }
+		}
+		#welcome-read-button:hover {
+			background-color: $color-pre-grey;
 		}
 	}
 	

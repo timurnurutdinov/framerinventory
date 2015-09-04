@@ -241,16 +241,11 @@ header {
         padding-top: 60px;
         width: 340px; } }
     #welcome-section #welcome-buttons .button {
-      margin-left: 10px;
       float: left; }
-      @media only screen and (min-width: 980px) {
-        #welcome-section #welcome-buttons .button {
-          margin-left: 20px; } }
-    #welcome-section #welcome-buttons :first-child {
-      margin-left: 0; }
     #welcome-section #welcome-buttons #welcome-download-button {
       background-color: #72C3F8;
-      width: 120px; }
+      width: 120px;
+      margin-left: 0; }
       @media only screen and (min-width: 980px) {
         #welcome-section #welcome-buttons #welcome-download-button {
           width: 146px; } }
@@ -259,6 +254,15 @@ header {
         @media only screen and (min-width: 980px) {
           #welcome-section #welcome-buttons #welcome-download-button a {
             width: 146px; } }
+    #welcome-section #welcome-buttons #welcome-download-button:hover {
+      background-color: #4796CB; }
+    #welcome-section #welcome-buttons #welcome-read-button {
+      margin-left: 10px; }
+      @media only screen and (min-width: 980px) {
+        #welcome-section #welcome-buttons #welcome-read-button {
+          margin-left: 20px; } }
+    #welcome-section #welcome-buttons #welcome-read-button:hover {
+      background-color: #666; }
   #welcome-section #tutorial-video {
     margin: auto;
     width: 240px; }
