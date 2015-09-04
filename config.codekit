@@ -46,6 +46,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/css\/img\/paypal-button.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4676,
+		"inputAbbreviatedPath": "\/css\/img\/paypal-button.png",
+		"outputAbbreviatedPath": "\/css\/img\/paypal-button.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/img\/smallkeynotebg.png": {
 		"fileType": 32768,
 		"ignore": 0,
