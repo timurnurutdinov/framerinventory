@@ -1,4 +1,5 @@
 @import '../partials/reset';
+@import '../partials/mixins';
 @import '../partials/layout';
 @import '../partials/variables';
 
@@ -39,7 +40,13 @@ header {
 			float: left;
 			margin-left: 0;
 		}
-	}
+		
+		@include hidpi {
+	  		background-image: url('img/logo@2x.png');
+	  		background-size: 260px 82px;
+		  }
+	  		
+	  }
 		
 	#header-links {
 		width: 260px;
@@ -321,12 +328,18 @@ header {
 		width: 100%;
 		height: 230px;
 		
+		@include hidpi {
+			background-image: url('img/statesbg@2x.png');
+			background-size: 200% 230px;
+		}
+		
 		@include MQ(L) {
 			background-position: left bottom;
 			height: 460px;
 			width: calc(100% - 50% + 480px);
 			margin-left: calc(50% - 480px);
 		}
+		
 	}
 }
 
@@ -375,11 +388,21 @@ header {
 		width: 100%;
 		padding-top: 20px;
 		
+		@include hidpi {
+			background-image: url('img/smallkeynotebg@2x.png');
+			background-size: 100% 134px;
+		}
+		
 		@include MQ(L) {
 			background-image: url('img/keynotebg.png');
 			width: 960px;
 			height: 460px;
 			padding-top: 0;
+			
+			@include hidpi {
+				background-image: url('img/smallkeynotebg@2x.png');
+				background-size: 960px 460px;
+			}
 		}
 	}
 }
