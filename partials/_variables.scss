@@ -67,13 +67,13 @@ h4 {
 	line-height: 1.44;
 	font-weight: 700;
 	letter-spacing: 0.2px;
+	font-size: 1.4rem;	
 	
 	@include MQ(M) {
 
 	}
 
 	@include MQ(L) {
-		font-family: $primary-font;
 		font-size: 1.8rem;	
 		
 	}
@@ -107,7 +107,7 @@ p {
 	color: $color-pre-grey;
 	line-height: 1.44;
 	font-weight: 700;
-	letter-spacing: 1px;
+	letter-spacing: 0.4px;
 	font-size: 1.4rem;
 	max-width: 430px;	
 	
@@ -120,6 +120,7 @@ p {
 		font-size: 2.2rem;	
 		line-height: 1.36;
 		max-width: 100%;
+		letter-spacing: 1px;
 	}
 }
 

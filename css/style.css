@@ -60,10 +60,10 @@ h4 {
   color: #999;
   line-height: 1.44;
   font-weight: 700;
-  letter-spacing: 0.2px; }
+  letter-spacing: 0.2px;
+  font-size: 1.4rem; }
   @media only screen and (min-width: 980px) {
     h4 {
-      font-family: "Josefin Sans", sans-serif;
       font-size: 1.8rem; } }
 
 h5 {
@@ -82,7 +82,7 @@ p {
   color: #666;
   line-height: 1.44;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.4px;
   font-size: 1.4rem;
   max-width: 430px; }
   @media only screen and (min-width: 980px) {
@@ -90,7 +90,8 @@ p {
       font-family: "Josefin Sans", sans-serif;
       font-size: 2.2rem;
       line-height: 1.36;
-      max-width: 100%; } }
+      max-width: 100%;
+      letter-spacing: 1px; } }
 
 a {
   font-family: "Josefin Sans", sans-serif;
@@ -130,14 +131,14 @@ header {
   width: 100%;
   background: #222;
   position: fixed;
-  height: 116px; }
+  height: 116px;
+  box-shadow: inset 0px -1px 0px 0px #000; }
   @media only screen and (min-width: 980px) {
     header {
       height: 82px; } }
   header #logo {
     width: 260px;
     height: 82px;
-    background-color: red;
     background-image: url("img/logo.png");
     background-repeat: no-repeat;
     margin: auto; }
@@ -147,8 +148,7 @@ header {
         margin-left: 0; } }
   header #header-links {
     width: 260px;
-    margin: auto;
-    background-color: blue; }
+    margin: auto; }
     @media only screen and (min-width: 980px) {
       header #header-links {
         width: 100%; } }
@@ -212,19 +212,25 @@ header {
       #welcome-section .mobile-container {
         width: 100%; } }
   #welcome-section h1 {
-    padding-top: 160px;
+    margin: auto;
     text-align: center;
-    background-color: yellow; }
+    padding-top: 140px;
+    max-width: 280px; }
+    @media only screen and (min-width: 980px) {
+      #welcome-section h1 {
+        padding-top: 160px;
+        max-width: 100%; } }
   #welcome-section p {
+    color: #CCC;
+    margin: auto;
     width: 100%;
     text-align: center;
     padding-top: 16px;
-    color: #CCC;
-    background-color: green; }
+    max-width: 300px; }
     @media only screen and (min-width: 980px) {
       #welcome-section p {
         width: 480px;
-        margin: auto; } }
+        max-width: 100%; } }
   #welcome-section #welcome-buttons {
     margin: auto;
     padding-top: 36px;
@@ -282,7 +288,7 @@ header {
   #states-section #states-column-one {
     width: 490px; } }
 #states-section #states-column-one h2 {
-  padding-top: 30px; }
+  padding-top: 40px; }
   @media only screen and (min-width: 980px) {
     #states-section #states-column-one h2 {
       padding-top: 100px; } }
@@ -298,7 +304,7 @@ header {
   #states-section #states-column-three {
     width: 174px; } }
 #states-section #states-column-three .button {
-  margin-top: 20px;
+  margin-top: 40px;
   float: left; }
   @media only screen and (min-width: 980px) {
     #states-section #states-column-three .button {
@@ -308,7 +314,7 @@ header {
   text-align: center;
   float: left;
   width: 120px;
-  padding-top: 20px;
+  padding-top: 42px;
   padding-left: 10px; }
   @media only screen and (min-width: 980px) {
     #states-section #states-column-three h5 {
@@ -319,10 +325,12 @@ header {
   clear: both;
   background-image: url("img/statesbg.png");
   background-repeat: no-repeat;
+  background-position: 25% top;
   width: 100%;
   height: 230px; }
   @media only screen and (min-width: 980px) {
     #states-section #states-image {
+      background-position: left bottom;
       height: 460px;
       width: calc(100% - 50% + 480px);
       margin-left: calc(50% - 480px); } }
@@ -370,7 +378,7 @@ header {
   #scale-section #states-column-one {
     width: 540px; } }
 #scale-section #states-column-one h2 {
-  padding-top: 30px; }
+  padding-top: 40px; }
   @media only screen and (min-width: 980px) {
     #scale-section #states-column-one h2 {
       padding-top: 94px; } }
@@ -419,7 +427,7 @@ header {
   #goodbuy-section h1 {
     text-align: center;
     margin: auto;
-    padding-top: 40px; }
+    padding-top: 50px; }
     @media only screen and (min-width: 980px) {
       #goodbuy-section h1 {
         padding-top: 80px; } }
@@ -433,8 +441,7 @@ header {
         width: 540px; } }
   #goodbuy-section .button {
     background-color: #72C3F8;
-    margin: auto;
-    margin-top: 36px; }
+    margin: auto; }
     @media only screen and (min-width: 980px) {
       #goodbuy-section .button {
         margin-top: 40px; } }
@@ -446,13 +453,20 @@ header {
         width: 340px; } }
     #goodbuy-section #goodbuy-buttons .button {
       background-color: #222;
-      margin-top: 0; }
+      margin-top: 10px;
+      padding-bottom: 20px; }
       @media only screen and (min-width: 980px) {
         #goodbuy-section #goodbuy-buttons .button {
           background-color: #444;
           margin-top: 48px;
           margin-left: 20px;
-          float: left; } }
+          float: left;
+          padding-bottom: 0; } }
+      #goodbuy-section #goodbuy-buttons .button a {
+        color: #72C3F8; }
+        @media only screen and (min-width: 980px) {
+          #goodbuy-section #goodbuy-buttons .button a {
+            color: #FFF; } }
     #goodbuy-section #goodbuy-buttons :first-child {
       margin-bottom: 0; }
       @media only screen and (min-width: 980px) {
@@ -460,14 +474,17 @@ header {
           margin-left: 0; } }
     #goodbuy-section #goodbuy-buttons #goodbuy-download-button {
       background-color: #72C3F8;
-      margin-top: 10px; }
+      margin-top: 30px;
+      padding-bottom: 0; }
       @media only screen and (min-width: 980px) {
         #goodbuy-section #goodbuy-buttons #goodbuy-download-button {
           margin-top: 48px;
           width: 146px; } }
-      @media only screen and (min-width: 980px) {
-        #goodbuy-section #goodbuy-buttons #goodbuy-download-button a {
-          width: 146px; } }
+      #goodbuy-section #goodbuy-buttons #goodbuy-download-button a {
+        color: #FFF; }
+        @media only screen and (min-width: 980px) {
+          #goodbuy-section #goodbuy-buttons #goodbuy-download-button a {
+            width: 146px; } }
 
 #read-section {
   height: 220px;
@@ -519,6 +536,8 @@ footer {
     @media only screen and (min-width: 980px) {
       footer h4:first-child {
         padding-top: 60px; } }
+  footer #name {
+    font-size: 1.6rem; }
   footer p {
     text-align: center;
     margin: auto;
@@ -530,13 +549,20 @@ footer {
       footer p {
         padding-top: 3px;
         width: 460px; } }
+  footer #paypal-button {
+    margin: auto;
+    width: 180px;
+    height: 40px;
+    background-color: red; }
   footer #social-links {
     margin: auto;
     width: 220px;
-    padding-top: 20px; }
+    padding-top: 20px;
+    padding-bottom: 20px; }
     @media only screen and (min-width: 980px) {
       footer #social-links {
-        padding-top: 64px; } }
+        padding-top: 30px;
+        padding-bottom: 0; } }
     footer #social-links a {
       font-size: 14px;
       padding-left: 22px; }

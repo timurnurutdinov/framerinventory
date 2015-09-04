@@ -19,6 +19,7 @@ header {
 	background: $color-dark;
 	position:fixed;
 	height:116px;
+	box-shadow: inset 0px -1px 0px 0px $color-black;
 	
 	@include MQ(L) {
 		height:82px;
@@ -30,7 +31,6 @@ header {
 	#logo {
 		width: 260px;
 		height: 82px;
-		background-color: red;
 		background-image: url('img/logo.png');
 		background-repeat: no-repeat;
 		margin: auto;
@@ -44,7 +44,6 @@ header {
 	#header-links {
 		width: 260px;
 		margin: auto;
-		background-color: blue;
 		
 		@include MQ(L) {
 			width: 100%;
@@ -142,21 +141,28 @@ header {
 	
 	
 	h1 {
-		padding-top: 160px;
+		margin: auto;
 		text-align: center;
-		background-color: yellow;
+		padding-top: 140px;
+		max-width: 280px;
+		
+		@include MQ(L) {
+			padding-top: 160px;
+			max-width: 100%;
+		}
 	}
 	
 	p {
+		color: $color-semi-grey;
+		margin: auto;
 		width: 100%;
 		text-align: center;
 		padding-top: 16px;
-		color: $color-semi-grey;
-		background-color: green;
+		max-width: 300px;
 		
 		@include MQ(L) {
 			width: 480px;
-			margin: auto;
+			max-width: 100%;
 		}
 	}
 	
@@ -254,7 +260,7 @@ header {
 		}
 		
 		h2 {
-			padding-top: 30px;
+			padding-top: 40px;
 			
 			@include MQ(L) {
 				padding-top: 100px;
@@ -283,7 +289,7 @@ header {
 		}
 		
 		.button {
-			margin-top: 20px;
+			margin-top: 40px;
 			float: left;
 			
 			@include MQ(L) {
@@ -296,7 +302,7 @@ header {
 			text-align: center;
 			float: left;
 			width: 120px;
-			padding-top: 20px;
+			padding-top: 42px;
 			padding-left: 10px;
 			
 			
@@ -311,14 +317,14 @@ header {
 	
 	#states-image {
 		clear:both;
-		//background-image: url('img/smallstatesbg.png');
 		background-image: url('img/statesbg.png');
 		background-repeat: no-repeat;
+		background-position: 25% top;
 		width: 100%;
 		height: 230px;
 		
 		@include MQ(L) {
-//			background-image: url('img/statesbg.png');
+			background-position: left bottom;
 			height: 460px;
 			width: calc(100% - 50% + 480px);
 			margin-left: calc(50% - 480px);
@@ -395,7 +401,7 @@ header {
 		}
 		
 		h2 {
-			padding-top: 30px;
+			padding-top: 40px;
 			
 			@include MQ(L) {
 				padding-top: 94px;
@@ -471,7 +477,7 @@ header {
 	h1 {
 		text-align: center;
 		margin: auto;
-		padding-top: 40px;
+		padding-top: 50px;
 		
 		@include MQ(L) {
 			padding-top: 80px;
@@ -492,7 +498,6 @@ header {
 	.button {
 		background-color: $color-tint;
 		margin: auto;
-		margin-top: 36px;
 		
 		@include MQ(L) {
 			margin-top: 40px;
@@ -509,13 +514,23 @@ header {
 		
 		.button {
 			background-color: $color-dark;
-			margin-top: 0;
+			margin-top: 10px;
+			padding-bottom: 20px;
 			
 			@include MQ(L) {
 				background-color: $color-semi-dark;
 				margin-top: 48px;
 				margin-left: 20px;
 				float: left;
+				padding-bottom: 0;
+			}
+			
+			a {
+				color: $color-tint;
+				
+				@include MQ(L) {
+					color: $color-white;
+				}
 			}
 		}
 		
@@ -529,7 +544,8 @@ header {
 		
 		#goodbuy-download-button {
 			background-color: $color-tint;
-			margin-top: 10px;
+			margin-top: 30px;
+			padding-bottom: 0;
 			
 			@include MQ(L) {
 				margin-top: 48px;
@@ -537,6 +553,7 @@ header {
 			}
 	
 			a {
+				color: $color-white;
 				
 				@include MQ(L) {
 					width: 146px;
@@ -625,6 +642,10 @@ footer {
 		}
 	}
 	
+	#name {
+		font-size: 1.6rem;	
+	}
+	
 	p {
 		text-align: center;
 		margin: auto;
@@ -640,13 +661,22 @@ footer {
 		
 	}
 	
+	#paypal-button {
+		margin: auto;
+		width: 180px;
+		height: 40px;
+		background-color: red;
+	}
+	
 	#social-links {
 		margin: auto;
 		width: 220px;
 		padding-top: 20px;
+		padding-bottom: 20px;
 		
 		@include MQ(L) {
-			padding-top: 64px;
+			padding-top: 30px;
+			padding-bottom: 0;
 		}
 		
 		a {
