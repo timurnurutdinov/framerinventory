@@ -424,7 +424,7 @@ header {
 	#states-column-one {
 		
 		@include MQ(L) {
-			width: 540px;
+			width: 460px;
 		}
 		
 		h2 {
@@ -446,7 +446,7 @@ header {
 	
 	#states-column-two {
 		@include MQ(L) {
-			width: 246px;
+			width: 326px;
 		}
 
 	}
@@ -669,11 +669,11 @@ footer {
 		text-align: center;
 		margin: auto;
 		color: $color-dark;
-		padding-top: 30px;
+		padding-top: 60px;
 		max-width: 460px;
 		
 		@include MQ(L) {
-			padding-top: 40px;
+			padding-top: 100px;
 			width: 460px;
 			max-width: 100%;
 		}
@@ -681,9 +681,8 @@ footer {
 	
 	h4:first-child {
 		color: $color-grey;
-		@include MQ(L) {
-			padding-top: 60px;
-		}
+		padding-top: 40px;
+		
 	}
 	
 	#name {
@@ -705,20 +704,30 @@ footer {
 		
 	}
 	
-	#paypal-button {
-		padding-top: 12px;
+	
+	#share-buttons {
+		width: 190px;
 		margin: auto;
-		width: 180px;
-		height: 40px;
+		padding-top: 16px;
 		
-		#test-paypal {
+		#twitter-button {
+			float: left;
 			
-			@include hidpi {
-				background-image: url('img/paypal-button@2x.png');
-				background-size: 180px 40px;
-			}
 		}
+		
+		#facebook-button {
+			float: left;
+			padding-left: 8px;
+			
+		}
+		
+		#paypal-button {
+			float: left;
+			padding-left: 8px;
+		}
+		
 	}
+	
 	
 	#social-links {
 		margin: auto;
