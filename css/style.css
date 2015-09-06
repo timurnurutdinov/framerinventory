@@ -409,7 +409,7 @@ header {
     float: left; } }
 @media only screen and (min-width: 980px) {
   #scale-section #states-column-one {
-    width: 460px; } }
+    width: 560px; } }
 #scale-section #states-column-one h2 {
   padding-top: 40px; }
   @media only screen and (min-width: 980px) {
@@ -422,7 +422,7 @@ header {
       padding-top: 12px; } }
 @media only screen and (min-width: 980px) {
   #scale-section #states-column-two {
-    width: 326px; } }
+    width: 226px; } }
 @media only screen and (min-width: 980px) {
   #scale-section #states-column-three {
     width: 174px; } }
@@ -483,29 +483,27 @@ header {
         width: 340px;
         padding-bottom: 0; } }
     #goodbuy-section #goodbuy-buttons .button {
-      float: left;
-      width: 140px; }
-      @media only screen and (min-width: 980px) {
-        #goodbuy-section #goodbuy-buttons .button {
-          width: 166px; } }
-      #goodbuy-section #goodbuy-buttons .button a {
-        width: 140px; }
-        @media only screen and (min-width: 980px) {
-          #goodbuy-section #goodbuy-buttons .button a {
-            width: 166px; } }
+      float: left; }
     #goodbuy-section #goodbuy-buttons #goodbuy-download-button {
       width: 120px;
       background-color: #72C3F8;
       margin-left: 0; }
+      @media only screen and (min-width: 980px) {
+        #goodbuy-section #goodbuy-buttons #goodbuy-download-button {
+          width: 146px; } }
       #goodbuy-section #goodbuy-buttons #goodbuy-download-button a {
         width: 120px; }
+        @media only screen and (min-width: 980px) {
+          #goodbuy-section #goodbuy-buttons #goodbuy-download-button a {
+            width: 146px; } }
     #goodbuy-section #goodbuy-buttons #goodbuy-download-button:hover {
       background-color: #4796CB; }
     #goodbuy-section #goodbuy-buttons #goodbuy-examples-button {
       margin-left: 10px; }
       @media only screen and (min-width: 980px) {
         #goodbuy-section #goodbuy-buttons #goodbuy-examples-button {
-          margin-left: 20px; } }
+          margin-left: 20px;
+          width: 166px; } }
     #goodbuy-section #goodbuy-buttons #goodbuy-examples-button:hover {
       background-color: #666; }
 
