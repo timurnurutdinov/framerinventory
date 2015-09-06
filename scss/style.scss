@@ -322,22 +322,30 @@ header {
 	
 	#states-image {
 		clear:both;
-		background-image: url('img/statesbg.png');
+		margin: auto;
+		background-image: url('img/smallstatesbg.png');
 		background-repeat: no-repeat;
 		background-position: 25% top;
-		width: 100%;
+		width: 240px;
 		height: 230px;
 		
 		@include hidpi {
-			background-image: url('img/statesbg@2x.png');
-			background-size: 200% 230px;
+			background-image: url('img/smallstatesbg@2x.png');
+			background-size: 240px 230px;
 		}
 		
 		@include MQ(L) {
+			background-image: url('img/statesbg.png');
 			background-position: left bottom;
+			background-size: 1440px 460px;
 			height: 460px;
 			width: calc(100% - 50% + 480px);
 			margin-left: calc(50% - 480px);
+			
+			@include hidpi {
+				background-image: url('img/statesbg@2x.png');
+				background-size: 1440px 460px;
+			}
 		}
 		
 	}
@@ -384,13 +392,14 @@ header {
 		background-image: url('img/smallkeynotebg.png');
 		background-repeat: no-repeat;
 		background-position: center;
+		margin: auto ;
 		height: 134px;
-		width: 100%;
+		width: 280px;
 		padding-top: 20px;
 		
 		@include hidpi {
 			background-image: url('img/smallkeynotebg@2x.png');
-			background-size: 100% 134px;
+			background-size: 280px 134px;
 		}
 		
 		@include MQ(L) {
@@ -400,7 +409,7 @@ header {
 			padding-top: 0;
 			
 			@include hidpi {
-				background-image: url('img/smallkeynotebg@2x.png');
+				background-image: url('img/keynotebg@2x.png');
 				background-size: 960px 460px;
 			}
 		}
@@ -538,18 +547,23 @@ header {
 	
 		.button {
 			float: left;
-			width: 120px;
-			@include MQ(L) { width: 146px; }
+			width: 140px;
+			@include MQ(L) { width: 166px; }
 			
 			a {
-				width: 120px;
-				@include MQ(L) { width: 146px; }
+				width: 140px;
+				@include MQ(L) { width: 166px; }
 			}
 		}
 
 		#goodbuy-download-button {
+			width: 120px;
 			background-color: $color-tint;
 			margin-left: 0;
+			
+			a {
+				width: 120px;
+			}
 			
 		}
 	
@@ -624,6 +638,7 @@ header {
 		.button {
 			margin-top: 20px;
 			float: left;
+			background-color: $color-semi-grey;
 			
 			@include MQ(L) {
 				margin-top: 100px;

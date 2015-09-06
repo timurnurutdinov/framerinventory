@@ -333,21 +333,28 @@ header {
       padding-left: 12px; } }
 #states-section #states-image {
   clear: both;
-  background-image: url("img/statesbg.png");
+  margin: auto;
+  background-image: url("img/smallstatesbg.png");
   background-repeat: no-repeat;
   background-position: 25% top;
-  width: 100%;
+  width: 240px;
   height: 230px; }
   @media (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi), (min-resolution: 1.3dppx) {
     #states-section #states-image {
-      background-image: url("img/statesbg@2x.png");
-      background-size: 200% 230px; } }
+      background-image: url("img/smallstatesbg@2x.png");
+      background-size: 240px 230px; } }
   @media only screen and (min-width: 980px) {
     #states-section #states-image {
+      background-image: url("img/statesbg.png");
       background-position: left bottom;
+      background-size: 1440px 460px;
       height: 460px;
       width: calc(100% - 50% + 480px);
       margin-left: calc(50% - 480px); } }
+  @media only screen and (min-width: 980px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-width: 980px) and (min-resolution: 124.8dpi), only screen and (min-width: 980px) and (min-resolution: 1.3dppx) {
+    #states-section #states-image {
+      background-image: url("img/statesbg@2x.png");
+      background-size: 1440px 460px; } }
 
 @media only screen and (min-width: 980px) {
   #keynote-section {
@@ -374,13 +381,14 @@ header {
   background-image: url("img/smallkeynotebg.png");
   background-repeat: no-repeat;
   background-position: center;
+  margin: auto;
   height: 134px;
-  width: 100%;
+  width: 280px;
   padding-top: 20px; }
   @media (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi), (min-resolution: 1.3dppx) {
     #keynote-section #keynote-image {
       background-image: url("img/smallkeynotebg@2x.png");
-      background-size: 100% 134px; } }
+      background-size: 280px 134px; } }
   @media only screen and (min-width: 980px) {
     #keynote-section #keynote-image {
       background-image: url("img/keynotebg.png");
@@ -389,7 +397,7 @@ header {
       padding-top: 0; } }
   @media only screen and (min-width: 980px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-width: 980px) and (min-resolution: 124.8dpi), only screen and (min-width: 980px) and (min-resolution: 1.3dppx) {
     #keynote-section #keynote-image {
-      background-image: url("img/smallkeynotebg@2x.png");
+      background-image: url("img/keynotebg@2x.png");
       background-size: 960px 460px; } }
 
 @media only screen and (min-width: 980px) {
@@ -476,18 +484,21 @@ header {
         padding-bottom: 0; } }
     #goodbuy-section #goodbuy-buttons .button {
       float: left;
-      width: 120px; }
+      width: 140px; }
       @media only screen and (min-width: 980px) {
         #goodbuy-section #goodbuy-buttons .button {
-          width: 146px; } }
+          width: 166px; } }
       #goodbuy-section #goodbuy-buttons .button a {
-        width: 120px; }
+        width: 140px; }
         @media only screen and (min-width: 980px) {
           #goodbuy-section #goodbuy-buttons .button a {
-            width: 146px; } }
+            width: 166px; } }
     #goodbuy-section #goodbuy-buttons #goodbuy-download-button {
+      width: 120px;
       background-color: #72C3F8;
       margin-left: 0; }
+      #goodbuy-section #goodbuy-buttons #goodbuy-download-button a {
+        width: 120px; }
     #goodbuy-section #goodbuy-buttons #goodbuy-download-button:hover {
       background-color: #4796CB; }
     #goodbuy-section #goodbuy-buttons #goodbuy-examples-button {
@@ -531,7 +542,8 @@ header {
       width: 174px; } }
   #read-section #read-column-three .button {
     margin-top: 20px;
-    float: left; }
+    float: left;
+    background-color: #CCC; }
     @media only screen and (min-width: 980px) {
       #read-section #read-column-three .button {
         margin-top: 100px; } }
