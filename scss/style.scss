@@ -27,8 +27,6 @@ header {
 	}
 	
 	
-	
-	
 	#logo {
 		width: 260px;
 		height: 82px;
@@ -71,14 +69,22 @@ header {
 			margin-left: 0;
 		}
 	}
+
+	#header-links a:hover {
+		color: $color-white;
+	}
+
 	
-	#header-links a:first-child {	
-			margin-right: 0;
-			margin-left: 0;
+	#header-links a:first-child {
+		color: $color-orange;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	#header-links a:first-child:hover {
+		color: #FCC66C;
 	}
 
 }
-
 
 .container {
 	margin: auto;
@@ -92,146 +98,119 @@ header {
 
 
 
-.button {
-	width: 150px;
-	height: 34px;
-	border-radius: 17px;
-	background-color: $color-semi-dark;
-	transition: all 0.3s;
-	
-	@include MQ(L) {
-		width: 174px;
-		height: 44px;
-		border-radius: 22px;
-	}
-
-	a {
-		display: inline-block;
-		width: 150px;
-		padding-top: 13px;
-		margin: auto;
-		
-		@include MQ(L) {
-			width: 174px;
-			padding-top: 18px;
-		}
-	}
-}
-
-.button:hover {
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-	background-color: $color-dark;
-}
 
 
-
-
-
-
-
-
-#welcome-section {
-	background-color: $color-dark;
-	
-	@include MQ(L) {
-		height: 800px;
-	}
-	
-	.mobile-container {
-		width: 90%;
-		margin: auto;
-		
-		@include MQ(L) {
-			width: 100%;
-		}
-	}
-	
+.base-section {
 	
 	h1 {
 		margin: auto;
+		max-width: 300px;
+		
+		@include MQ(M) {
+			max-width: 470px;
+		}
+		@include MQ(L) {
+			max-width: 100%;
+		}
+	}
+	
+	
+	p {
+		margin: auto;
 		text-align: center;
-		padding-top: 140px;
-		max-width: 280px;
+		width: 100%;
+		max-width: 300px;
+		padding-bottom: 30px;
+		
+		
+		@include MQ(M) {
+			max-width: 470px;
+			padding-bottom: 50px;
+		}
+		@include MQ(L) {
+			width: 580px;
+			max-width: 100%;
+			padding-top: 6px;
+		}
+	}
+
+	
+	.button {
+		width: 300px;
+		height: 44px;
+		border-radius: 22px;
+		background-color: $color-dark;
+		transition: all 0.3s;
+		margin: auto;
+		margin-top: 20px;
+	
+		@include MQ(L) {
+			margin-top: 30px;
+		}
+
+		a {
+			display: inline-block;
+			width: 300px;
+			padding-top: 18px;
+			margin: auto;
+			letter-spacing: 2px;
+		}
+	}
+
+	.button:hover {
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+		background-color: $color-semi-dark;
+	}
+	
+	
+	h5 {
+		padding-top: 10px;
+		padding-bottom: 30px;
+		margin: auto;
 		
 		@include MQ(L) {
-			padding-top: 160px;
-			max-width: 100%;
+			padding-bottom: 40px;
+		}
+	}
+	
+}
+
+
+#welcome-section {
+	background-color: $color-orange;
+	
+	h1 {
+		padding-top: 140px;
+		
+		@include MQ(M) {
+			padding-top: 130px;
 		}
 	}
 	
 	p {
-		color: $color-semi-grey;
-		margin: auto;
-		width: 100%;
-		text-align: center;
-		padding-top: 16px;
-		max-width: 300px;
-		
-		@include MQ(L) {
-			width: 480px;
-			max-width: 100%;
-		}
+		color: $color-white;
 	}
-	
-	#welcome-buttons {
-		margin: auto;
-		padding-top: 36px;
-		width: 280px;
-		
-		@include MQ(L) {
-			padding-top: 60px;
-			width: 340px;
-		}
-		
-		.button {
-			float: left;
-		}
 
-		#welcome-download-button {
-			background-color: $color-tint;
-			width: 120px;
-			margin-left: 0;
-			@include MQ(L) { width: 146px;}
-	
-			a {
-				width: 120px;
-				@include MQ(L) { width: 146px; }
-			}
-		}
-		
-		#welcome-download-button:hover {
-			background-color: $color-tint-hover;
-		}
-		
-		#welcome-read-button {
-			margin-left: 10px;
-			@include MQ(L) { margin-left: 20px; }
-		}
-		#welcome-read-button:hover {
-			background-color: $color-pre-grey;
-		}
-	}
-	
 	#tutorial-video {
-		margin: auto;
-		width: 240px;
+		width: 80%;
+		max-width: 100%;
+		height: 240px;
+		margin-left: 10%;
 		
-		@include MQ(L) {
-			width: 480px;
+		@include MQ(M) {
+			width: 580px;
+			height: 363px;
+			max-width: 580px;
+			margin-left: calc((100% - 580px) / 2);
+			margin-top: -20px;
 		}
 	}
-	
-	iframe {
-		width: 240px;
-		height: 150px;
-		padding-top: 20px;
-		padding-bottom: 20px;
 
-		@include MQ(L) {
-			width: 480px;
-			height: 300px;
-			padding-top: 60px;
-		}
+	#tutorial-video iframe {
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
 	}
 	
 }
@@ -239,429 +218,95 @@ header {
 
 
 
+#main-section {	
+	
+	h1 {
+		color: $color-black;
+		padding-top: 40px;
 
-
-
-#states-section {
-	@include MQ(L) {
-		height: 740px;
-	}
-	
-	
-	.states-column {
-		
-		@include MQ(L) {
-			height: 280px;
-			padding: 0;
-			margin: 0;
-			float: left;
-		}
-	}
-	
-	#states-column-one {
-		
-		@include MQ(L) {
-			width: 490px;
-		}
-		
-		h2 {
-			padding-top: 40px;
-			
-			@include MQ(L) {
-				padding-top: 100px;
-			}
-		}
-		
-		p {
-			padding-top: 8px;
-			
-			@include MQ(L) {
-				padding-top: 12px;
-			}
-		}
-	}
-	
-	#states-column-two {
-		@include MQ(L) {
-			width: 960-490-174px;
-		}
-	}
-	
-	#states-column-three {
-		
-		@include MQ(L) {
-			width: 174px;
-		}
-		
-		.button {
-			margin-top: 40px;
-			float: left;
-			
-			@include MQ(L) {
-				margin-top: 107px;
-			}
-		}
-		
-		h5 {
-			display: inline-block;
-			text-align: center;
-			float: left;
-			width: 120px;
-			padding-top: 42px;
-			padding-left: 10px;
-			
-			
-			@include MQ(L) {
-				width: 150px;
-				padding-top: 14px;		
-				padding-left: 12px;
-			}
-		}
-	}
-	
-	
-	#states-image {
-		clear:both;
-		margin: auto;
-		background-image: url('img/smallstatesbg.png');
-		background-repeat: no-repeat;
-		background-position: 25% top;
-		width: 240px;
-		height: 230px;
-		
-		@include hidpi {
-			background-image: url('img/smallstatesbg@2x.png');
-			background-size: 240px 230px;
-		}
-		
-		@include MQ(L) {
-			background-image: url('img/statesbg.png');
-			background-position: left bottom;
-			background-size: 1440px 460px;
-			height: 460px;
-			width: calc(100% - 50% + 480px);
-			margin-left: calc(50% - 480px);
-			
-			@include hidpi {
-				background-image: url('img/statesbg@2x.png');
-				background-size: 1440px 460px;
-			}
-		}
-		
-	}
-}
-
-
-
-
-#keynote-section {
-	
-	@include MQ(L) {
-		height: 680px;
-	}
-	
-	.container {
-		@include MQ(L) {
-			box-shadow: inset 0px -1px 0px 0px $color-semi-grey;
-		}
-	}
-	
-	
-	h2 {
-		text-align: center;
-		margin: auto;
-		padding-top: 30px;
-		
 		@include MQ(L) {
 			padding-top: 70px;
 		}
 	}
 	
-	p {
-		padding-top: 8px;
-		text-align: center;
-		margin: auto;
-		
-		@include MQ(L) {
-			width: 540px;
-			padding-top: 12px;
-		}
+	
+	.block {
+		width: 100%;
 	}
-		
-	#keynote-image {
-		background-image: url('img/smallkeynotebg.png');
-		background-repeat: no-repeat;
-		background-position: center;
-		margin: auto ;
-		height: 134px;
-		width: 280px;
-		padding-top: 20px;
-		
-		@include hidpi {
-			background-image: url('img/smallkeynotebg@2x.png');
-			background-size: 280px 134px;
-		}
-		
+
+	img {
+		width: calc(100% - 20px);
+		max-width: 100%;
+		height: auto;
+		margin-left: 10px;
+		margin-top: -20px;
+	
 		@include MQ(L) {
-			background-image: url('img/keynotebg.png');
-			width: 960px;
-			height: 460px;
-			padding-top: 0;
-			
-			@include hidpi {
-				background-image: url('img/keynotebg@2x.png');
-				background-size: 960px 460px;
-			}
+			max-width: 1183px;
+			margin-left: calc((100% - 1183px) / 2);
 		}
 	}
 }
 
 
 
-#scale-section {
-	@include MQ(L) {
-		height: 300px;
-	}
-	
-	.states-column {
-		@include MQ(L) {
-			height: 300px;
-			float: left;
-		}
-	}
-	
-	#states-column-one {
-		
-		@include MQ(L) {
-			width: 460px;
-		}
-		
-		h2 {
-			padding-top: 40px;
-			
-			@include MQ(L) {
-				padding-top: 94px;
-			}
-		}
-		
-		p {
-			padding-top: 8px;
-			
-			@include MQ(L) {
-				padding-top: 12px;
-			}
-		}
-	}
-	
-	#states-column-two {
-		@include MQ(L) {
-			width: 326px;
-		}
 
-	}
-	
-	#states-column-three {
-		@include MQ(L) {
-			width: 174px;
-		}
-		
-		.button {
-			margin-top: 20px;
-			float: left;
-			
-			@include MQ(L) {
-				margin-top: 100px;
-			}
-		}
-		
-		h5 {
-			display: inline-block;
-			text-align: center;
-			width: 120px;
-			padding-left: 10px;
-			padding-top: 23px;
-			margin-bottom: 43px;
-			
-			@include MQ(L) {
-				padding-top: 14px;
-				width: 150px;
-				padding-left: 12px;
-				margin-bottom: 0px;
-			}
-		}
-	}
-}
-
-
-
-#goodbuy-section {
-	background-color: $color-dark;
-	
-	@include MQ(L) {
-		height: 400px;
-	}
-	
-	.mobile-container {
-		margin: auto;
-		width: 90%;
-		
-		@include MQ(L) {
-			width: 100%;
-		}
-	}
+#tutorial-section {
 	
 	h1 {
-		text-align: center;
-		margin: auto;
-		padding-top: 50px;
+		color: $color-black;
+		padding-top: 60px;
 		
 		@include MQ(L) {
 			padding-top: 80px;
 		}
 	}
 	
+
+}
+
+
+
+
+
+#goodbuy-section {
+	background-color: $color-dark;
+	
+	h1 {
+		padding-top: 30px;
+				
+		@include MQ(L) {
+			padding-top: 50px;
+		}
+
+	}
+	
 	p {
-		padding-top: 8px;
-		text-align: center;
-		margin: auto;
 		color: $color-semi-grey;
+	}
+	
+	
+	.button {
+		margin-top: 0;
+		background-color: $color-orange;
 		
 		@include MQ(L) {
-			width: 540px;
+			margin-top: -20px;
 		}
 	}
 	
-
-
-	#goodbuy-buttons {
-		margin: auto;
-		padding-top: 26px;
-		padding-bottom: 70px;
-		width: 280px;
-	
-		@include MQ(L) {
-			padding-top: 60px;
-			width: 340px;
-			padding-bottom: 0;
-		}
-	
-		.button {
-			float: left;
-			width: 140px;
-			@include MQ(L) { width: 166px; }
-			
-			a {
-				width: 140px;
-				@include MQ(L) { width: 166px; }
-			}
-		}
-
-		#goodbuy-download-button {
-			width: 120px;
-			background-color: $color-tint;
-			margin-left: 0;
-			
-			a {
-				width: 120px;
-			}
-			
-		}
-	
-		#goodbuy-download-button:hover {
-			background-color: $color-tint-hover;
-		}
-	
-		#goodbuy-examples-button {
-			margin-left: 10px;
-			@include MQ(L) { margin-left: 20px; }
-		}
-		#goodbuy-examples-button:hover {
-			background-color: $color-pre-grey;
-		}
+	.button:hover {
+		background-color: #CC891B;
 	}
+	
+	
+	h5 {
+		color: $color-grey;
+	}
+	
 }
 
 
-
-#read-section {
-	background-color: $color-pre-white;
-	box-shadow: inset 0px -1px 0px 0px $color-semi-grey;
-	
-	@include MQ(L) {
-		height: 300px;
-		box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0);
-	}
-	
-	.states-column {
-		@include MQ(L) {
-			height: 300px;
-			float: left;
-			box-shadow: inset 0px -1px 0px 0px $color-semi-grey;
-		}
-	}
-	
-	#read-column-one {
-		
-		@include MQ(L) {
-			width: 540px;
-		}
-		
-		h2 {
-			padding-top: 40px;
-			
-			@include MQ(L) {
-				padding-top: 94px;
-			}
-		}
-		
-		p {
-			padding-top: 8px;
-			
-			@include MQ(L) {
-				padding-top: 12px;
-			}
-		}
-	}
-	
-	#read-column-two {
-		@include MQ(L) {
-			width: 246px;
-		}
-
-	}
-	
-	#read-column-three {
-		@include MQ(L) {
-			width: 174px;
-		}
-		
-		.button {
-			margin-top: 20px;
-			float: left;
-			background-color: $color-semi-grey;
-			
-			@include MQ(L) {
-				margin-top: 100px;
-			}
-		}
-		
-		
-		h5 {
-			display: inline-block;
-			text-align: center;
-			width: 120px;
-			padding-left: 10px;
-			padding-top: 23px;
-			margin-bottom: 43px;
-			
-			@include MQ(L) {
-				padding-top: 14px;
-				padding-left: 27px;
-				margin-bottom: 0px;
-			}
-		}
-	}
-}
 
 
 footer {
@@ -721,7 +366,7 @@ footer {
 	
 	
 	#share-buttons {
-		width: 190px;
+		width: 200px;
 		margin: auto;
 		padding-top: 16px;
 		
