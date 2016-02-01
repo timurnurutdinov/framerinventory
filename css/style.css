@@ -47,6 +47,18 @@ h1 {
     h1 {
       font-size: 4.8rem; } }
 
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #222;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 2.4rem; }
+  @media only screen and (min-width: 720px) {
+    h2 {
+      text-align: center;
+      font-size: 2.8rem; } }
+
 h4 {
   font-family: "Josefin Sans", sans-serif;
   color: #999;
@@ -80,7 +92,7 @@ p {
       font-family: "Josefin Sans", sans-serif;
       font-size: 2.2rem;
       max-width: 100%;
-      letter-spacing: 1px; } }
+      letter-spacing: 0.8px; } }
 
 a {
   font-family: "Josefin Sans", sans-serif;
@@ -180,7 +192,8 @@ header {
   text-align: center;
   width: 100%;
   max-width: 300px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  padding-top: 2px; }
   @media only screen and (min-width: 720px) {
     .base-section p {
       max-width: 470px;
@@ -255,13 +268,12 @@ header {
   width: 100%; }
 #main-section img {
   width: calc(100% - 20px);
-  max-width: 100%;
   height: auto;
   margin-left: 10px;
   margin-top: -20px; }
   @media only screen and (min-width: 960px) {
     #main-section img {
-      max-width: 1183px;
+      width: 1183px;
       margin-left: calc((100% - 1183px) / 2); } }
 
 #tutorial-section h1 {
@@ -270,6 +282,67 @@ header {
   @media only screen and (min-width: 960px) {
     #tutorial-section h1 {
       padding-top: 80px; } }
+#tutorial-section #tutorials-block {
+  width: 100%;
+  margin: auto; }
+  @media only screen and (min-width: 720px) {
+    #tutorial-section #tutorials-block {
+      width: 90%; } }
+  @media only screen and (min-width: 960px) {
+    #tutorial-section #tutorials-block {
+      width: 940px; } }
+#tutorial-section .tutorial {
+  float: left;
+  width: 100%;
+  padding-bottom: 50px; }
+  @media only screen and (min-width: 720px) {
+    #tutorial-section .tutorial {
+      width: calc((100% - 60px) / 3);
+      padding-left: 30px; } }
+  @media only screen and (min-width: 960px) {
+    #tutorial-section .tutorial {
+      padding-bottom: 80px; } }
+  #tutorial-section .tutorial .tutorial-section-video {
+    width: 80%;
+    margin: auto;
+    max-width: 400px; }
+    @media only screen and (min-width: 720px) {
+      #tutorial-section .tutorial .tutorial-section-video {
+        width: 100%;
+        max-width: 100%; } }
+  #tutorial-section .tutorial .tutorial-section-video iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  #tutorial-section .tutorial h2 {
+    text-align: center;
+    padding-top: 20px; }
+    @media only screen and (min-width: 720px) {
+      #tutorial-section .tutorial h2 {
+        text-align: left; } }
+  #tutorial-section .tutorial p {
+    font-size: 1.4rem;
+    text-align: center;
+    padding-bottom: 10px; }
+    @media only screen and (min-width: 720px) {
+      #tutorial-section .tutorial p {
+        font-size: 1.8rem;
+        text-align: left;
+        padding-bottom: 24px; } }
+  #tutorial-section .tutorial a {
+    display: block;
+    color: #F5A623;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em; }
+    @media only screen and (min-width: 720px) {
+      #tutorial-section .tutorial a {
+        text-align: left; } }
+  #tutorial-section .tutorial a:hover {
+    color: #FCC66C; }
+#tutorial-section .tutorial:first-child {
+  padding-left: 0; }
 
 #goodbuy-section {
   background-color: #222; }
