@@ -1,5 +1,6 @@
 {
     "domain" : "com.tilllur.framer-inventory",
     "currentVersion" : "2.5.1",
-    "websiteURL" : "http://timurnurutdinov.github.io/framerinventory/"
+    "websiteURL" : "http://timurnurutdinov.github.io/framerinventory/",
+    "description" : "1. Generate States & Replicate layers relative to Artboard or Group\n2. Choose device to get correct values"
 }
