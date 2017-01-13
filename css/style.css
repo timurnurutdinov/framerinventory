@@ -37,82 +37,71 @@ html * {
   -moz-osx-font-smoothing: grayscale; }
 
 h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #FFF;
-  text-align: center;
   line-height: 1.2;
-  font-weight: 700;
-  font-size: 2.8rem; }
+  font-weight: 100;
+  font-size: 6.4rem; }
   @media only screen and (min-width: 720px) {
     h1 {
-      font-size: 4.8rem; } }
+      font-size: 6.4rem; } }
 
 h2 {
-  font-family: "Josefin Sans", sans-serif;
-  color: #222;
-  text-align: center;
-  line-height: 1.2;
-  font-weight: 700;
-  font-size: 2.4rem; }
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  line-height: 1.5;
+  font-weight: 100;
+  font-size: 4.8rem; }
   @media only screen and (min-width: 720px) {
     h2 {
-      text-align: center;
-      font-size: 2.8rem; } }
+      font-size: 4.8rem; } }
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: #666;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 1.34;
+  letter-spacing: 0.2px; }
 
 h4 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #999;
-  text-align: center;
   line-height: 1.44;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.4px;
   font-size: 1.4rem; }
   @media only screen and (min-width: 960px) {
     h4 {
-      font-size: 1.8rem; } }
+      font-size: 1.4rem; } }
 
 h5 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #66430B;
   line-height: 1.3;
-  font-weight: 700;
-  font-size: 1.4rem;
-  letter-spacing: 0.6px;
-  text-align: center; }
+  font-weight: 500;
+  font-size: 1.0rem;
+  letter-spacing: 0.3px; }
 
 p {
-  font-family: "Josefin Sans", sans-serif;
-  color: #444;
+  font-family: "Roboto", sans-serif;
+  color: #000;
   line-height: 1.44;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.4px;
-  font-size: 1.6rem; }
-  @media only screen and (min-width: 720px) {
-    p {
-      font-family: "Josefin Sans", sans-serif;
-      font-size: 2.2rem;
-      max-width: 100%;
-      letter-spacing: 0.8px; } }
+  font-size: 1.8rem; }
 
 a {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
-  color: #72C3F8; }
+  color: #72C3F8;
+  line-height: 1.44;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  font-size: 1.8rem; }
 
 a:hover {
   color: #F5A623; }
-
-.button a {
-  font-family: "Josefin Sans", sans-serif;
-  color: #FFF;
-  line-height: 1.2;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 1.2rem; }
 
 html {
   font-size: 62.5%; }
@@ -121,25 +110,35 @@ body {
   margin: 0;
   padding: 0; }
 
+#icon-logo {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-image: url("img/icon logo.png");
+  background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi), (min-resolution: 1.3dppx) {
+    #icon-logo {
+      background-image: url("img/icon logo@2x.png");
+      background-size: 200px 200px; } }
+
 header {
-  width: 100%;
-  background: #222;
-  position: fixed;
-  height: 116px;
-  box-shadow: inset 0px -1px 0px 0px #000; }
+  width: 100%; }
   @media only screen and (min-width: 720px) {
     header {
-      height: 82px; } }
+      height: 92px; } }
   header #logo {
     width: 260px;
     height: 82px;
     background-image: url("img/logo.png");
-    background-repeat: no-repeat;
-    margin: auto; }
+    background-repeat: no-repeat; }
     @media only screen and (min-width: 720px) {
       header #logo {
         float: left;
-        margin-left: 0; } }
+        margin-left: 28px; } }
     @media (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi), (min-resolution: 1.3dppx) {
       header #logo {
         background-image: url("img/logo@2x.png");
@@ -151,7 +150,7 @@ header {
       header #header-links {
         width: 100%; } }
   header #header-links a {
-    color: #999;
+    color: #FFF;
     letter-spacing: 1px;
     line-height: 1.2;
     font-size: 1.6rem;
@@ -159,17 +158,14 @@ header {
     @media only screen and (min-width: 720px) {
       header #header-links a {
         float: right;
-        margin-right: 50px;
+        margin-right: 32px;
         margin-top: 36px;
         margin-left: 0; } }
   header #header-links a:hover {
-    color: #FFF; }
+    color: #EEE; }
   header #header-links a:first-child {
-    color: #F5A623;
-    margin-right: 0;
+    margin-right: 28px;
     margin-left: 0; }
-  header #header-links a:first-child:hover {
-    color: #FCC66C; }
 
 .container {
   margin: auto;
@@ -178,85 +174,120 @@ header {
     .container {
       width: 960px; } }
 
-.base-section h1 {
+.play-video-icon {
   margin: auto;
-  max-width: 300px; }
-  @media only screen and (min-width: 720px) {
-    .base-section h1 {
-      max-width: 470px; } }
-  @media only screen and (min-width: 960px) {
-    .base-section h1 {
-      max-width: 100%; } }
-.base-section p {
-  margin: auto;
-  text-align: center;
-  width: 100%;
-  max-width: 300px;
-  padding-bottom: 30px;
-  padding-top: 2px; }
-  @media only screen and (min-width: 720px) {
-    .base-section p {
-      max-width: 470px;
-      padding-bottom: 50px; } }
-  @media only screen and (min-width: 960px) {
-    .base-section p {
-      width: 580px;
-      max-width: 100%;
-      padding-top: 6px; } }
-.base-section .button {
-  width: 300px;
-  height: 44px;
-  border-radius: 22px;
-  background-color: #222;
-  transition: all 0.3s;
-  margin: auto;
-  margin-top: 20px; }
-  @media only screen and (min-width: 960px) {
-    .base-section .button {
-      margin-top: 30px; } }
-  .base-section .button a {
-    display: inline-block;
-    width: 300px;
-    padding-top: 18px;
-    margin: auto;
-    letter-spacing: 2px; }
-.base-section .button:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
-  background-color: #444; }
-.base-section h5 {
-  padding-top: 10px;
-  padding-bottom: 30px;
-  margin: auto; }
-  @media only screen and (min-width: 960px) {
-    .base-section h5 {
-      padding-bottom: 40px; } }
+  width: 90px;
+  height: 90px;
+  background-image: url("img/play video.png");
+  background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi), (min-resolution: 1.3dppx) {
+    .play-video-icon {
+      background-image: url("img/play video@2x.png");
+      background-size: 90px 90px; } }
 
 #welcome-section {
-  background-color: #F5A623; }
+  background-image: linear-gradient(-180deg, #5FE2FE 0%, #2DBFFF 100%);
+  box-shadow: inset 0px -1px 0px 0px #3496B1;
+  padding-bottom: 48px; }
   #welcome-section h1 {
-    padding-top: 140px; }
+    text-align: center; }
     @media only screen and (min-width: 720px) {
       #welcome-section h1 {
-        padding-top: 130px; } }
-  #welcome-section p {
-    color: #FFF; }
-  #welcome-section #tutorial-video {
-    width: 80%;
-    max-width: 100%;
-    height: 240px;
-    margin-left: 10%; }
+        padding-top: 114px; } }
+  #welcome-section h2 {
+    text-align: center; }
     @media only screen and (min-width: 720px) {
-      #welcome-section #tutorial-video {
-        width: 580px;
-        height: 363px;
-        max-width: 580px;
-        margin-left: calc((100% - 580px) / 2);
-        margin-top: -20px; } }
-  #welcome-section #tutorial-video iframe {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
+      #welcome-section h2 {
+        padding-top: 2px; } }
+  #welcome-section .tint-buttons-block {
+    width: 464px;
+    height: 52px;
+    margin: auto;
+    margin-top: 32px; }
+    #welcome-section .tint-buttons-block .download-button {
+      float: left;
+      width: 224px;
+      height: 52px;
+      box-shadow: 0px 10px 48px 0px #2FA1C0;
+      transition: border-blur 0.4s ease-in-out;
+      background: #FFFFFF;
+      border-radius: 5px; }
+      #welcome-section .tint-buttons-block .download-button .download-button-icon {
+        float: left;
+        width: 56px;
+        height: 52px;
+        background-image: url("img/button download icon.png");
+        background-repeat: no-repeat; }
+        @media (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi), (min-resolution: 1.3dppx) {
+          #welcome-section .tint-buttons-block .download-button .download-button-icon {
+            background-image: url("img/button download icon@2x.png");
+            background-size: 56px 52px; } }
+      #welcome-section .tint-buttons-block .download-button p {
+        color: #000; }
+      #welcome-section .tint-buttons-block .download-button h5 {
+        opacity: 0.5;
+        color: #000000; }
+    #welcome-section .tint-buttons-block .download-button:hover {
+      cursor: pointer;
+      box-shadow: 0px 8px 40px 0px rgba(30, 112, 134, 0.76); }
+    #welcome-section .tint-buttons-block .share-button {
+      float: right;
+      width: 224px;
+      height: 52px;
+      box-shadow: 0px 10px 48px 0px #2FA1C0;
+      transition: all 0.2s ease-in-out;
+      background: #2AA3EF;
+      border-radius: 5px; }
+      #welcome-section .tint-buttons-block .share-button .share-button-icon {
+        float: left;
+        width: 56px;
+        height: 52px;
+        background-image: url("img/button share icon.png");
+        background-repeat: no-repeat; }
+        @media (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi), (min-resolution: 1.3dppx) {
+          #welcome-section .tint-buttons-block .share-button .share-button-icon {
+            background-image: url("img/button share icon@2x.png");
+            background-size: 56px 52px; } }
+      #welcome-section .tint-buttons-block .share-button p {
+        font-size: 1.6rem;
+        color: #FFF; }
+      #welcome-section .tint-buttons-block .share-button h5 {
+        color: #FFF;
+        opacity: 0.8; }
+    #welcome-section .tint-buttons-block .share-button:hover {
+      cursor: pointer;
+      box-shadow: 0px 8px 40px 0px rgba(30, 112, 134, 0.76);
+      background: #009DF6; }
+    #welcome-section .tint-buttons-block p {
+      margin-top: 10px;
+      margin-left: 70px;
+      line-height: 2.1rem; }
+    #welcome-section .tint-buttons-block h5 {
+      margin-left: 70px; }
+  #welcome-section .demo-video-button {
+    background-color: purple;
+    width: 560px;
+    height: 350px;
+    margin: auto;
+    margin-top: 64px;
+    background-image: url("img/demo video image.png");
+    background-repeat: no-repeat; }
+    @media (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi), (min-resolution: 1.3dppx) {
+      #welcome-section .demo-video-button {
+        background-image: url("img/demo video image@2x.png");
+        background-size: 560px 350px; } }
+    #welcome-section .demo-video-button .play-video-icon {
+      background-color: red;
+      position: relative;
+      top: 100px; }
+    #welcome-section .demo-video-button h3 {
+      color: #FFF;
+      margin: auto;
+      text-align: center;
+      position: relative;
+      top: 116px; }
+  #welcome-section .demo-video-button:hover {
+    cursor: pointer; }
 
 #main-section h1 {
   color: #000;
@@ -264,8 +295,10 @@ header {
   @media only screen and (min-width: 960px) {
     #main-section h1 {
       padding-top: 70px; } }
+
 #main-section .block {
   width: 100%; }
+
 #main-section img {
   width: calc(100% - 20px);
   height: auto;
@@ -282,6 +315,7 @@ header {
   @media only screen and (min-width: 960px) {
     #tutorial-section h1 {
       padding-top: 80px; } }
+
 #tutorial-section #tutorials-block {
   width: 100%;
   margin: auto; }
@@ -291,6 +325,7 @@ header {
   @media only screen and (min-width: 960px) {
     #tutorial-section #tutorials-block {
       width: 940px; } }
+
 #tutorial-section .tutorial {
   float: left;
   width: 100%;
@@ -341,6 +376,7 @@ header {
         text-align: left; } }
   #tutorial-section .tutorial a:hover {
     color: #FCC66C; }
+
 #tutorial-section .tutorial:first-child {
   padding-left: 0; }
 
@@ -428,3 +464,25 @@ footer {
       padding-left: 22px; }
     footer #social-links a:first-child {
       padding-left: 10px; }
+
+#tutorial-video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+#tutorial-video {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  margin-top: 6%; }
+
+#tutorial-video iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }

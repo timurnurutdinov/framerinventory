@@ -14,16 +14,32 @@ body {
 }
 
 
+#icon-logo {
+	width: 200px;
+	height: 200px;
+	
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	
+	
+	background-image: url('img/icon logo.png');
+	background-repeat: no-repeat;
+
+	@include hidpi {
+  		background-image: url('img/icon logo@2x.png');
+  		background-size: 200px 200px;
+	}
+}
 
 header {
     width:100%;
-	background: $color-dark;
-	position:fixed;
-	height:116px;
-	box-shadow: inset 0px -1px 0px 0px $color-black;
+//	background-color: red;
 	
 	@include MQ(M) {
-		height:82px;
+		height:92px;
 	}
 	
 	
@@ -32,17 +48,17 @@ header {
 		height: 82px;
 		background-image: url('img/logo.png');
 		background-repeat: no-repeat;
-		margin: auto;
+//		margin: auto;
 		
 		@include MQ(M) {
 			float: left;
-			margin-left: 0;
+			margin-left: 28px;
 		}
 		
 		@include hidpi {
 	  		background-image: url('img/logo@2x.png');
 	  		background-size: 260px 82px;
-		  }
+		}
 	  		
 	  }
 		
@@ -56,7 +72,7 @@ header {
 	}
 
 	#header-links a {
-		color: $color-grey;
+		color: $color-white;
 		letter-spacing: 1px;
 		line-height: 1.2;
 		font-size: 1.6rem;
@@ -64,24 +80,24 @@ header {
 		
 		@include MQ(M) {
 			float: right;
-			margin-right: 50px;
+			margin-right: 32px;
 			margin-top: 36px;
 			margin-left: 0;
 		}
 	}
 
 	#header-links a:hover {
-		color: $color-white;
+		color: $color-pre-white;
 	}
 
 	
 	#header-links a:first-child {
-		color: $color-orange;
-		margin-right: 0;
+//		color: $color-semi-grey;
+		margin-right: 28px;
 		margin-left: 0;
 	}
 	#header-links a:first-child:hover {
-		color: $color-orange-hover;
+//		color: $color-orange-hover;
 	}
 
 }
@@ -100,118 +116,257 @@ header {
 
 
 
-.base-section {
-	
-	h1 {
-		margin: auto;
-		max-width: 300px;
-		
-		@include MQ(M) {
-			max-width: 470px;
-		}
-		@include MQ(L) {
-			max-width: 100%;
-		}
-	}
-	
-	
-	p {
-		margin: auto;
-		text-align: center;
-		width: 100%;
-		max-width: 300px;
-		padding-bottom: 30px;
-		padding-top: 2px;
-		
-		
-		@include MQ(M) {
-			max-width: 470px;
-			padding-bottom: 50px;
-		}
-		@include MQ(L) {
-			width: 580px;
-			max-width: 100%;
-			padding-top: 6px;
-		}
-	}
 
-	
-	.button {
-		width: 300px;
-		height: 44px;
-		border-radius: 22px;
-		background-color: $color-dark;
-		transition: all 0.3s;
-		margin: auto;
-		margin-top: 20px;
-	
-		@include MQ(L) {
-			margin-top: 30px;
-		}
+//
+//.base-section {
+//
+//	h1 {
+//		margin: auto;
+//		max-width: 300px;
+//
+//		@include MQ(M) {
+//			max-width: 470px;
+//		}
+//		@include MQ(L) {
+//			max-width: 100%;
+//		}
+//	}
+//
+//
+//	p {
+//		margin: auto;
+//		text-align: center;
+//		width: 100%;
+//		max-width: 300px;
+//		padding-bottom: 30px;
+//		padding-top: 2px;
+//
+//
+//		@include MQ(M) {
+//			max-width: 470px;
+//			padding-bottom: 50px;
+//		}
+//		@include MQ(L) {
+//			width: 580px;
+//			max-width: 100%;
+//			padding-top: 6px;
+//		}
+//	}
+//
+//
+//	.button {
+//		width: 300px;
+//		height: 44px;
+//		border-radius: 22px;
+//		background-color: $color-dark;
+//		transition: all 0.3s;
+//		margin: auto;
+//		margin-top: 20px;
+//
+//		@include MQ(L) {
+//			margin-top: 30px;
+//		}
+//
+//		a {
+//			display: inline-block;
+//			width: 300px;
+//			padding-top: 18px;
+//			margin: auto;
+//			letter-spacing: 2px;
+//		}
+//	}
+//
+//	.button:hover {
+//		box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+//		background-color: $color-semi-dark;
+//	}
+//
+//
+//	h5 {
+//		padding-top: 10px;
+//		padding-bottom: 30px;
+//		margin: auto;
+//
+//		@include MQ(L) {
+//			padding-bottom: 40px;
+//		}
+//	}
+//
+//}
 
-		a {
-			display: inline-block;
-			width: 300px;
-			padding-top: 18px;
-			margin: auto;
-			letter-spacing: 2px;
-		}
-	}
-
-	.button:hover {
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
-		background-color: $color-semi-dark;
-	}
+.play-video-icon {
+	margin: auto;
+	width: 90px;
+	height: 90px;
+	background-image: url('img/play video.png');
+	background-repeat: no-repeat;
 	
-	
-	h5 {
-		padding-top: 10px;
-		padding-bottom: 30px;
-		margin: auto;
-		
-		@include MQ(L) {
-			padding-bottom: 40px;
-		}
+	@include hidpi {
+  		background-image: url('img/play video@2x.png');
+  		background-size: 90px 90px;
 	}
-	
 }
 
 
 #welcome-section {
-	background-color: $color-orange;
+	background-image: linear-gradient(-180deg, #5FE2FE 0%, #2DBFFF 100%);
+	box-shadow: inset 0px -1px 0px 0px #3496B1;
+	padding-bottom: 48px;
 	
 	h1 {
-		padding-top: 140px;
+		text-align: center;
 		
 		@include MQ(M) {
-			padding-top: 130px;
+			padding-top: 114px;
 		}
 	}
 	
-	p {
-		color: $color-white;
-	}
-
-	#tutorial-video {
-		width: 80%;
-		max-width: 100%;
-		height: 240px;
-		margin-left: 10%;
+	
+	h2 {
+		text-align: center;
 		
 		@include MQ(M) {
-			width: 580px;
-			height: 363px;
-			max-width: 580px;
-			margin-left: calc((100% - 580px) / 2);
-			margin-top: -20px;
+			padding-top: 2px;
 		}
 	}
+	
+	.tint-buttons-block {
+		width: 464px;
+		height: 52px;
+//		background-color: yellow;
+		margin: auto;
+		margin-top: 32px;
+		
+		
+		.download-button {
+			float: left;
+			width: 224px;
+			height: 52px;
+			box-shadow: 0px 10px 48px 0px #2FA1C0;
+			transition: border-blur 0.4s ease-in-out;
+			background: #FFFFFF;
+			border-radius: 5px;
+			
+			.download-button-icon {
+				float: left;
+				width: 56px;
+				height: 52px;
+				background-image: url('img/button download icon.png');
+				background-repeat: no-repeat;
 
-	#tutorial-video iframe {
-		top:0;
-		left:0;
-		width:100%;
-		height:100%;
+				@include hidpi {
+			  		background-image: url('img/button download icon@2x.png');
+			  		background-size: 56px 52px;
+				}
+			}
+			
+			p {
+				color: $color-black;
+			}
+			
+			h5 {
+				opacity: 0.5;
+				color: #000000;
+			}
+		}
+		
+		.download-button:hover {
+			cursor: pointer;
+			box-shadow: 0px 8px 40px 0px rgba(30,112,134,0.76);
+		}
+		
+		
+		.share-button {
+			float: right;
+			width: 224px;
+			height: 52px;
+			box-shadow: 0px 10px 48px 0px #2FA1C0;
+			transition: all 0.2s ease-in-out;
+			background: #2AA3EF;
+			border-radius: 5px;
+			
+			
+			.share-button-icon {
+				float: left;
+				width: 56px;
+				height: 52px;
+				background-image: url('img/button share icon.png');
+				background-repeat: no-repeat;
+
+				@include hidpi {
+			  		background-image: url('img/button share icon@2x.png');
+			  		background-size: 56px 52px;
+				}
+			}
+			
+			
+			p {
+				font-size: 1.6rem;
+				color: $color-white;
+			}
+			
+			h5 {
+				color: $color-white;
+				opacity: 0.8;
+			}
+		}
+		
+		.share-button:hover {
+			cursor: pointer;
+			box-shadow: 0px 8px 40px 0px rgba(30,112,134,0.76);
+			background: #009DF6;
+		}
+		
+		
+		p { 
+//			width: 150px;
+			margin-top: 10px;
+			margin-left: 70px;
+			line-height: 2.1rem;
+		}
+		
+		h5 { 
+//			width: 150px;
+			margin-left: 70px;
+		}
+		
+	}
+	
+	
+	
+	.demo-video-button {
+		background-color: purple;
+		width: 560px;
+		height: 350px;
+		margin: auto;
+		margin-top: 64px;
+		
+		background-image: url('img/demo video image.png');
+		background-repeat: no-repeat;
+		
+		@include hidpi {
+	  		background-image: url('img/demo video image@2x.png');
+	  		background-size: 560px 350px;
+		}
+		
+		
+		.play-video-icon {
+			background-color: red;
+			position: relative;
+			top: 100px;
+		}
+		
+		h3 {
+			color: $color-white;
+			margin: auto;
+			text-align: center;
+			position: relative;
+			top: 116px;
+		}
+	}
+	
+	.demo-video-button:hover {
+		cursor: pointer;
 	}
 	
 }
@@ -502,4 +657,39 @@ footer {
 			padding-left: 10px;
 		}
 	}
+}
+
+
+
+#tutorial-video-container {
+	position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+	display: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#tutorial-video {
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	margin-top: 6%;
+	
+	//@include MQ(M) {
+//		width: 580px;
+//		height: 363px;
+//		max-width: 580px;
+//		margin-left: calc((100% - 580px) / 2);
+//		margin-top: -20px;
+//	}
+}
+
+#tutorial-video iframe {
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
 }

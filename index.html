@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500" rel="stylesheet">
 	
 	<link rel="stylesheet" href="css/style.css">
 	<title>Framer Inventory</title>
 	    <meta property="og:url"           content="http://timurnurutdinov.github.io/framerinventory/" />
 	    <meta property="og:type"          content="website" />
-	    <meta property="og:title"         content="Framer Inventory 2.0 for Sketch" />
+	    <meta property="og:title"         content="Framer Inventory for Sketch" />
 	    <meta property="og:description"   content="Sketch plugin to generate FramerJS prototypes. Just have your motion done." />
 	    <meta property="og:image"         content="https://raw.githubusercontent.com/timurnurutdinov/Framer-Inventory-for-Sketch/images-second-version/readme/window.png" />
 </head>
@@ -24,27 +24,50 @@
 	}(document, 'script', 'facebook-jssdk'));</script>
 		
 	
-	<header>
-		<div class="container">
-			<div id="logo"></div>
-			<div id="header-links">
-				<a href="http://bit.ly/framer-inventory-github" target="_blank">Download</a>
-				<a href="http://bit.ly/deep-framer-inventory" target="_blank">Article</a>
-				<a href="https://dribbble.com/shots/2526209-Framer-Inventory-2-0-Landing-Page" target="_blank">Examples</a>
-			</div>
-		</div>
-	</header>
 	
-	
-	<section id="welcome-section" class="base-section">
-		<h1>Fastest way to create linear prototypes</h1>
-		<p>Sketch plugin to generate FramerJS prototypes. Just have your motion done.</p>
+	<div id="tutorial-video-container" onclick="document.getElementById('tutorial-video-container').style.display='none'">
 		<div id="tutorial-video">
 			<iframe src="https://player.vimeo.com/video/155297208?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		</div>
-		<div class="button"><a href="http://bit.ly/framer-inventory-github" target="_blank">Download Framer Inventory</a>
+	</div>
+	
+	
+	
+	<section id="welcome-section" class="base-section">
+		
+		<div id="icon-logo"></div>
+		
+		<header>
+			<div id="logo"></div>
+			<div id="header-links">
+				<a href="http://bit.ly/framer-inventory-github" target="_blank">Download</a>
+				<a href="http://bit.ly/deep-framer-inventory" target="_blank">Support</a>
+				<a href="https://dribbble.com/shots/2526209-Framer-Inventory-2-0-Landing-Page" target="_blank">Learn</a>
+			</div>
+		</header>
+		
+		
+		<h1>Framer Inventory</h1>
+		<h2>Export layers & states from Sketch</h2>
+
+		<div class="tint-buttons-block">
+			<div class="download-button">
+				<div class="download-button-icon"></div>
+				<p>Download Plugin</p>
+				<h5>v3.0.1 for Sketch 41+</h5>
+			</div>
+		
+			<div class="share-button">
+				<div class="share-button-icon"></div>
+				<p>Share on Twitter</p>
+				<h5>It really helps</h5>
+			</div>
 		</div>
-		<h5>Brand new 2.0 is available</h5>
+		
+		<div class="demo-video-button" onclick="document.getElementById('tutorial-video-container').style.display='block'">
+			<div class="play-video-icon"></div>
+			<h3>Sketch Plugin Preview</h3>
+		</div>
 	</section>
 	
 	
@@ -157,14 +180,14 @@
 	</script>
 	
 	<!-- goggle analytics -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	  ga('create', 'UA-58418174-3', 'auto');
-	  ga('send', 'pageview');
-	</script>
+	// <script>
+// 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+// 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+// 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+// 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+// 	  ga('create', 'UA-58418174-3', 'auto');
+// 	  ga('send', 'pageview');
+// 	</script>
 
 
 </body>
