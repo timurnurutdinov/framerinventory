@@ -68,6 +68,94 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/css\/img\/export prototype feature 1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34784,
+		"inputAbbreviatedPath": "\/css\/img\/export prototype feature 1.png",
+		"outputAbbreviatedPath": "\/css\/img\/export prototype feature 1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/export prototype feature 1@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 118328,
+		"inputAbbreviatedPath": "\/css\/img\/export prototype feature 1@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/export prototype feature 1@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/export prototype feature 2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44377,
+		"inputAbbreviatedPath": "\/css\/img\/export prototype feature 2.png",
+		"outputAbbreviatedPath": "\/css\/img\/export prototype feature 2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/export prototype feature 2@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 155315,
+		"inputAbbreviatedPath": "\/css\/img\/export prototype feature 2@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/export prototype feature 2@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/export prototype feature 3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31910,
+		"inputAbbreviatedPath": "\/css\/img\/export prototype feature 3.png",
+		"outputAbbreviatedPath": "\/css\/img\/export prototype feature 3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/export prototype feature 3@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 97578,
+		"inputAbbreviatedPath": "\/css\/img\/export prototype feature 3@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/export prototype feature 3@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/export prototype video.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21292,
+		"inputAbbreviatedPath": "\/css\/img\/export prototype video.png",
+		"outputAbbreviatedPath": "\/css\/img\/export prototype video.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/export prototype video@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 62328,
+		"inputAbbreviatedPath": "\/css\/img\/export prototype video@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/export prototype video@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/img\/icon logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -90,6 +178,116 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/css\/img\/import states feature 1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24254,
+		"inputAbbreviatedPath": "\/css\/img\/import states feature 1.png",
+		"outputAbbreviatedPath": "\/css\/img\/import states feature 1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/import states feature 1@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37953,
+		"inputAbbreviatedPath": "\/css\/img\/import states feature 1@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/import states feature 1@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/import states feature 2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39866,
+		"inputAbbreviatedPath": "\/css\/img\/import states feature 2.png",
+		"outputAbbreviatedPath": "\/css\/img\/import states feature 2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/import states feature 2@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 102822,
+		"inputAbbreviatedPath": "\/css\/img\/import states feature 2@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/import states feature 2@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/import states feature 3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19286,
+		"inputAbbreviatedPath": "\/css\/img\/import states feature 3.png",
+		"outputAbbreviatedPath": "\/css\/img\/import states feature 3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/import states feature 3@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48751,
+		"inputAbbreviatedPath": "\/css\/img\/import states feature 3@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/import states feature 3@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/import states video.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23581,
+		"inputAbbreviatedPath": "\/css\/img\/import states video.png",
+		"outputAbbreviatedPath": "\/css\/img\/import states video.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/import states video@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 65375,
+		"inputAbbreviatedPath": "\/css\/img\/import states video@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/import states video@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/import states.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66096,
+		"inputAbbreviatedPath": "\/css\/img\/import states.png",
+		"outputAbbreviatedPath": "\/css\/img\/import states.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/import states@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 174879,
+		"inputAbbreviatedPath": "\/css\/img\/import states@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/import states@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/img\/keynotebg.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -108,17 +306,6 @@
 		"initialSize": 106644,
 		"inputAbbreviatedPath": "\/css\/img\/keynotebg@2x.png",
 		"outputAbbreviatedPath": "\/css\/img\/keynotebg@2x.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/css\/img\/logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1984,
-		"inputAbbreviatedPath": "\/css\/img\/logo.png",
-		"outputAbbreviatedPath": "\/css\/img\/logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -163,6 +350,28 @@
 		"initialSize": 352567,
 		"inputAbbreviatedPath": "\/css\/img\/process@2x.png",
 		"outputAbbreviatedPath": "\/css\/img\/process@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/reimport.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 103449,
+		"inputAbbreviatedPath": "\/css\/img\/reimport.png",
+		"outputAbbreviatedPath": "\/css\/img\/reimport.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/reimport@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 327101,
+		"inputAbbreviatedPath": "\/css\/img\/reimport@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/reimport@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -229,6 +438,50 @@
 		"initialSize": 169703,
 		"inputAbbreviatedPath": "\/css\/img\/statesbg@2x.png",
 		"outputAbbreviatedPath": "\/css\/img\/statesbg@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/welcome plugin.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30692,
+		"inputAbbreviatedPath": "\/css\/img\/welcome plugin.png",
+		"outputAbbreviatedPath": "\/css\/img\/welcome plugin.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/welcome plugin@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 86715,
+		"inputAbbreviatedPath": "\/css\/img\/welcome plugin@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/welcome plugin@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/welcome video.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36204,
+		"inputAbbreviatedPath": "\/css\/img\/welcome video.png",
+		"outputAbbreviatedPath": "\/css\/img\/welcome video.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/welcome video@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 102809,
+		"inputAbbreviatedPath": "\/css\/img\/welcome video@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/welcome video@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
