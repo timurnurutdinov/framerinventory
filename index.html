@@ -13,7 +13,7 @@
 	    <meta property="og:description"   content="Sketch plugin to generate FramerJS prototypes. Just have your motion done." />
 	    <meta property="og:image"         content="https://raw.githubusercontent.com/timurnurutdinov/Framer-Inventory-for-Sketch/images-second-version/readme/window.png" />
 </head>
-<body>
+<body id="body">
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
@@ -25,7 +25,7 @@
 		
 	
 	
-	<div id="tutorial-video-container" onclick="document.getElementById('tutorial-video-container').style.display='none'">
+	<div id="tutorial-video-container" onclick="document.getElementById('tutorial-video-container').style.display='none'; document.getElementById('body').style.overflow='auto'">
 		<div id="tutorial-video">
 			<iframe src="https://player.vimeo.com/video/155297208?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		</div>
@@ -45,11 +45,285 @@
 				<a href="https://dribbble.com/shots/2526209-Framer-Inventory-2-0-Landing-Page" target="_blank">Learn</a>
 			</div>
 		</header>
-		
-		
-		<h1>Framer Inventory</h1>
-		<h2>Export layers & states from Sketch</h2>
 
+
+		<h1 class="h0 plugin-title">Framer Inventory</h1>
+		<h1>Semantic Import from Sketch to Framer</h1>
+
+
+		<div class="buttons-group welcome-buttons">	
+			<div class="button welcome-button-download first-child">
+				<p>Download</p>
+			</div>
+		
+			<div class="button welcome-button-share">
+				<p>Buy PRO</p>
+			</div>
+		</div>
+		
+		
+		
+		<div class="welcome-video">
+			<div class="video-block" onclick="document.getElementById('tutorial-video-container').style.display='block'; document.getElementById('body').style.overflow='hidden'">
+				<div class="play-video-icon"></div>
+				<h3>Watch Plugin Preview</h3>
+			</div>
+		</div>
+	
+	</section>
+	
+	
+	
+	
+	
+	<section class="import-states-section">
+		<div class="container">
+			
+			
+			<div class="import-states-left">
+				<h1>Import States</h1>
+				<h3>Select layers with the same name on artboards in Sketch to import them as a <strong>new Layer</strong> with <strong>States</strong> in Framer.</h3>
+				
+				
+				<div class="buttons-group import-states-buttons">
+					<div class="button import-states-button-watch first-child">
+						<p>Watch Demo</p>
+					</div>
+		
+					<div class="button import-states-button-read">
+						<p>Read Guide</p>
+					</div>		
+				</div>
+				
+				
+				<div class="video-block" onclick="document.getElementById('tutorial-video-container').style.display='block'">
+					<div class="play-video-icon"></div>
+					<!-- <h3>Layers & States Demo</h3> -->
+				</div>
+				
+			</div>
+			
+			<div class="import-states-right">
+				
+				
+			</div>
+			
+			
+			<div class="import-states-features">
+				<div class="column-3 first-child">
+					<p>Pixels & Points</p>
+					<p>Design at @1x in Sketch & import to Framer the way you need.</p>
+					<div></div>
+				</div>
+				
+				<div class="column-3">
+					<p>Native Layers</p>
+					<p>Animate corners, borders, shadows & colors.</p>
+					<div></div>
+				</div>
+				
+				<div class="column-3">
+					<p>Relative to Artboard or Group</p>
+					<p>Compose complex views with child-to-parent relationship</p>
+					<div></div>
+				</div>
+			</div>
+			
+					
+		</div>
+	</section>
+	
+	
+	
+	
+	
+	<section class="export-prototype-section">
+		<div class="container">
+			
+			<!-- <div class="info-container"> -->
+				
+				
+				<div class="export-prototype-left">
+					<h1>Export complete prototypes from Sketch to Framer</h1>
+					<h3>Export custom transitions between layers on artboards with automatically generated Framer prototypes
+	based on Layers with States.</h3>
+
+					<div class="buttons-group export-prototype-buttons first-child">
+						<div class="button export-prototype-button-watch">
+							<p>Watch Demo</p>
+						</div>
+
+						<div class="button export-prototype-button-read">
+							<p>Read Guide</p>
+						</div>		
+					</div>
+				</div>
+		
+		
+				<div class="export-prototype-right">
+					<div class="video-block" onclick="document.getElementById('tutorial-video-container').style.display='block'">
+						<div class="play-video-icon"></div>
+						<h3>Simulate Scene Demo</h3>
+					</div>
+				</div>
+				
+				
+				<div class="export-prototype-how">
+					<h2>How to export Framer prototype</h2>
+					<h3>The new way to prototype transitions is just three easy steps from you.</h3>
+				</div>
+				
+				
+				<div class="export-prototype-features">
+					<div class="column-3 first-child">
+						<p>1. Include Layers</p>
+						<p>Make layers exportable in Sketch to include them in prototype.</p>
+						<div></div>
+					</div>
+				
+					<div class="column-3">
+						<p>2. Choose Transition</p>
+						<p>Select artboards and get animations between layers.</p>
+						<div></div>
+					</div>
+				
+					<div class="column-3">
+						<p>3. Paste code into Framer</p>
+						<p>Paste code from Clipboard, assets are already in Framer project.</p>
+						<div></div>
+					</div>
+				</div>
+				
+				
+				<div class="export-prototype-reimport-left">
+					<p class="export-prototype-new">NEW</p>
+					<p class="export-prototype-reimport-title">Reimport Prototype</p>
+					<p class="export-prototype-reimport-text">Reimport from Sketch to update Layers & States with no harm to your prototype.</p>
+					
+					<div class="export-prototype-reimport-block">
+						<p># Views</p>
+						<p class="export-prototype-reimport-small-description">Updates from Sketch</p>
+						
+						<p># Custom</p>
+						<p class="export-prototype-reimport-small-description">Stays same on reimport</p>
+						
+					</div>
+				</div>
+				
+				
+				<div class="export-prototype-reimport-right">
+				</div>
+				
+				<div class="export-prototype-reimport-clear">
+				</div>
+				
+			<!-- </div> -->
+		</div>
+	</section>
+	
+	
+	<section class="pro-section">
+		<div class="container">
+			<div class="pro-left">
+				<h1>PRO version</h1>
+				<h3>Download free version with limited runs per day or get a PRO version with unlimited actions.</h3>
+				
+				<div class="pro-features-free">
+					<p>Free version</p>
+					
+					<p class="pro-features-item">5 runs per day</p>
+					<p class="pro-features-item">50 runs on first day</p>
+					
+					<div class="button pro-section-button-download">
+						<p>Download</p>
+					</div>
+				</div>
+				
+				<div class="pro-features-pro">
+					<p>Free version</p>
+					
+					<p class="pro-features-item">Unlimited runs per day<p>
+					<p class="pro-features-item">Unlimited runs on first day</p>
+					
+					<div class="button pro-section-button-buy">
+						<p>Buy PRO</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="pro-right">
+			</div>
+			
+			<div class="pro-clear">
+			</div>
+		</div>
+	</section>
+	
+	
+	<!-- <section id="states-section">
+
+	</section>
+
+
+	<section id="main-section" class="base-section">
+		<h1>Simulate Keynote with Sketch & FramerJS</h1>
+		<p>Create a composition of artbaords and mark layers to include in prototype. Paste code and see your motion</p>
+		<div class="block">
+			<img src="css/img/process@2x.png" alt="Framer Inventory process">
+		</div>
+	</section>
+
+
+	<section id="tutorial-section" class="base-section">
+		<h1>Easy tutorials to change your workflow</h1>
+		<p>Find out how to use Framer Inventory and download examples to try yourself</p>
+		<div id="tutorials-block">
+
+			<div class="tutorial">
+				<div class="tutorial-section-video">
+					<iframe src="https://player.vimeo.com/video/155306300?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+				<h2>IF Onboarding</h2>
+				<p>Explore how to mark layers and use Export page</p>
+				<a href="http://bit.ly/framer-inventory-example-if" target="_blank">Download Sketch file</a>
+			</div>
+
+			<div class="tutorial">
+				<div class="tutorial-section-video">
+					<iframe src="https://player.vimeo.com/video/155307305?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+				<h2>Shapes or Images</h2>
+				<p>Investigate what can be exported without an image</p>
+				<a href="http://bit.ly/framer-inventory-example-exportable" target="_blank">Download Sketch file</a>
+			</div>
+
+			<div class="tutorial">
+				<div class="tutorial-section-video">
+					<iframe src="https://player.vimeo.com/video/155308463?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+				<h2>Shadows tips</h2>
+				<p>Scales and static shadows on groups and custom shapes</p>
+				<a href="http://bit.ly/framer-inventory-example-shadows" target="_blank">Download Sketch file</a>
+			</div>
+
+			<div style="clear: both"></div>
+		</div>
+	</section> -->
+	
+	
+	<!-- <section id="goodbuy-section" class="base-section">
+		<h1>Best way to test storytelling</h1>
+		<p>Highly detailed prototypes are great. But you can test your idea without writing a single line of code.</p>
+		<div class="button">
+			<a href="http://bit.ly/framer-inventory-github" target="_blank">Download Framer Inventory</a>
+		</div>
+		<h5>Brand new 2.0 is available</h5>
+	</section> -->
+
+	<section id="welcome-again-section" class="base-section">
+		<h1>Framer Import for Experts</h1>
+		<h2>Are you an Expert?</h2>
+		
 		<div class="tint-buttons-block">
 			<div class="download-button">
 				<div class="download-button-icon"></div>
@@ -63,81 +337,12 @@
 				<h5>It really helps</h5>
 			</div>
 		</div>
-		
-		<div class="demo-video-button" onclick="document.getElementById('tutorial-video-container').style.display='block'">
-			<div class="play-video-icon"></div>
-			<h3>Sketch Plugin Preview</h3>
-		</div>
 	</section>
-	
-	
-	<section id="states-section">
-		
-	</section>
-	
-	
-	<section id="main-section" class="base-section">
-		<h1>Simulate Keynote with Sketch & FramerJS</h1>
-		<p>Create a composition of artbaords and mark layers to include in prototype. Paste code and see your motion</p>
-		<div class="block">
-			<img src="css/img/process@2x.png" alt="Framer Inventory process">
-		</div>
-	</section>
-	
-	
-	<section id="tutorial-section" class="base-section">
-		<h1>Easy tutorials to change your workflow</h1>
-		<p>Find out how to use Framer Inventory and download examples to try yourself</p>
-		<div id="tutorials-block">
-			
-			<div class="tutorial">
-				<div class="tutorial-section-video">
-					<iframe src="https://player.vimeo.com/video/155306300?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				</div>
-				<h2>IF Onboarding</h2>
-				<p>Explore how to mark layers and use Export page</p>
-				<a href="http://bit.ly/framer-inventory-example-if" target="_blank">Download Sketch file</a>
-			</div>
-			
-			<div class="tutorial">
-				<div class="tutorial-section-video">
-					<iframe src="https://player.vimeo.com/video/155307305?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				</div>
-				<h2>Shapes or Images</h2>
-				<p>Investigate what can be exported without an image</p>
-				<a href="http://bit.ly/framer-inventory-example-exportable" target="_blank">Download Sketch file</a>
-			</div>
-			
-			<div class="tutorial">
-				<div class="tutorial-section-video">
-					<iframe src="https://player.vimeo.com/video/155308463?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				</div>
-				<h2>Shadows tips</h2>
-				<p>Scales and static shadows on groups and custom shapes</p>
-				<a href="http://bit.ly/framer-inventory-example-shadows" target="_blank">Download Sketch file</a>
-			</div>
-			
-			<div style="clear: both"></div>
-		</div>
-	</section>
-	
-	
-	<section id="goodbuy-section" class="base-section">
-		<h1>Best way to test storytelling</h1>
-		<p>Highly detailed prototypes are great. But you can test your idea without writing a single line of code.</p>
-		<div class="button">
-			<a href="http://bit.ly/framer-inventory-github" target="_blank">Download Framer Inventory</a>
-		</div>
-		<h5>Brand new 2.0 is available</h5>
-	</section>
-
-	
 	
 	
 	<footer>
 		<div class="mobile-container">
-			<h4>If Framer Inventory saved your time and you would like to <a href="https://github.com/timurnurutdinov/Framer-Inventory-for-Sketch/issues">share your idea</a> or improvement, you are welcome. If you are lazy you can share this page or donate with a Paypal :)</h4>
-			
+			<p>If <strong>Framer Inventory</strong> saved you some time, you can share it with friends and collegues. </p>
 			
 			<div id="share-buttons">
 			

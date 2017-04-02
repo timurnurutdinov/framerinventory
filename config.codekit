@@ -2,6 +2,94 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19102",
 "files": {
+	"\/css\/img\/button download icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1587,
+		"inputAbbreviatedPath": "\/css\/img\/button download icon.png",
+		"outputAbbreviatedPath": "\/css\/img\/button download icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/button download icon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3685,
+		"inputAbbreviatedPath": "\/css\/img\/button download icon@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/button download icon@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/button share icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 526,
+		"inputAbbreviatedPath": "\/css\/img\/button share icon.png",
+		"outputAbbreviatedPath": "\/css\/img\/button share icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/button share icon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1028,
+		"inputAbbreviatedPath": "\/css\/img\/button share icon@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/button share icon@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/demo video image.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 82848,
+		"inputAbbreviatedPath": "\/css\/img\/demo video image.png",
+		"outputAbbreviatedPath": "\/css\/img\/demo video image.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/demo video image@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 221767,
+		"inputAbbreviatedPath": "\/css\/img\/demo video image@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/demo video image@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/icon logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5690,
+		"inputAbbreviatedPath": "\/css\/img\/icon logo.png",
+		"outputAbbreviatedPath": "\/css\/img\/icon logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/icon logo@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14411,
+		"inputAbbreviatedPath": "\/css\/img\/icon logo@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/icon logo@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/img\/keynotebg.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -28,20 +116,9 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3743,
+		"initialSize": 1984,
 		"inputAbbreviatedPath": "\/css\/img\/logo.png",
 		"outputAbbreviatedPath": "\/css\/img\/logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/css\/img\/logo@2x.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 8228,
-		"inputAbbreviatedPath": "\/css\/img\/logo@2x.png",
-		"outputAbbreviatedPath": "\/css\/img\/logo@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -53,6 +130,28 @@
 		"initialSize": 4676,
 		"inputAbbreviatedPath": "\/css\/img\/paypal-button.png",
 		"outputAbbreviatedPath": "\/css\/img\/paypal-button.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/play video.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2763,
+		"inputAbbreviatedPath": "\/css\/img\/play video.png",
+		"outputAbbreviatedPath": "\/css\/img\/play video.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/play video@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7661,
+		"inputAbbreviatedPath": "\/css\/img\/play video@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/play video@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
