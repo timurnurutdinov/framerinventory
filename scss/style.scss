@@ -23,6 +23,7 @@ body {
 	margin-right: auto;
 	left: 0;
 	right: 0;
+	top: 30px;
 	
 	
 	background-image: url('img/icon logo.png');
@@ -31,6 +32,10 @@ body {
 	@include hidpi {
   		background-image: url('img/icon logo@2x.png');
   		background-size: 200px 200px;
+	}
+	
+	@include MQ(M) {
+		top: 0;
 	}
 }
 
@@ -64,7 +69,8 @@ header {
 //	  }
 		
 	#header-links {
-		width: 260px;
+		background-color: red;
+		width: 100%;
 		margin: auto;
 		
 		@include MQ(M) {
@@ -73,10 +79,13 @@ header {
 	}
 
 	#header-links a {
-		opacity: 0.5;
-		margin-left: 40px;
 		color: $color-black;
 		opacity: 0.5;
+
+		float: right;
+		margin-right: 24px;
+		margin-top: 32px;
+		margin-left: 0;
 		
 		@include MQ(M) {
 			float: right;
@@ -115,13 +124,26 @@ header {
 
 .column-3 {
 	width: 300px;
-	height: 200px;
-	float: left;
-	margin-left: 30px;
+//	float: left;
+	margin: auto;
+	padding-top: 60px;
+	max-width: 400px;
+	
+	@include MQ(L) {
+		float: left;
+		margin-left: 30px;
+		padding-top: 0px;
+		width: 300px;
+		height: 200px;
+	}
 }
 
 .first-child {
-	margin-left: 0;
+
+	@include MQ(L) {
+		margin-left: 0;
+	}
+//	padding-top: 0;
 }
 
 
@@ -257,15 +279,21 @@ header {
 
 .button {
 //	height: calc(52px-16px);
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 14px;
+	padding-right: 14px;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	background: yellow;
 	border-radius: 8px;
 	float: left;
 	border: 1px solid rgba(0,0,0,0.4);
-	margin-left: 20px;
+	margin-left: 12px;
+	
+	@include MQ(L) {
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-left: 20px;
+	}
 	
 	//box-shadow: 0px 10px 48px 0px rgba(0,0,0,0.24);
 }
@@ -281,19 +309,27 @@ header {
 //	box-shadow: inset 0px -1px 0px 0px #3496B1;
 //	padding-bottom: 48px;
 	background: #EBEBEB;
-	padding-bottom: 100px;
+	padding-bottom: 36px;
+	
+	@include MQ(M) {
+		padding-bottom: 100px;
+	}
 	
 	h1 {
 		text-align: center;
 		opacity: 0.5;
+		width: 90%;
+		margin: auto;
 		
 		@include MQ(M) {
+			width: 100%;
 		}
 	}
 	
 	.plugin-title {
 //		background: green;
 		opacity: 1;
+		padding-top: 235px;
 		
 		@include MQ(M) {
 			padding-top: 114px;
@@ -306,11 +342,12 @@ header {
 		margin: auto;
 //		background: blue;
 //		height: 10px;
-		width: 312px;
+		width: calc(312px - 4*12px);
 		margin-top: 32px;
-//		margin-bottom: 48px;
-
-//		box-shadow: 0px 10px 48px 0px rgba(0,0,0,0.24);
+		
+		@include MQ(L) {
+			width: 312px;
+		}
 
 		.welcome-button-download {
 			background-image: linear-gradient(-180deg, #5FE2FE 0%, #2DBFFF 100%);
@@ -334,17 +371,24 @@ header {
 	
 	
 	.welcome-video {
-		width: 960px;
-		height: 288px;
+		width: 100%;
+//		height: 188px;
 		margin: auto;
 //		background: red;
 //		clip: ;
+
+		@include MQ(M) {
+			width: 960px;
+			height: 288px;
+		}
 		
 		.video-block {
-			width: 460px;
-			height: 288px;
+			width: 300px;
+			height: 188px;
 			margin: auto;
 			margin-top: 140px;
+			
+			box-shadow: 0px 7px 31px 0px rgba(0,0,0,0.36);
 
 			background-image: url('img/welcome video.png');
 			background-repeat: no-repeat;
@@ -353,9 +397,18 @@ header {
 		  		background-image: url('img/welcome video@2x.png');
 		  		background-size: 460px 288px;
 			}
+			
+			@include MQ(M) {
+				width: 460px;
+				height: 288px;
+			}
 
 			.play-video-icon {
-				top: 80px;
+				top: 30px;
+				
+				@include MQ(M) {
+					top: 80px;
+				}
 			}
 		
 			h3 {
@@ -363,7 +416,11 @@ header {
 				margin: auto;
 				text-align: center;
 				position: relative;
-				top: 124px;
+				top: 48px;
+				
+				@include MQ(M) {
+					top: 124px;
+				}
 			}
 		}
 		
@@ -372,14 +429,18 @@ header {
 			position: relative;
 			top: -288px;
 			left: 600px;
-//			float: right;
-//			z-index: 10;
+			display: none;
+//			background: red;
 			
 			width: 320px;
 			height: 200px;
 
 			background-image: url('img/welcome plugin.png');
 			background-repeat: no-repeat;
+			
+			@include MQ(M) {
+				display: block;
+			}
 
 			@include hidpi {
 		  		background-image: url('img/welcome plugin@2x.png');
@@ -388,6 +449,27 @@ header {
 		}
 	}
 	
+	.welcome-share-buttons {
+
+		padding-top: 16px;
+		width: 300px;
+		margin: auto;
+		margin-bottom: 32px;
+
+		@include MQ(M) {
+			width: 460px;
+			margin: auto;
+		}
+		
+		#twitter-button {
+			float: right;
+		}
+		
+		#facebook-button {
+			float: right;
+			padding-right: 8px;		
+		}	
+	}
 	
 	
 }
@@ -395,21 +477,52 @@ header {
 
 .import-states-section {
 	background: #181818;
-	padding-bottom: 120px;
+	padding-bottom: 40px;
+	
+	@include MQ(L) {
+		padding-bottom: 120px;
+	}	
 	
 	.import-states-left {
-		width: 460px;
-		float: left;
+		width: 100%;
+//		max-width: 480px;
+		margin: auto;
+//		background: green;
+		
+		@include MQ(L) {
+			float: left;
+			width: 460px;
+		}
 		
 		h1 {
-			margin-top: 100px;
+			margin: auto;
+			padding-top: 40px;
 			color: white;
+			text-align: left;
+//			width: 80%;
+			max-width: 400px;
+			
+			@include MQ(M) {
+				padding-top: 100px;
+				width: 100%;
+				max-width: 100%;
+				text-align: left;
+			}
 		}
 		
 		h3 {
-			margin-top: 10px;
+			margin: auto;
+//			margin-top: 10px;
 			color: white;
 			opacity: 0.6;
+//			width: 80%;
+			text-align: left;
+			
+			@include MQ(M) {
+				width: 100%;
+				margin-top: 10px;
+				text-align: left;
+			}
 		}
 		
 		
@@ -418,6 +531,10 @@ header {
 //			margin: auto;
 			width: 330px;
 			margin-top: 32px;
+			
+//			@include MQ(M) {
+//				margin-left: 0;
+//			}
 				
 			.import-states-button-watch {
 				background: rgba(255,255,255,0.10);
@@ -441,10 +558,16 @@ header {
 		}
 		
 		.video-block {
-			margin-top: 144px;
+//			margin: auto;
+			margin-top: 114px;
 			
 			background-image: url('img/import states video.png');
 			background-repeat: no-repeat;
+
+			@include MQ(M) {
+//				margin-left: 0;
+				margin-top: 144px;
+			}
 
 			@include hidpi {
 		  		background-image: url('img/import states video@2x.png');
@@ -457,13 +580,21 @@ header {
 	.import-states-right {
 //		background: red;
 		width: 460px;
-		height: 560px;
-		float: right;
+		
+		display: none;
+		
 		margin-top: 100px;
 		margin-bottom: 120px;
 		
 		background-image: url('img/import states.png');
 		background-repeat: no-repeat;
+
+		@include MQ(L) {
+			float: right;
+			width: 460px;
+			height: 560px;
+			display: block;
+		}
 
 		@include hidpi {
 	  		background-image: url('img/import states@2x.png');
@@ -474,8 +605,16 @@ header {
 	.import-states-features {
 		clear: both;
 //		background: green;
-		height: 300px;
+//		height: 1000px;
 //		margin-bottom: 200px;
+		padding-top: 40px;
+		padding-bottom: 60px;
+
+		@include MQ(L) {
+			height: 300px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
 		
 		.column-3 {
 			
@@ -498,6 +637,10 @@ header {
 				background: black;
 				margin-top: 20px;
 //				margin-bottom: 200px;
+				
+				@include hidpi {
+			  		background-size: 300px 200px;
+				}
 			}
 			
 			
@@ -537,15 +680,32 @@ header {
 }
 
 
+
+
+
+
+
 .export-prototype-section {
-	padding-bottom: 140px;
+	padding-bottom: 40px;
+	
+	@include MQ(L) {
+		padding-bottom: 140px;
+	}
 	
 	.export-prototype-left {
 		float: left;
-		width: 620px;
+		width: 100%;
+		
+		@include MQ(L) {
+			width: 620px;
+		}
 		
 		h1 {
-			margin-top: 100px;
+			margin-top: 40px;
+			
+			@include MQ(L) {
+				margin-top: 100px;
+			}
 		}
 		
 		h3 {
@@ -570,14 +730,24 @@ header {
 		
 			div:first-child {
 				margin-left: 0;
+				
+			}
+			
+			div:nth-child(2) {
+//				margin-left: 0;
 			}
 		}
 	}
 	
 	.export-prototype-right {
-		float: right;
+		float: left;
 		width: 300px;
-		margin-top: 100px;
+		margin-top: 40px;
+		
+		@include MQ(L) {
+			float: right;
+			margin-top: 100px;
+		}
 		
 		.video-block {
 			background-image: url('img/export prototype video.png');
@@ -593,9 +763,15 @@ header {
 	.export-prototype-how {
 //		background: green;
 		clear: both;
-		padding-top: 140px;
-		padding-bottom: 60px;
-		width: 630px;
+		padding-top: 60px;
+		padding-bottom: 20px;
+		width: 100%;
+		
+		@include MQ(L) {
+			width: 630px;
+			padding-top: 140px;
+			padding-bottom: 60px;
+		}
 		
 		h3 {
 			color: $color-pre-grey;
@@ -604,8 +780,13 @@ header {
 	}
 	
 	.export-prototype-features {
-		height: 300px;
-		margin-bottom: 140px;
+//		height: 300px;
+		margin-bottom: 40px;
+		
+		@include MQ(L) {
+			height: 300px;
+			margin-bottom: 140px;
+		}
 		
 		.column-3 {
 			p:nth-child(2) {
@@ -617,6 +798,11 @@ header {
 				width: 300px;
 				height: 200px;
 				margin-top: 20px;
+				background-repeat: no-repeat;
+				
+				@include hidpi {
+					background-size: 300px 200px;
+				}
 //				background: black;
 			}
 		}
@@ -652,6 +838,10 @@ header {
 		width: 300px;
 		padding-top: 40px;
 		
+//		@include MQ(L) {
+//			padding-top: 40px;
+//		}
+		
 		.export-prototype-new {
 			color: $color-blue-dream;
 		}
@@ -678,16 +868,26 @@ header {
 	}
 	
 	.export-prototype-reimport-right {
-		float: right;
-		width: 630px;
-		height: 400px;
+		float: left;
+		width: 280px;
+		height: 180px;
 		
 		background-image: url('img/reimport.png');
 		background-repeat: no-repeat;
+		
+		@include MQ(L) {
+			float: right;
+			width: 630px;
+			height: 400px;
+		}
 
 		@include hidpi {
 	  		background-image: url('img/reimport@2x.png');
-	  		background-size: 630px 400px;
+			background-size: 280px 180px;
+			
+			@include MQ(L) {
+				background-size: 630px 400px;
+			}
 		}
 	}
 	
@@ -700,16 +900,28 @@ header {
 
 .pro-section {
 //	background: $color-pre-white;
-	padding-bottom: 100px;
+	padding-bottom: 40px;
 	background: #EBEBEB;
 	box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,0.10);
 	
+	@include MQ(L) {
+		padding-bottom: 100px;
+	}
+	
 	.pro-left {
 		float: left;
-		width: 630px;
+		width: 100%;
+		
+		@include MQ(L) {
+			width: 630px;
+		}
 		
 		h1 {
-			padding-top: 100px;
+			padding-top: 40px;
+			
+			@include MQ(L) {
+				padding-top: 100px;
+			}
 		}
 		
 		h3 {
@@ -767,112 +979,7 @@ header {
 
 
 
-footer {
-	background-color: $color-pre-white;
-	
-	@include MQ(L) {
-		height: 340px;
-	}
-	
-	.mobile-container {
-		margin: auto;
-		width: 90%;
-		
-		@include MQ(L) {
-			width: 100%;
-		}
-	}
-	
-	h4 {
-		text-align: center;
-		margin: auto;
-		color: $color-dark;
-		padding-top: 60px;
-		max-width: 460px;
-		
-		@include MQ(L) {
-			padding-top: 100px;
-			width: 460px;
-			max-width: 100%;
-		}
-	}
-	
-	//h4:first-child {
-//		color: $color-grey;
-//		padding-top: 40px;
-//
-//	}
-	
-	p {
-		text-align: center;
-		margin: auto;
-		font-size: 16px;
-		color: $color-grey;
-		letter-spacing: 1px;
-		line-height: 19px;
-		
-		@include MQ(L) {
-			padding-top: 3px;
-			width: 460px;
-		}
-		
-	}
-	
-	p:first-child {
-		color: $color-black;
-		font-weight: 300;
-		line-height: 1.44;
-		width: 480px;
-		padding-top: 40px;
-		
-	}
-	
-	
-	#share-buttons {
-		width: 200px;
-		margin: auto;
-		padding-top: 16px;
-		
-		#twitter-button {
-			float: left;
-			
-		}
-		
-		#facebook-button {
-			float: left;
-			padding-left: 8px;
-			
-		}
-		
-		#paypal-button {
-			float: left;
-			padding-left: 8px;
-		}
-		
-	}
-	
-	
-	#social-links {
-		margin: auto;
-		width: 220px;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		
-		@include MQ(L) {
-			padding-top: 30px;
-			padding-bottom: 0;
-		}
-		
-		a {
-			font-size: 14px;
-			padding-left: 22px;
-		}
-		
-		a:first-child {
-			padding-left: 10px;
-		}
-	}
-}
+
 
 
 
@@ -888,10 +995,10 @@ footer {
 }
 
 #tutorial-video {
-	width: 80%;
-	height: 80%;
+	width: 90%;
+	height: 90%;
 	margin: auto;
-	margin-top: 6%;
+	margin-top: 4%;
 	
 	//@include MQ(M) {
 //		width: 580px;
