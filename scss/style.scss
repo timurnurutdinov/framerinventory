@@ -558,13 +558,68 @@ header {
 	  		background-image: url('img/import states@2x.png');
 	  		background-size: 460px 560px;
 		}
+		
+		@keyframes example {
+		    0% {
+			    -ms-transform: scale(1, 1); /* IE 9 */
+			    -webkit-transform: scale(1, 1); /* Safari */
+			    transform: scale(1, 1);
+				
+				border-radius: 4px;
+				
+				left: 312px;
+				top: 252px;
+			}
+		    20% {
+			    -ms-transform: scale(1, 1); /* IE 9 */
+			    -webkit-transform: scale(1, 1); /* Safari */
+			    transform: scale(1, 1);
+				
+				border-radius: 4px;
+				
+				left: 312px;
+				top: 252px;
+			}
+		    66% {
+			    -ms-transform: scale($isv, $isv); /* IE 9 */
+			    -webkit-transform: scale($isv, $isv); /* Safari */
+			    transform: scale($isv, $isv);
+				
+				border-radius: 32px;
+				
+				left: calc(312px - 43px);
+				top: calc(252px - 43px);
+			}
+		    100% {
+			    -ms-transform: scale($isv, $isv); /* IE 9 */
+			    -webkit-transform: scale($isv, $isv); /* Safari */
+			    transform: scale($isv, $isv);
+				
+				border-radius: 32px;
+				
+				left: calc(312px - 43px);
+				top: calc(252px - 43px);
+			}
+		}
+		
+		.import-states-move {
+			position: relative;
+			width: 120px;
+			height: 120px;
+			left: 312px;
+			top: 252px;
+			
+			background-color: #007DFF;
+			animation-name: example;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-timing-function: ease-in-out;
+		}
 	}
 	
 	.import-states-features {
 		clear: both;
-//		background: green;
-//		height: 1000px;
-//		margin-bottom: 200px;
 		padding-top: 40px;
 		padding-bottom: 60px;
 
