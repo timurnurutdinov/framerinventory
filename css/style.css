@@ -665,13 +665,13 @@ header {
       float: left;
       width: 240px;
       padding-top: 64px; }
-      .pro-section .pro-left .pro-features-pro div {
+      .pro-section .pro-left .pro-features-pro a {
         margin-left: 0;
         margin-top: 30px;
         background: rgba(0, 0, 0, 0.02);
         border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 5px; }
-      .pro-section .pro-left .pro-features-pro div:hover {
+      .pro-section .pro-left .pro-features-pro a:hover {
         box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.16); }
   .pro-section .pro-right {
     float: right;
