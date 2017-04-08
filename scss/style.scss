@@ -13,6 +13,9 @@ body {
 	padding:0;
 }
 
+input, button { border: none; } 
+button:focus { outline: 0; }
+
 
 #icon-logo {
 	width: 200px;
@@ -147,82 +150,6 @@ header {
 }
 
 
-//
-//.base-section {
-//
-//	h1 {
-//		margin: auto;
-//		max-width: 300px;
-//
-//		@include MQ(M) {
-//			max-width: 470px;
-//		}
-//		@include MQ(L) {
-//			max-width: 100%;
-//		}
-//	}
-//
-//
-//	p {
-//		margin: auto;
-//		text-align: center;
-//		width: 100%;
-//		max-width: 300px;
-//		padding-bottom: 30px;
-//		padding-top: 2px;
-//
-//
-//		@include MQ(M) {
-//			max-width: 470px;
-//			padding-bottom: 50px;
-//		}
-//		@include MQ(L) {
-//			width: 580px;
-//			max-width: 100%;
-//			padding-top: 6px;
-//		}
-//	}
-//
-//
-//	.button {
-//		width: 300px;
-//		height: 44px;
-//		border-radius: 22px;
-//		background-color: $color-dark;
-//		transition: all 0.3s;
-//		margin: auto;
-//		margin-top: 20px;
-//
-//		@include MQ(L) {
-//			margin-top: 30px;
-//		}
-//
-//		a {
-//			display: inline-block;
-//			width: 300px;
-//			padding-top: 18px;
-//			margin: auto;
-//			letter-spacing: 2px;
-//		}
-//	}
-//
-//	.button:hover {
-//		box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
-//		background-color: $color-semi-dark;
-//	}
-//
-//
-//	h5 {
-//		padding-top: 10px;
-//		padding-bottom: 30px;
-//		margin: auto;
-//
-//		@include MQ(L) {
-//			padding-bottom: 40px;
-//		}
-//	}
-//
-//}
 
 .play-video-icon {
 	margin: auto;
@@ -279,6 +206,7 @@ header {
 
 .button {
 //	height: calc(52px-16px);
+	cursor: pointer;
 	padding-left: 14px;
 	padding-right: 14px;
 	padding-top: 12px;
@@ -288,6 +216,7 @@ header {
 	float: left;
 	border: 1px solid rgba(0,0,0,0.4);
 	margin-left: 12px;
+	transition: all 0.3s;
 	
 	@include MQ(L) {
 		padding-left: 20px;
@@ -295,7 +224,12 @@ header {
 		margin-left: 20px;
 	}
 	
-	//box-shadow: 0px 10px 48px 0px rgba(0,0,0,0.24);
+//	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.24);
+}
+
+.button:hover {
+	opacity: 0.9;
+//	box-shadow: 0px 10px 48px 0px rgba(0,0,0,0.5);
 }
 
 
@@ -304,7 +238,7 @@ header {
 
 
 
-#welcome-section {
+.welcome-section {
 //	background-image: linear-gradient(-180deg, #5FE2FE 0%, #2DBFFF 100%);
 //	box-shadow: inset 0px -1px 0px 0px #3496B1;
 //	padding-bottom: 48px;
@@ -356,11 +290,19 @@ header {
 			box-shadow: 0px 10px 48px 0px rgba(0,0,0,0.24);
 		}
 		
+		.welcome-button-download:hover {
+			box-shadow: 0px 20px 58px 0px rgba(0,0,0,0.34);
+		}
+		
 		.welcome-button-share {
 			background-image: linear-gradient(-180deg, #B2B2B2 0%, #878787 100%);
 			border: 1px solid #6F6F6F;
 			border-radius: 5px;
 			box-shadow: 0px 10px 48px 0px rgba(0,0,0,0.24);
+		}
+		
+		.welcome-button-share:hover {
+			box-shadow: 0px 20px 58px 0px rgba(0,0,0,0.34);
 		}
 		
 		p {
@@ -475,6 +417,9 @@ header {
 }
 
 
+
+
+
 .import-states-section {
 	background: #181818;
 	padding-bottom: 40px;
@@ -495,17 +440,18 @@ header {
 		}
 		
 		h1 {
-			margin: auto;
+			margin: 0;
 			padding-top: 40px;
 			color: white;
 			text-align: left;
-//			width: 80%;
+			width: 100%;
 			max-width: 400px;
 			
 			@include MQ(M) {
 				padding-top: 100px;
 				width: 100%;
 				max-width: 100%;
+				margin: auto;
 				text-align: left;
 			}
 		}
@@ -541,11 +487,23 @@ header {
 				border: 1px solid rgba(255,255,255,0.20);
 				border-radius: 5px;
 			}
+			
+			.import-states-button-watch:hover {
+				opacity: 0.7;
+				box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+			}
+			
 			.import-states-button-read {
 				background: none;
 				border: 1px solid rgba(255,255,255,0.20);
 				border-radius: 5px;
 			}
+			
+			.import-states-button-read:hover {
+				opacity: 0.7;
+				box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+			}
+			
 		
 			p {
 				text-align: center;
@@ -722,10 +680,18 @@ header {
 				border-radius: 5px;
 			}
 			
+			.export-prototype-button-watch:hover {
+				box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.05);
+			}
+			
 			.export-prototype-button-read {
 				background: none;
 				border: 1px solid rgba(0,0,0,0.20);
 				border-radius: 5px;
+			}
+			
+			.export-prototype-button-read:hover {
+				box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.05);
 			}
 		
 			div:first-child {
@@ -939,13 +905,17 @@ header {
 			width: 240px;
 			padding-top: 64px;
 			
-			div {
+			a {
 				margin-left: 0;
 				margin-top: 30px;
 				
 				background: rgba(0,0,0,0.02);
 				border: 1px solid rgba(0,0,0,0.20);
 				border-radius: 5px;
+			}
+			
+			a:hover {
+				box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.16);
 			}
 		}
 		
@@ -961,6 +931,10 @@ header {
 				background: rgba(0,0,0,0.02);
 				border: 1px solid rgba(0,0,0,0.20);
 				border-radius: 5px;
+			}
+			
+			div:hover {
+				box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.16);
 			}
 		}
 	}
