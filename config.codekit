@@ -442,28 +442,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/css\/img\/video import states.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 22997,
-		"inputAbbreviatedPath": "\/css\/img\/video import states.png",
-		"outputAbbreviatedPath": "\/css\/img\/video import states.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/css\/img\/video import states@2x.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 64125,
-		"inputAbbreviatedPath": "\/css\/img\/video import states@2x.png",
-		"outputAbbreviatedPath": "\/css\/img\/video import states@2x.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/css\/img\/welcome plugin.png": {
 		"fileType": 32768,
 		"ignore": 0,

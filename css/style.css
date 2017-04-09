@@ -603,6 +603,9 @@ header {
     .export-prototype-section .export-prototype-how h3 {
       color: #666;
       padding-top: 10px; }
+      @media only screen and (min-width: 960px) {
+        .export-prototype-section .export-prototype-how h3 {
+          width: 400px; } }
   .export-prototype-section .export-prototype-features {
     margin-bottom: 40px; }
     @media only screen and (min-width: 960px) {

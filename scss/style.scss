@@ -797,6 +797,11 @@ header {
 		h3 {
 			color: $color-pre-grey;
 			padding-top: 10px;
+			
+			@include MQ(L) {
+//				background-color: red;
+				width: 400px;
+			}
 		}
 	}
 	
