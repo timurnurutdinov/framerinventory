@@ -331,6 +331,15 @@ header {
         @media only screen and (min-width: 720px) {
           .welcome-section .welcome-video .video-block h3 {
             top: 124px; } }
+@keyframes plugin-mode-change {
+  0% {
+    background-image: url("img/welcome plugin.png"); }
+  49% {
+    background-image: url("img/welcome plugin.png"); }
+  50% {
+    background-image: url("img/welcome plugin 2.png"); }
+  100% {
+    background-image: url("img/welcome plugin 2.png"); } }
     .welcome-section .welcome-video .welcome-plugin {
       height: 0;
       position: relative;
@@ -340,7 +349,11 @@ header {
       width: 320px;
       height: 200px;
       background-image: url("img/welcome plugin.png");
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      animation-name: plugin-mode-change;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out; }
       @media only screen and (min-width: 720px) {
         .welcome-section .welcome-video .welcome-plugin {
           display: block; } }
@@ -453,53 +466,46 @@ header {
         background-size: 460px 560px; } }
 @keyframes example {
   0% {
-    -ms-transform: scale(1, 1);
+    -ms-transform: scale(1, 1) translate(0, 0);
     /* IE 9 */
-    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1) translate(0, 0);
     /* Safari */
-    transform: scale(1, 1);
-    border-radius: 4px;
-    left: 312px;
-    top: 252px; }
+    transform: scale(1, 1) translate(0, 0);
+    border-radius: 16px; }
   20% {
-    -ms-transform: scale(1, 1);
+    -ms-transform: scale(1, 1) translate(0, 0);
     /* IE 9 */
-    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1) translate(0, 0);
     /* Safari */
-    transform: scale(1, 1);
-    border-radius: 4px;
-    left: 312px;
-    top: 252px; }
+    transform: scale(1, 1) translate(0, 0);
+    border-radius: 16px; }
   66% {
-    -ms-transform: scale(0.28, 0.28);
+    -ms-transform: scale(0.28, 0.28) translate(-154px, -136px);
     /* IE 9 */
-    -webkit-transform: scale(0.28, 0.28);
+    -webkit-transform: scale(0.28, 0.28) translate(-154px, -136px);
     /* Safari */
-    transform: scale(0.28, 0.28);
-    border-radius: 32px;
-    left: calc(312px - 43px);
-    top: calc(252px - 43px); }
+    transform: scale(0.28, 0.28) translate(-154px, -136px);
+    border-radius: 32px; }
   100% {
-    -ms-transform: scale(0.28, 0.28);
+    -ms-transform: scale(0.28, 0.28) translate(-154px, -136px);
     /* IE 9 */
-    -webkit-transform: scale(0.28, 0.28);
+    -webkit-transform: scale(0.28, 0.28) translate(-154px, -136px);
     /* Safari */
-    transform: scale(0.28, 0.28);
-    border-radius: 32px;
-    left: calc(312px - 43px);
-    top: calc(252px - 43px); } }
+    transform: scale(0.28, 0.28) translate(-154px, -136px);
+    border-radius: 32px; } }
     .import-states-section .import-states-right .import-states-move {
       position: relative;
-      width: 120px;
-      height: 120px;
+      width: 121px;
+      height: 121px;
       left: 312px;
-      top: 252px;
+      top: 266px;
+      border-radius: 32px;
       background-color: #007DFF;
       animation-name: example;
       animation-duration: 2s;
       animation-iteration-count: infinite;
       animation-direction: alternate;
-      animation-timing-function: ease-in-out; }
+      animation-timing-function: cubic-bezier(0.56, 0.88, 0.85, 0.17); }
   .import-states-section .import-states-features {
     clear: both;
     padding-top: 40px;

@@ -366,6 +366,22 @@ header {
 			}
 		}
 		
+		@keyframes plugin-mode-change {
+			0% {
+				background-image: url('img/welcome plugin.png');
+			}
+			49% {
+				background-image: url('img/welcome plugin.png');
+			}
+			50% {
+				background-image: url('img/welcome plugin 2.png');
+			}
+			100% {
+				background-image: url('img/welcome plugin 2.png');
+			}
+			
+		}
+		
 		.welcome-plugin {
 			height: 0;
 			position: relative;
@@ -379,6 +395,12 @@ header {
 
 			background-image: url('img/welcome plugin.png');
 			background-repeat: no-repeat;
+			
+			animation-name: plugin-mode-change;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+//			animation-direction: alternate;
+			animation-timing-function: ease-in-out;
 			
 			@include MQ(M) {
 				display: block;
@@ -561,60 +583,64 @@ header {
 		
 		@keyframes example {
 		    0% {
-			    -ms-transform: scale(1, 1); /* IE 9 */
-			    -webkit-transform: scale(1, 1); /* Safari */
-			    transform: scale(1, 1);
+			    -ms-transform: scale(1, 1) translate(0, 0); /* IE 9 */
+			    -webkit-transform: scale(1, 1) translate(0, 0); /* Safari */
+			    transform: scale(1, 1) translate(0, 0);
 				
-				border-radius: 4px;
+				border-radius: 16px;
 				
-				left: 312px;
-				top: 252px;
+//				left: 312px;
+//				top: 252px;
 			}
 		    20% {
-			    -ms-transform: scale(1, 1); /* IE 9 */
-			    -webkit-transform: scale(1, 1); /* Safari */
-			    transform: scale(1, 1);
+			    -ms-transform: scale(1, 1) translate(0, 0); /* IE 9 */
+			    -webkit-transform: scale(1, 1) translate(0, 0); /* Safari */
+			    transform: scale(1, 1) translate(0, 0);
 				
-				border-radius: 4px;
+				border-radius: 16px;
 				
-				left: 312px;
-				top: 252px;
+//				left: 312px;
+//				top: 252px;
 			}
 		    66% {
-			    -ms-transform: scale($isv, $isv); /* IE 9 */
-			    -webkit-transform: scale($isv, $isv); /* Safari */
-			    transform: scale($isv, $isv);
+			    -ms-transform: scale($isv, $isv) translate($ixv, $iyv); /* IE 9 */
+			    -webkit-transform: scale($isv, $isv) translate($ixv, $iyv); /* Safari */
+			    transform: scale($isv, $isv) translate($ixv, $iyv);
 				
 				border-radius: 32px;
 				
-				left: calc(312px - 43px);
-				top: calc(252px - 43px);
+//				left: calc(312px - 43px);
+//				top: calc(252px - 43px);
 			}
 		    100% {
-			    -ms-transform: scale($isv, $isv); /* IE 9 */
-			    -webkit-transform: scale($isv, $isv); /* Safari */
-			    transform: scale($isv, $isv);
+			    -ms-transform: scale($isv, $isv) translate($ixv, $iyv); /* IE 9 */
+			    -webkit-transform: scale($isv, $isv) translate($ixv, $iyv); /* Safari */
+			    transform: scale($isv, $isv) translate($ixv, $iyv);
 				
 				border-radius: 32px;
 				
-				left: calc(312px - 43px);
-				top: calc(252px - 43px);
+//				left: calc(312px - 43px);
+//				top: calc(252px - 43px);
 			}
 		}
 		
 		.import-states-move {
 			position: relative;
-			width: 120px;
-			height: 120px;
+			width: 121px;
+			height: 121px;
 			left: 312px;
-			top: 252px;
+			top: 266px;
+			
+			border-radius: 32px;
 			
 			background-color: #007DFF;
 			animation-name: example;
 			animation-duration: 2s;
 			animation-iteration-count: infinite;
 			animation-direction: alternate;
-			animation-timing-function: ease-in-out;
+//			animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+			//animation-timing-function: cubic-bezier(.78,1,.97,.1);
+			animation-timing-function: cubic-bezier(.56,.88,.85,.17);
 		}
 	}
 	
