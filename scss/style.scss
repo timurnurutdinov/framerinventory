@@ -368,20 +368,16 @@ header {
 		
 		@keyframes plugin-mode-change {
 			0% {
-		  		background-image: url('img/welcome plugin@2x.png');
-		  		background-size: 320px 200px;
+		  		opacity: 0;
 			}
 			49% {
-		  		background-image: url('img/welcome plugin@2x.png');
-		  		background-size: 320px 200px;
+		  		opacity: 0;
 			}
 			50% {
-		  		background-image: url('img/welcome plugin 2@2x.png');
-		  		background-size: 320px 200px;
+		  		opacity: 1;
 			}
 			100% {
-		  		background-image: url('img/welcome plugin 2@2x.png');
-		  		background-size: 320px 200px;
+		  		opacity: 1;
 			}
 			
 		}
@@ -396,23 +392,71 @@ header {
 			
 			width: 320px;
 			height: 200px;
-
-			background-image: url('img/welcome plugin.png');
-			background-repeat: no-repeat;
-			
-			animation-name: plugin-mode-change;
-			animation-duration: 4s;
-			animation-iteration-count: infinite;
-//			animation-direction: alternate;
-			animation-timing-function: ease-in-out;
 			
 			@include MQ(M) {
 				display: block;
 			}
 
-			@include hidpi {
-		  		background-image: url('img/welcome plugin@2x.png');
-		  		background-size: 320px 200px;
+			//background-image: url('img/welcome plugin.png');
+//			background-repeat: no-repeat;
+//
+//			animation-name: plugin-mode-change;
+//			animation-duration: 4s;
+//			animation-iteration-count: infinite;
+//			animation-timing-function: ease-in-out;
+//
+//			@include MQ(M) {
+//				display: block;
+//			}
+//
+//			@include hidpi {
+//		  		background-image: url('img/welcome plugin@2x.png');
+//		  		background-size: 320px 200px;
+//			}
+
+
+
+			.welcome-plugin-preview-image-import-states {
+				width: 235px;
+				height: 112px;
+				position: relative;
+//				background: green;
+				left: 40px;
+				top: 36px;
+				
+				box-shadow: 0px 10px 40px 0px rgba(0,0,0,0.50);
+				border-radius: 4px;
+				
+				background-image: url('img/welcome plugin.png');
+				background-repeat: no-repeat;
+				
+				@include hidpi {
+			  		background-image: url('img/welcome plugin@2x.png');
+			  		background-size: 320px 200px;
+				}
+				
+				
+				.welcome-plugin-preview-image-export-prototype {
+					width: 235px;
+					height: 112px;
+					position: relative;
+//					background: blue;
+					
+					
+					background-image: url('img/welcome plugin 2.png');
+					background-repeat: no-repeat;
+				
+					@include hidpi {
+				  		background-image: url('img/welcome plugin 2@2x.png');
+				  		background-size: 320px 200px;
+					}
+
+					animation-name: plugin-mode-change;
+					animation-duration: 4s;
+					animation-iteration-count: infinite;
+					animation-timing-function: ease-in-out;
+
+				}
 			}
 		}
 	}
