@@ -406,7 +406,7 @@ header {
     @media only screen and (min-width: 960px) {
       .import-states-section .import-states-left {
         float: left;
-        width: 460px; } }
+        width: 420px; } }
     .import-states-section .import-states-left h1 {
       margin: 0;
       padding-top: 40px;
@@ -570,7 +570,6 @@ header {
     .export-prototype-section {
       padding-bottom: 140px; } }
   .export-prototype-section .export-prototype-left {
-    float: left;
     width: 100%; }
     @media only screen and (min-width: 960px) {
       .export-prototype-section .export-prototype-left {
@@ -583,37 +582,40 @@ header {
     .export-prototype-section .export-prototype-left h3 {
       margin-top: 10px;
       color: #666; }
-    .export-prototype-section .export-prototype-left .export-prototype-buttons {
-      margin-top: 32px; }
-      .export-prototype-section .export-prototype-left .export-prototype-buttons .export-prototype-button-watch {
-        background: rgba(0, 0, 0, 0.02);
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        border-radius: 5px; }
-      .export-prototype-section .export-prototype-left .export-prototype-buttons .export-prototype-button-watch:hover {
-        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.05); }
-      .export-prototype-section .export-prototype-left .export-prototype-buttons .export-prototype-button-read {
-        background: none;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        border-radius: 5px; }
-      .export-prototype-section .export-prototype-left .export-prototype-buttons .export-prototype-button-read:hover {
-        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.05); }
-      .export-prototype-section .export-prototype-left .export-prototype-buttons div:first-child {
-        margin-left: 0; }
-  .export-prototype-section .export-prototype-right {
-    float: left;
-    width: 300px;
-    margin-top: 40px; }
-    @media only screen and (min-width: 960px) {
-      .export-prototype-section .export-prototype-right {
-        float: right;
-        margin-top: 100px; } }
-    .export-prototype-section .export-prototype-right .video-block {
-      background-image: url("img/export prototype video.png");
-      background-repeat: no-repeat; }
-      @media (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi), (min-resolution: 1.3dppx) {
-        .export-prototype-section .export-prototype-right .video-block {
-          background-image: url("img/export prototype video@2x.png");
-          background-size: 300px 200px; } }
+  .export-prototype-section .export-prototype-media {
+    background: red;
+    width: 100%; }
+    .export-prototype-section .export-prototype-media .export-prototype-video-left {
+      float: left;
+      width: 50%; }
+      .export-prototype-section .export-prototype-media .export-prototype-video-left .export-prototype-buttons {
+        margin-top: 32px; }
+        .export-prototype-section .export-prototype-media .export-prototype-video-left .export-prototype-buttons .export-prototype-button-watch {
+          background: rgba(0, 0, 0, 0.02);
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          border-radius: 5px; }
+        .export-prototype-section .export-prototype-media .export-prototype-video-left .export-prototype-buttons .export-prototype-button-watch:hover {
+          box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.05); }
+        .export-prototype-section .export-prototype-media .export-prototype-video-left .export-prototype-buttons .export-prototype-button-read {
+          background: none;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          border-radius: 5px; }
+        .export-prototype-section .export-prototype-media .export-prototype-video-left .export-prototype-buttons .export-prototype-button-read:hover {
+          box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.05); }
+        .export-prototype-section .export-prototype-media .export-prototype-video-left .export-prototype-buttons div:first-child {
+          margin-left: 0; }
+      .export-prototype-section .export-prototype-media .export-prototype-video-left .video-block {
+        margin-top: 132px;
+        background-image: url("img/export prototype video.png");
+        background-repeat: no-repeat; }
+        @media (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi), (min-resolution: 1.3dppx) {
+          .export-prototype-section .export-prototype-media .export-prototype-video-left .video-block {
+            background-image: url("img/export prototype video@2x.png");
+            background-size: 300px 200px; } }
+    .export-prototype-section .export-prototype-media .export-prototype-video-right {
+      float: left;
+      height: 320px;
+      width: 50%; }
   .export-prototype-section .export-prototype-how {
     clear: both;
     padding-top: 60px;
