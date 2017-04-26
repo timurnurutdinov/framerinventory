@@ -187,6 +187,12 @@ header {
 		top: 54px;
 	}
 	
+	.download-example-files {
+		background: red;
+		margin-top: 124px;
+		text-align: center;
+	}
+	
 	//h3 {
 //		color: $color-white;
 //		margin: auto;
@@ -364,6 +370,7 @@ header {
 					top: 124px;
 				}
 			}
+			
 		}
 		
 		
@@ -773,7 +780,7 @@ header {
 		width: 100%;
 		
 		@include MQ(L) {
-			width: 620px;
+			width: 580px;
 		}
 		
 		h1 {
@@ -985,13 +992,14 @@ header {
 		}
 		
 		.export-prototype-reimport-block {
-			margin-top: 40px;
+			margin-top: 28px;
 //			margin-left: 20px;
 			width: 172px;
 			border-radius: 16px;
 			background: #EEE;
 			padding-left: 20px;
 			padding-top: 16px;
+			border: 1px solid rgba(0,0,0,0.2);
 			
 			p {
 				opacity: 0.9;
