@@ -676,12 +676,21 @@ header {
       padding-top: 6px;
       opacity: 0.4; }
     .export-prototype-section .export-prototype-reimport-left .export-prototype-reimport-block {
-      padding-top: 48px; }
+      margin-top: 40px;
+      width: 172px;
+      border-radius: 16px;
+      background: #EEE;
+      padding-left: 20px;
+      padding-top: 16px; }
+      .export-prototype-section .export-prototype-reimport-left .export-prototype-reimport-block p {
+        opacity: 0.9;
+        font-size: 16px; }
       .export-prototype-section .export-prototype-reimport-left .export-prototype-reimport-block .export-prototype-reimport-small-description {
-        font-size: 14px;
+        font-size: 13px;
         padding-top: 2px;
         padding-bottom: 16px;
-        color: #999; }
+        color: #999;
+        opacity: 1; }
   .export-prototype-section .export-prototype-reimport-right {
     float: left;
     width: 280px;
