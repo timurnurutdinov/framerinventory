@@ -853,26 +853,7 @@ header {
 		
 	}
 	
-//	.export-prototype-right {
-////		float: left;
-//		width: 300px;
-//		margin-top: 40px;
-//
-//		@include MQ(L) {
-//			float: right;
-//			margin-top: 100px;
-//		}
-//
-//		//.video-block {
-////			background-image: url('img/export prototype video.png');
-////			background-repeat: no-repeat;
-////
-////			@include hidpi {
-////		  		background-image: url('img/export prototype video@2x.png');
-////		  		background-size: 300px 200px;
-////			}
-////		}
-//	}
+
 	
 	.export-prototype-media {
 		background: red;
@@ -963,7 +944,12 @@ header {
 //			padding-top: 48px;
 			height: 320px;
 			width: 50%;
+			display: none;
 //			background: blue;
+
+			@include MQ(L) {
+				display: block;
+			}
 		}
 	}
 	
@@ -1075,7 +1061,7 @@ header {
 			background: #EEE;
 			padding-left: 20px;
 			padding-top: 16px;
-			border: 1px solid rgba(0,0,0,0.2);
+			border: 1px solid rgba(0,0,0,0.08);
 			
 			p {
 				opacity: 0.9;
@@ -1093,6 +1079,7 @@ header {
 	}
 	
 	.export-prototype-reimport-right {
+		display: none;
 		float: left;
 		width: 280px;
 		height: 180px;
@@ -1101,6 +1088,7 @@ header {
 		background-repeat: no-repeat;
 		
 		@include MQ(L) {
+			display: block;
 			float: right;
 			width: 630px;
 			height: 400px;

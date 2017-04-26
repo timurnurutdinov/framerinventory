@@ -661,7 +661,11 @@ header {
     .export-prototype-section .export-prototype-media .export-prototype-video-right {
       float: left;
       height: 320px;
-      width: 50%; }
+      width: 50%;
+      display: none; }
+      @media only screen and (min-width: 960px) {
+        .export-prototype-section .export-prototype-media .export-prototype-video-right {
+          display: block; } }
   .export-prototype-section .export-prototype-how {
     clear: both;
     padding-top: 60px;
@@ -728,7 +732,7 @@ header {
       background: #EEE;
       padding-left: 20px;
       padding-top: 16px;
-      border: 1px solid rgba(0, 0, 0, 0.2); }
+      border: 1px solid rgba(0, 0, 0, 0.08); }
       .export-prototype-section .export-prototype-reimport-left .export-prototype-reimport-block p {
         opacity: 0.9;
         font-size: 16px; }
@@ -739,6 +743,7 @@ header {
         color: #999;
         opacity: 1; }
   .export-prototype-section .export-prototype-reimport-right {
+    display: none;
     float: left;
     width: 280px;
     height: 180px;
@@ -746,6 +751,7 @@ header {
     background-repeat: no-repeat; }
     @media only screen and (min-width: 960px) {
       .export-prototype-section .export-prototype-reimport-right {
+        display: block;
         float: right;
         width: 630px;
         height: 400px; } }
