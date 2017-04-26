@@ -225,7 +225,6 @@ header {
     position: relative;
     top: 54px; }
   .video-block .download-example-files {
-    background: red;
     margin-top: 124px;
     text-align: center; }
 
@@ -427,14 +426,25 @@ header {
           text-align: left; } }
     .import-states-section .import-states-left h3 {
       margin: auto;
-      color: white;
-      opacity: 0.6;
+      color: rgba(255, 255, 255, 0.6);
       text-align: left; }
       @media only screen and (min-width: 720px) {
         .import-states-section .import-states-left h3 {
           width: 100%;
           margin-top: 10px;
           text-align: left; } }
+      .import-states-section .import-states-left h3 a {
+        color: #30bcfc;
+        opacity: 1;
+        font-weight: 300;
+        font-size: 1.8rem;
+        line-height: 1.34;
+        letter-spacing: 0.2px; }
+        @media only screen and (min-width: 720px) {
+          .import-states-section .import-states-left h3 a {
+            font-size: 2.4rem; } }
+      .import-states-section .import-states-left h3 a:hover {
+        color: #19a3e3; }
     .import-states-section .import-states-left .import-states-buttons {
       display: block;
       width: 330px;
@@ -469,6 +479,16 @@ header {
         .import-states-section .import-states-left .video-block {
           background-image: url("img/import states video@2x.png");
           background-size: 300px 200px; } }
+      .import-states-section .import-states-left .video-block .download-example-files {
+        color: rgba(255, 255, 255, 0.1); }
+      .import-states-section .import-states-left .video-block a {
+        color: rgba(255, 255, 255, 0.3); }
+      .import-states-section .import-states-left .video-block a:first-child {
+        color: rgba(255, 255, 255, 0.45); }
+      .import-states-section .import-states-left .video-block a:hover {
+        color: #32C3FF; }
+      .import-states-section .import-states-left .video-block a:first-child:hover {
+        color: #F5A623; }
   .import-states-section .import-states-right {
     width: 460px;
     display: none;
@@ -586,14 +606,26 @@ header {
     .export-prototype-section .export-prototype-left h3 {
       margin-top: 10px;
       color: #666; }
+      .export-prototype-section .export-prototype-left h3 a {
+        color: #30bcfc;
+        font-weight: 300;
+        font-size: 1.8rem;
+        line-height: 1.34;
+        letter-spacing: 0.2px; }
+        @media only screen and (min-width: 720px) {
+          .export-prototype-section .export-prototype-left h3 a {
+            font-size: 2.4rem; } }
+      .export-prototype-section .export-prototype-left h3 a:hover {
+        color: #19a3e3; }
   .export-prototype-section .export-prototype-media {
     background: red;
     width: 100%; }
     .export-prototype-section .export-prototype-media .export-prototype-video-left {
-      float: left;
-      width: 50%; }
+      float: left; }
       .export-prototype-section .export-prototype-media .export-prototype-video-left .export-prototype-buttons {
-        margin-top: 32px; }
+        background-color: red;
+        margin-top: 32px;
+        width: 100%; }
         .export-prototype-section .export-prototype-media .export-prototype-video-left .export-prototype-buttons .export-prototype-button-watch {
           background: rgba(0, 0, 0, 0.02);
           border: 1px solid rgba(0, 0, 0, 0.2);
@@ -616,6 +648,16 @@ header {
           .export-prototype-section .export-prototype-media .export-prototype-video-left .video-block {
             background-image: url("img/export prototype video@2x.png");
             background-size: 300px 200px; } }
+        .export-prototype-section .export-prototype-media .export-prototype-video-left .video-block .download-example-files {
+          color: rgba(0, 0, 0, 0.1); }
+        .export-prototype-section .export-prototype-media .export-prototype-video-left .video-block a {
+          color: rgba(0, 0, 0, 0.3); }
+        .export-prototype-section .export-prototype-media .export-prototype-video-left .video-block a:first-child {
+          color: rgba(0, 0, 0, 0.45); }
+        .export-prototype-section .export-prototype-media .export-prototype-video-left .video-block a:hover {
+          color: #32C3FF; }
+        .export-prototype-section .export-prototype-media .export-prototype-video-left .video-block a:first-child:hover {
+          color: #F5A623; }
     .export-prototype-section .export-prototype-media .export-prototype-video-right {
       float: left;
       height: 320px;
