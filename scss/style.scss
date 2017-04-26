@@ -366,6 +366,10 @@ header {
 			}
 		}
 		
+		
+		
+		
+		
 		@keyframes plugin-mode-change {
 			0% {
 		  		opacity: 0;
@@ -397,23 +401,6 @@ header {
 				display: block;
 			}
 
-			//background-image: url('img/welcome plugin.png');
-//			background-repeat: no-repeat;
-//
-//			animation-name: plugin-mode-change;
-//			animation-duration: 4s;
-//			animation-iteration-count: infinite;
-//			animation-timing-function: ease-in-out;
-//
-//			@include MQ(M) {
-//				display: block;
-//			}
-//
-//			@include hidpi {
-//		  		background-image: url('img/welcome plugin@2x.png');
-//		  		background-size: 320px 200px;
-//			}
-
 
 
 			.welcome-plugin-preview-image-import-states {
@@ -432,7 +419,7 @@ header {
 				
 				@include hidpi {
 			  		background-image: url('img/welcome plugin@2x.png');
-			  		background-size: 320px 200px;
+			  		background-size: 235px 112px;
 				}
 				
 				
@@ -448,7 +435,7 @@ header {
 				
 					@include hidpi {
 				  		background-image: url('img/welcome plugin 2@2x.png');
-				  		background-size: 320px 200px;
+				  		background-size: 235px 112px;
 					}
 
 					animation-name: plugin-mode-change;
