@@ -7,8 +7,14 @@
 		"uuidString": "C2E37F5C-2984-43E4-93ED-90DCECB3FD8C"
 		}
 	],
-"creatorBuild": "25479",
+"creatorBuild": "25813",
 "files": {
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/build\/.gitignore": {
 		"ft": 8192,
 		"oA": 2,
@@ -17,35 +23,47 @@
 		},
 	"\/css\/img\/button download icon.png": {
 		"ft": 32768,
-		"iS": 2511,
+		"iS": 1587,
 		"oA": 0,
 		"oAP": "\/css\/img\/button download icon.png",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/button download icon@2x.png": {
 		"ft": 32768,
-		"iS": 5923,
+		"iS": 3685,
 		"oA": 0,
 		"oAP": "\/css\/img\/button download icon@2x.png",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/button share icon.png": {
 		"ft": 32768,
-		"iS": 867,
+		"iS": 526,
 		"oA": 0,
 		"oAP": "\/css\/img\/button share icon.png",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/button share icon@2x.png": {
 		"ft": 32768,
-		"iS": 1921,
+		"iS": 1028,
 		"oA": 0,
 		"oAP": "\/css\/img\/button share icon@2x.png",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/demo video image.png": {
 		"ft": 32768,
@@ -53,7 +71,10 @@
 		"oA": 0,
 		"oAP": "\/css\/img\/demo video image.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/demo video image@2x.png": {
 		"ft": 32768,
@@ -61,149 +82,486 @@
 		"oA": 0,
 		"oAP": "\/css\/img\/demo video image@2x.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/export prototype feature 1.png": {
+		"ft": 32768,
+		"iS": 34784,
+		"oA": 0,
+		"oAP": "\/css\/img\/export prototype feature 1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/export prototype feature 1@2x.png": {
+		"ft": 32768,
+		"iS": 118328,
+		"oA": 0,
+		"oAP": "\/css\/img\/export prototype feature 1@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/export prototype feature 2.png": {
+		"ft": 32768,
+		"iS": 44438,
+		"oA": 0,
+		"oAP": "\/css\/img\/export prototype feature 2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/export prototype feature 2@2x.png": {
+		"ft": 32768,
+		"iS": 155369,
+		"oA": 0,
+		"oAP": "\/css\/img\/export prototype feature 2@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/export prototype feature 3.png": {
+		"ft": 32768,
+		"iS": 31623,
+		"oA": 0,
+		"oAP": "\/css\/img\/export prototype feature 3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/export prototype feature 3@2x.png": {
+		"ft": 32768,
+		"iS": 97178,
+		"oA": 0,
+		"oAP": "\/css\/img\/export prototype feature 3@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/export prototype image.png": {
+		"ft": 32768,
+		"iS": 19425,
+		"oA": 0,
+		"oAP": "\/css\/img\/export prototype image.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/export prototype image@2x.png": {
+		"ft": 32768,
+		"iS": 51347,
+		"oA": 0,
+		"oAP": "\/css\/img\/export prototype image@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/export prototype video.png": {
+		"ft": 32768,
+		"iS": 20704,
+		"oA": 0,
+		"oAP": "\/css\/img\/export prototype video.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/export prototype video@2x.png": {
+		"ft": 32768,
+		"iS": 60953,
+		"oA": 0,
+		"oAP": "\/css\/img\/export prototype video@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/icon logo.png": {
 		"ft": 32768,
-		"iS": 25696,
+		"iS": 5690,
 		"oA": 0,
 		"oAP": "\/css\/img\/icon logo.png",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/icon logo@2x.png": {
 		"ft": 32768,
-		"iS": 57497,
+		"iS": 14411,
 		"oA": 0,
 		"oAP": "\/css\/img\/icon logo@2x.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/import states feature 1.png": {
+		"ft": 32768,
+		"iS": 24254,
+		"oA": 0,
+		"oAP": "\/css\/img\/import states feature 1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/import states feature 1@2x.png": {
+		"ft": 32768,
+		"iS": 37953,
+		"oA": 0,
+		"oAP": "\/css\/img\/import states feature 1@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/import states feature 2.png": {
+		"ft": 32768,
+		"iS": 38288,
+		"oA": 0,
+		"oAP": "\/css\/img\/import states feature 2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/import states feature 2@2x.png": {
+		"ft": 32768,
+		"iS": 106768,
+		"oA": 0,
+		"oAP": "\/css\/img\/import states feature 2@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/import states feature 3.png": {
+		"ft": 32768,
+		"iS": 19840,
+		"oA": 0,
+		"oAP": "\/css\/img\/import states feature 3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/import states feature 3@2x.png": {
+		"ft": 32768,
+		"iS": 53393,
+		"oA": 0,
+		"oAP": "\/css\/img\/import states feature 3@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/import states video.png": {
+		"ft": 32768,
+		"iS": 22997,
+		"oA": 0,
+		"oAP": "\/css\/img\/import states video.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/import states video@2x.png": {
+		"ft": 32768,
+		"iS": 64125,
+		"oA": 0,
+		"oAP": "\/css\/img\/import states video@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/import states.png": {
+		"ft": 32768,
+		"iS": 62639,
+		"oA": 0,
+		"oAP": "\/css\/img\/import states.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/import states@2x.png": {
+		"ft": 32768,
+		"iS": 167905,
+		"oA": 0,
+		"oAP": "\/css\/img\/import states@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/keynotebg.png": {
 		"ft": 32768,
-		"iS": 41781,
+		"iS": 28344,
 		"oA": 0,
 		"oAP": "\/css\/img\/keynotebg.png",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/keynotebg@2x.png": {
 		"ft": 32768,
-		"iS": 106644,
+		"iS": 63811,
 		"oA": 0,
 		"oAP": "\/css\/img\/keynotebg@2x.png",
 		"oF": 0,
-		"opt": 1
-		},
-	"\/css\/img\/logo.png": {
-		"ft": 32768,
-		"iS": 3743,
-		"oA": 0,
-		"oAP": "\/css\/img\/logo.png",
-		"oF": 0,
-		"opt": 1
-		},
-	"\/css\/img\/logo@2x.png": {
-		"ft": 32768,
-		"iS": 8228,
-		"oA": 0,
-		"oAP": "\/css\/img\/logo@2x.png",
-		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/paypal-button.png": {
 		"ft": 32768,
-		"iS": 4676,
+		"iS": 2882,
 		"oA": 0,
 		"oAP": "\/css\/img\/paypal-button.png",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/play video.png": {
 		"ft": 32768,
-		"iS": 2763,
+		"iS": 1840,
 		"oA": 0,
 		"oAP": "\/css\/img\/play video.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/play video@2x.png": {
 		"ft": 32768,
-		"iS": 7661,
+		"iS": 4628,
 		"oA": 0,
 		"oAP": "\/css\/img\/play video@2x.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/process@2x.png": {
 		"ft": 32768,
-		"iS": 352567,
+		"iS": 254985,
 		"oA": 0,
 		"oAP": "\/css\/img\/process@2x.png",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/reimport.png": {
+		"ft": 32768,
+		"iS": 103449,
+		"oA": 0,
+		"oAP": "\/css\/img\/reimport.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/reimport@2x.png": {
+		"ft": 32768,
+		"iS": 327101,
+		"oA": 0,
+		"oAP": "\/css\/img\/reimport@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/smallkeynotebg.png": {
 		"ft": 32768,
-		"iS": 9123,
+		"iS": 8190,
 		"oA": 0,
 		"oAP": "\/css\/img\/smallkeynotebg.png",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/smallkeynotebg@2x.png": {
 		"ft": 32768,
-		"iS": 21378,
+		"iS": 17413,
 		"oA": 0,
 		"oAP": "\/css\/img\/smallkeynotebg@2x.png",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/smallstatesbg.png": {
 		"ft": 32768,
-		"iS": 10284,
+		"iS": 5238,
 		"oA": 0,
 		"oAP": "\/css\/img\/smallstatesbg.png",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/smallstatesbg@2x.png": {
 		"ft": 32768,
-		"iS": 26103,
+		"iS": 11400,
 		"oA": 0,
 		"oAP": "\/css\/img\/smallstatesbg@2x.png",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/statesbg.png": {
 		"ft": 32768,
-		"iS": 58396,
+		"iS": 21525,
 		"oA": 0,
 		"oAP": "\/css\/img\/statesbg.png",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/img\/statesbg@2x.png": {
 		"ft": 32768,
-		"iS": 169703,
+		"iS": 54039,
 		"oA": 0,
 		"oAP": "\/css\/img\/statesbg@2x.png",
 		"oF": 0,
-		"opt": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/welcome plugin 2.png": {
+		"ft": 32768,
+		"iS": 12811,
+		"oA": 0,
+		"oAP": "\/css\/img\/welcome plugin 2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/welcome plugin 2@2x.png": {
+		"ft": 32768,
+		"iS": 34990,
+		"oA": 0,
+		"oAP": "\/css\/img\/welcome plugin 2@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/welcome plugin.png": {
+		"ft": 32768,
+		"iS": 18958,
+		"oA": 0,
+		"oAP": "\/css\/img\/welcome plugin.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/welcome plugin@2x.png": {
+		"ft": 32768,
+		"iS": 55636,
+		"oA": 0,
+		"oAP": "\/css\/img\/welcome plugin@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/welcome video.png": {
+		"ft": 32768,
+		"iS": 36204,
+		"oA": 0,
+		"oAP": "\/css\/img\/welcome video.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/css\/img\/welcome video@2x.png": {
+		"ft": 32768,
+		"iS": 102809,
+		"oA": 0,
+		"oAP": "\/css\/img\/welcome video@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/css\/style.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/css\/style-min.css",
 		"oF": 0,
 		"oS": 0
 		},
 	"\/index.html": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/index.html",
 		"oF": 0
 		},
@@ -1976,6 +2334,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -1994,6 +2356,10 @@
 			},
 		"no-class-assign": {
 			"active": 1,
+			"optionString": ""
+			},
+		"no-compare-neg-zero": {
+			"active": 0,
 			"optionString": ""
 			},
 		"no-cond-assign": {
@@ -2196,6 +2562,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
@@ -2273,6 +2643,10 @@
 			"optionString": ""
 			},
 		"no-proto": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-prototype-builtins": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -2472,6 +2846,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
+			},
 		"object-curly-newline": {
 			"active": 0,
 			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
@@ -2516,9 +2894,17 @@
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
 			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
+			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -2613,6 +2999,10 @@
 			"optionString": ""
 			},
 		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},
@@ -3059,7 +3449,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -3082,14 +3473,6 @@
 		"autoOutputPathStyle": 0,
 		"orderOutput": 0,
 		"outputStyle": 1
-		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
@@ -3152,7 +3535,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"optimizerType": 1,
+		"quality": 100
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
