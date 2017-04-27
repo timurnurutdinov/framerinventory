@@ -369,10 +369,27 @@
 
 	  <script>
 		  
+		  var guid = function() {
+		    function s4() {
+		      return Math.floor((1 + Math.random()) * 0x10000)
+		        .toString(16)
+		        .substring(1);
+		    }
+		    return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+		      s4() + '-' + s4() + s4() + s4();
+		  }
+		  
+		  var clientId = guid();
+		  
+		  ga(function(tracker) {
+		     clientId = tracker.get('clientId');
+		  });
+		  
 		  var analyticsLink = "https://www.google-analytics.com/collect?v=1&t=event&tid=UA-58418174-3"
 		  
 		  var composeLink = function(request) {
-		      return analyticsLink + "&cid=" + "557" + "&ec=" + request[0] + "&ea=" + request[1] + "&el=" + request[2] + "&ev=" + request[3]
+			  // alert(clientId);
+		      return analyticsLink + "&cid=" + clientId + "&ec=" + request[0] + "&ea=" + request[1] + "&el=" + request[2] + "&ev=" + request[3];
 		  }
 
 		  var sendEvent = function(link) {
