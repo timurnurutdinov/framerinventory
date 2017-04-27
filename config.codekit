@@ -134,6 +134,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/css\/img\/export prototype image.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19425,
+		"inputAbbreviatedPath": "\/css\/img\/export prototype image.png",
+		"outputAbbreviatedPath": "\/css\/img\/export prototype image.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/export prototype image@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 51347,
+		"inputAbbreviatedPath": "\/css\/img\/export prototype image@2x.png",
+		"outputAbbreviatedPath": "\/css\/img\/export prototype image@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/img\/export prototype video.png": {
 		"fileType": 32768,
 		"ignore": 0,

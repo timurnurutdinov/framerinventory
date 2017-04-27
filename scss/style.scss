@@ -720,8 +720,6 @@ header {
 			animation-duration: 2s;
 			animation-iteration-count: infinite;
 			animation-direction: alternate;
-//			animation-timing-function: cubic-bezier(.17,.67,.83,.67);
-			//animation-timing-function: cubic-bezier(.78,1,.97,.1);
 			animation-timing-function: cubic-bezier(.56,.88,.85,.17);
 		}
 	}
@@ -940,15 +938,69 @@ header {
 		}
 		
 		.export-prototype-video-right {
-			float: left;
-//			padding-top: 48px;
+			float: right;
+			margin-top: 43px;
 			height: 320px;
-			width: 50%;
+			width: 540px;
 			display: none;
 //			background: blue;
 
 			@include MQ(L) {
 				display: block;
+			}
+			
+			background-image: url('img/export prototype image.png');
+			background-repeat: no-repeat;
+
+			@include hidpi {
+		  		background-image: url('img/export prototype image@2x.png');
+		  		background-size: 540px 320px;
+			}
+			
+			
+			
+			@keyframes export-prototype-animation {
+				0% {
+			  		height: 30px;
+					top: 106px;
+				}
+				20% {
+			  		height: 30px;
+					top: 106px;
+				}
+				41% {
+			  		height: 80px;
+					top: 142px;
+				}
+				60% {
+			  		height: 80px;
+					top: 142px;
+				}
+				76% {
+			  		height: 30px;
+					top: 228px;
+				}
+				100% {
+			  		height: 30px;
+					top: 228px;
+				}
+			
+			}
+			
+			
+			.export-prototype-animation-item {
+				width: 93px;
+				height: 30px;
+				position: relative;
+				left: 396px;
+				border-radius: 3px;
+				background: $color-complementary;
+				
+				animation-name: export-prototype-animation;
+				animation-duration: 3.2s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+				animation-timing-function: cubic-bezier(.4,.18,.45,.17);
 			}
 		}
 	}
