@@ -1249,7 +1249,38 @@ header {
 }
 
 
-
+footer {
+	background: #EBEBEB;
+	padding-top: 64px;
+	padding-bottom: 72px;
+	
+	.container {
+		width: 90%;
+		margin: auto;
+		
+		@include MQ(L) {
+			width: 960px;
+		}
+	
+		p {
+			width: 80%;
+		
+			@include MQ(L) {
+				width: 460px;
+			}
+		}
+	
+		p:first-child {
+			margin-bottom: 24px;
+		}
+		
+		a {
+			color: $color-blue-dream;
+		}
+	}
+	
+	
+}
 
 
 
