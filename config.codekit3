@@ -565,6 +565,15 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/min\/tracking-inventory-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/min\/min\/tracking-inventory-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/partials\/_layout.scss": {
 		"aP": 0,
 		"bl": 0,
