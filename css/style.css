@@ -403,8 +403,7 @@ header {
           background-image: url("img/product hunt icon@2x.png");
           background-size: 72px 28px; } }
     .welcome-section .welcome-share-buttons #twitter-button {
-      float: right;
-      padding-right: 8px; }
+      float: right; }
     .welcome-section .welcome-share-buttons #facebook-button {
       float: right;
       padding-right: 8px; }
