@@ -51,6 +51,23 @@
 	</div>
 	
 	
+	<div id="import-states-video-container" onclick="document.getElementById('import-states-video-container').style.display='none'; document.getElementById('body').style.overflow='auto'">
+		<div id="tutorial-video">
+			<iframe src="https://player.vimeo.com/video/214898282?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+	</div>
+
+	
+	<div id="export-prototype-video-container" onclick="document.getElementById('export-prototype-video-container').style.display='none'; document.getElementById('body').style.overflow='auto'">
+		<div id="tutorial-video">
+			<iframe src="https://player.vimeo.com/video/214899141?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+	</div>
+	
+	
+	
+	
+	
 	
 	<section class="welcome-section">
 		
@@ -131,7 +148,7 @@
 				
 				
 				<div class="buttons-group import-states-buttons">
-					<div class="button import-states-button-watch first-child" onclick="document.getElementById('tutorial-video-container').style.display='block'">
+					<div class="button import-states-button-watch first-child" onclick="document.getElementById('import-states-video-container').style.display='block'">
 						<p>Watch Demo</p>
 					</div>
 		
@@ -141,7 +158,7 @@
 				</div>
 				
 				
-				<div class="video-block" onclick="document.getElementById('tutorial-video-container').style.display='block'">
+				<div class="video-block" onclick="document.getElementById('import-states-video-container').style.display='block'">
 					<div class="play-video-icon"></div>
 					<p class="download-example-files"><a>Sketch File</a> | <a>Preview Prototype</a></p>
 				</div>
@@ -202,7 +219,7 @@
 					<div class="export-prototype-video-left">
 						
 						<div class="buttons-group export-prototype-buttons first-child">
-							<div class="button export-prototype-button-watch">
+							<div class="button export-prototype-button-watch" onclick="document.getElementById('export-prototype-video-container').style.display='block'">
 								<p>Watch Demo</p>
 							</div>
 
@@ -211,7 +228,7 @@
 							</a></div>		
 						</div>
 						
-						<div class="video-block" onclick="document.getElementById('tutorial-video-container').style.display='block'">
+						<div class="video-block" onclick="document.getElementById('export-prototype-video-container').style.display='block'">
 							<div class="play-video-icon"></div>
 							<p class="download-example-files"><a>Sketch File</a> | <a>Preview Prototype</a></p>
 						</div>
