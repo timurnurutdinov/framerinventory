@@ -1668,6 +1668,15 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/tracking-inventory.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/min\/tracking-inventory-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/version.json": {
 		"ft": 524288,
 		"oA": 1,
