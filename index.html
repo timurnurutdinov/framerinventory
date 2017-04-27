@@ -102,7 +102,7 @@
 		
 		
 		<div class="welcome-video">
-			<div class="video-block" onclick="document.getElementById('tutorial-video-container').style.display='block'; document.getElementById('body').style.overflow='hidden'">
+			<div id="welcome-watch-track-button" class="video-block" onclick="document.getElementById('tutorial-video-container').style.display='block'; document.getElementById('body').style.overflow='hidden'">
 				<div class="play-video-icon"></div>
 				<h3>Watch Plugin Preview</h3>
 			</div>
@@ -148,7 +148,7 @@
 				
 				
 				<div class="buttons-group import-states-buttons">
-					<div class="button import-states-button-watch first-child" onclick="document.getElementById('import-states-video-container').style.display='block'">
+					<div id="import-states-track-button-button" class="button import-states-button-watch first-child" onclick="document.getElementById('import-states-video-container').style.display='block'">
 						<p>Watch Demo</p>
 					</div>
 		
@@ -158,7 +158,7 @@
 				</div>
 				
 				
-				<div class="video-block" onclick="document.getElementById('import-states-video-container').style.display='block'">
+				<div id="import-states-track-button" class="video-block" onclick="document.getElementById('import-states-video-container').style.display='block'">
 					<div class="play-video-icon"></div>
 					<p class="download-example-files"><a href="https://www.dropbox.com/s/y1z0moj5cmujm3s/framer-inventory-3-uber-example.sketch?dl=0" target="_blank">Sketch File</a> | <a href="https://framer.cloud/tezXO/" target="_blank">Preview Prototype</a></p>
 				</div>
@@ -219,7 +219,7 @@
 					<div class="export-prototype-video-left">
 						
 						<div class="buttons-group export-prototype-buttons first-child">
-							<div class="button export-prototype-button-watch" onclick="document.getElementById('export-prototype-video-container').style.display='block'">
+							<div id="export-prototype-track-button-button" class="button export-prototype-button-watch" onclick="document.getElementById('export-prototype-video-container').style.display='block'">
 								<p>Watch Demo</p>
 							</div>
 
@@ -228,7 +228,7 @@
 							</a></div>		
 						</div>
 						
-						<div class="video-block" onclick="document.getElementById('export-prototype-video-container').style.display='block'">
+						<div id="export-prototype-track-button" class="video-block" onclick="document.getElementById('export-prototype-video-container').style.display='block'">
 							<div class="play-video-icon"></div>
 							<p class="download-example-files"><a href="https://www.dropbox.com/s/cpjyai5u3ivctml/framer-inventory-3-apple-music-example.sketch?dl=0" target="_blank">Sketch File</a> | <a href="https://framer.cloud/OGlWH/" target="_blank">Preview Prototype</a></p>
 						</div>
@@ -365,6 +365,22 @@
 		  
 		  var analyticsLink = "https://www.google-analytics.com/collect?v=1&t=event&tid=UA-58418174-3"
 		  
+		  var composeLink = function(request) {
+		      return analyticsLink + "&cid=" + "557" + "&ec=" + request[0] + "&ea=" + request[1] + "&el=" + request[2] + "&ev=" + request[3]
+		  }
+
+		  var sendEvent = function(link) {
+		  	var xhttp = new XMLHttpRequest();
+		  	xhttp.onreadystatechange = function() {
+		  	    if (this.readyState == 4 && this.status == 200) {
+		  	       // alert("ok")
+		  	    }
+		  	};
+		  	xhttp.open("GET", link, true);
+		  	xhttp.send();
+		  }
+		  
+		  
 		  // DISTRIBUTION (7)
 
 		  var downloadEventHeader = ["distribution", "download", "message_header", "1"]
@@ -374,8 +390,8 @@
 		  var buyEventWelcome = ["distribution", "buy", "message_welcome", "1"]
 		  var buyEventPro =["distribution", "buy", "message_pro", "1"]
 
-		  var shareEventTwitter = ["distribution", "share", "twitter", "1"]
-		  var shareEventFacebook = ["distribution", "share", "facebook", "1"]
+		  // var shareEventTwitter = ["distribution", "share", "twitter", "1"]
+// 		  var shareEventFacebook = ["distribution", "share", "facebook", "1"]
 
 		  // LEANING (7)
 
@@ -393,34 +409,40 @@
 		  var supportEvent = ["support", "contact", "message_header", "1"]
 
 
-
-		  var composeLink = function(request) {
-		      return analyticsLink + "&cid=" + "557" + "&ec=" + request[0] + "&ea=" + request[1] + "&el=" + request[2] + "&ev=" + request[3]
-		  }
-
-
-		  var sendEvent = function(link) {
-		  	var xhttp = new XMLHttpRequest();
-		  	xhttp.onreadystatechange = function() {
-		  	    if (this.readyState == 4 && this.status == 200) {
-		  	       // alert("ok")
-		  	    }
-		  	};
-		  	xhttp.open("GET", link, true);
-		  	xhttp.send();
-		  }
-		  
-		  
-		  var sendSupportLink = function() {
-			  var composedLink = composeLink(supportEvent);
-			  alert("sending support link");
-			  sendEvent(composedLink);
-		  }
-		  
-		  
-		  
 		  
 		  var createTrackers = function() {
+			  
+			  
+			  // LEARN
+			  
+			  document.getElementById("welcome-watch-track-button").addEventListener("click", function(){
+				  var composedLink = composeLink(watchEventDemo);
+				  sendEvent(composedLink);
+			  });
+			  
+			  document.getElementById("import-states-track-button").addEventListener("click", function(){
+				  var composedLink = composeLink(watchEventImportStates);
+				  sendEvent(composedLink);
+			  });
+			  
+			  document.getElementById("export-prototype-track-button").addEventListener("click", function(){
+				  var composedLink = composeLink(watchEventExportPrototype);
+				  sendEvent(composedLink);
+			  });
+			  
+			  document.getElementById("import-states-track-button-button").addEventListener("click", function(){
+				  var composedLink = composeLink(watchEventImportStatesButton);
+				  sendEvent(composedLink);
+			  });
+			  
+			  document.getElementById("export-prototype-track-button-button").addEventListener("click", function(){
+				  var composedLink = composeLink(watchEventExportPrototypeButton);
+				  sendEvent(composedLink);
+			  });
+			  
+			  
+			  
+			  // DISTRIBUTION
 			  
 			  document.getElementById("download-header-track-button").addEventListener("click", function(){
 				  var composedLink = composeLink(downloadEventHeader);
