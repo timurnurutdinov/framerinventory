@@ -3,157 +3,354 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500" rel="stylesheet">
 	
 	<link rel="stylesheet" href="css/style.css">
 	<title>Framer Inventory</title>
+	
     <meta property="og:url"           content="https://timurnurutdinov.github.io/framerinventory/" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="Framer Inventory plugin for Sketch" />
     <meta property="og:description"   content="Semantic Import from Sketch to Framer – Import States & Export Prototypes." />
     <meta property="og:image"         content="https://raw.githubusercontent.com/timurnurutdinov/Framer-Inventory-for-Sketch/images-third-version/readme/facebookshare.png" />
-</head>
-<body>
 	
+	<script
+	    id="fsc-api"
+	    src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.3/fastspring-builder.min.js"
+	    type="text/javascript"
+	    data-storefront="framerinventoryforsketch.onfastspring.com/popup-framerinventoryforsketch">
+	</script>
+	
+</head>
+<body id="body">
+	
+	<!-- <div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script> -->
+		
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
 	  if (d.getElementById(id)) return;
 	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+	  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
 		
 	
-	<header>
-		<div class="container">
-			<div id="logo"></div>
-			<div id="header-links">
-				<a href="http://bit.ly/framer-inventory-github" target="_blank">Download</a>
-				<a href="http://bit.ly/deep-framer-inventory" target="_blank">Article</a>
-				<a href="https://dribbble.com/shots/2526209-Framer-Inventory-2-0-Landing-Page" target="_blank">Examples</a>
-			</div>
-		</div>
-	</header>
 	
-	
-	<section id="welcome-section" class="base-section">
-		<h1>Fastest way to create linear prototypes</h1>
-		<p>Sketch plugin to generate FramerJS prototypes. Just have your motion done.</p>
+	<div id="tutorial-video-container" onclick="document.getElementById('tutorial-video-container').style.display='none'; document.getElementById('body').style.overflow='auto'">
 		<div id="tutorial-video">
-			<iframe src="https://player.vimeo.com/video/155297208?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<iframe src="https://player.vimeo.com/video/215017128?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		</div>
-		<div class="button"><a href="http://bit.ly/framer-inventory-github" target="_blank">Download Framer Inventory</a>
+	</div>
+	
+	
+	<div id="import-states-video-container" onclick="document.getElementById('import-states-video-container').style.display='none'; document.getElementById('body').style.overflow='auto'">
+		<div id="tutorial-video">
+			<iframe src="https://player.vimeo.com/video/214898282?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		</div>
-		<h5>Brand new 2.0 is available</h5>
-	</section>
-	
-	
-	<section id="states-section">
-		
-	</section>
-	
-	
-	<section id="main-section" class="base-section">
-		<h1>Simulate Keynote with Sketch & FramerJS</h1>
-		<p>Create a composition of artbaords and mark layers to include in prototype. Paste code and see your motion</p>
-		<div class="block">
-			<img src="css/img/process@2x.png" alt="Framer Inventory process">
-		</div>
-	</section>
-	
-	
-	<section id="tutorial-section" class="base-section">
-		<h1>Easy tutorials to change your workflow</h1>
-		<p>Find out how to use Framer Inventory and download examples to try yourself</p>
-		<div id="tutorials-block">
-			
-			<div class="tutorial">
-				<div class="tutorial-section-video">
-					<iframe src="https://player.vimeo.com/video/155306300?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				</div>
-				<h2>IF Onboarding</h2>
-				<p>Explore how to mark layers and use Export page</p>
-				<a href="http://bit.ly/framer-inventory-example-if" target="_blank">Download Sketch file</a>
-			</div>
-			
-			<div class="tutorial">
-				<div class="tutorial-section-video">
-					<iframe src="https://player.vimeo.com/video/155307305?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				</div>
-				<h2>Shapes or Images</h2>
-				<p>Investigate what can be exported without an image</p>
-				<a href="http://bit.ly/framer-inventory-example-exportable" target="_blank">Download Sketch file</a>
-			</div>
-			
-			<div class="tutorial">
-				<div class="tutorial-section-video">
-					<iframe src="https://player.vimeo.com/video/155308463?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				</div>
-				<h2>Shadows tips</h2>
-				<p>Scales and static shadows on groups and custom shapes</p>
-				<a href="http://bit.ly/framer-inventory-example-shadows" target="_blank">Download Sketch file</a>
-			</div>
-			
-			<div style="clear: both"></div>
-		</div>
-	</section>
-	
-	
-	<section id="goodbuy-section" class="base-section">
-		<h1>Best way to test storytelling</h1>
-		<p>Highly detailed prototypes are great. But you can test your idea without writing a single line of code.</p>
-		<div class="button">
-			<a href="http://bit.ly/framer-inventory-github" target="_blank">Download Framer Inventory</a>
-		</div>
-		<h5>Brand new 2.0 is available</h5>
-	</section>
+	</div>
 
+	
+	<div id="export-prototype-video-container" onclick="document.getElementById('export-prototype-video-container').style.display='none'; document.getElementById('body').style.overflow='auto'">
+		<div id="tutorial-video">
+			<iframe src="https://player.vimeo.com/video/214899141?color=f3a633&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	<section class="welcome-section">
+		
+		<div id="icon-logo"></div>
+		
+		<header>
+			<!-- <div id="logo"></div> -->
+			<div id="header-links">
+				
+				<a id="support-header-button" href="https://twitter.com/framerinventory" target="_blank">Support</a>
+				<a id="learn-header-button" href="https://medium.com/framer-inventory?utm_source=site&utm_medium=header" target="_blank">Learn</a>
+				<a id="download-header-track-button" href="https://github.com/timurnurutdinov/Framer-Inventory-for-Sketch/archive/master.zip" download="Framer Inventory 3">Download</a>
+			</div> 
+		</header>
+
+
+		<h1 class="h0 plugin-title">Framer Inventory</h1>
+		<h1>Semantic Import from Sketch to Framer</h1>
+
+
+		<div class="buttons-group welcome-buttons">
+			
+			<a id="welcome-download-track-button" class="button welcome-button-download first-child" href="https://github.com/timurnurutdinov/Framer-Inventory-for-Sketch/archive/master.zip" download="Framer Inventory 3">
+				<p>Download</p>
+			</a>
+			
+			<a id="welcome-buy-track-button" class="button welcome-button-share" href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="framer-inventory-plugin-for-sketch">
+				<p>Buy PRO</p>
+			</a>
+		</div>
+		
+		
+		
+		<div class="welcome-video">
+			<div id="welcome-watch-track-button" class="video-block" onclick="document.getElementById('tutorial-video-container').style.display='block'; document.getElementById('body').style.overflow='hidden'">
+				<div class="play-video-icon"></div>
+				<h3>Watch Plugin Preview</h3>
+			</div>
+			
+			<div class="welcome-plugin">
+				<div class="welcome-plugin-preview-image-import-states">
+					<div class="welcome-plugin-preview-image-export-prototype">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="welcome-share-buttons">
+			<!-- <a id="product-hunt-button">
+
+			</a> -->
+			
+			<div id="twitter-button">
+				<a href="https://twitter.com/intent/tweet" class="twitter-share-button" data-url="http://bitly.com/framerinvetory" data-text="Framer Inventory – Semantic Import from Sketch to Framer" data-count="none" data-size="large">Tweet</a>
+			</div>
+
+			<div id="facebook-button">
+				
+				<div class="fb-share-button" data-href="https://timurnurutdinov.github.io/framerinventory/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftimurnurutdinov.github.io%2Fframerinventory%2F&amp;src=sdkpreparse">Share</a></div>
+				
+			</div>
+		</div>
+	
+	</section>
+	
+	
+	
+	
+	
+	<section class="import-states-section">
+		<div class="container">
+			
+			
+			<div class="import-states-left">
+				<h1>Import States</h1>
+				<h3>Select layers with the same name on artboards in Sketch to import them as a <a href="https://framer.com/getstarted/guide/#layers" target="_blank">new Layer</a> with <a href="https://framer.com/getstarted/guide/#states" target="_blank">States</a> in Framer.</h3>
+				
+				
+				<div class="buttons-group import-states-buttons">
+					<div id="import-states-track-button-button" class="button import-states-button-watch first-child" onclick="document.getElementById('import-states-video-container').style.display='block'">
+						<p>Watch Demo</p>
+					</div>
+		
+					
+						<div class="button import-states-button-read">
+							<a id="read-import-states-track-button" href="https://medium.com/@tilllur/import-states-with-framer-inventory-plugin-for-sketch-e9ad6ebfeae7" target="_blank">
+								<p>Read Guide</p>
+							</a>
+						</div>
+					
+				</div>
+				
+				
+				<div id="import-states-track-button" class="video-block" onclick="document.getElementById('import-states-video-container').style.display='block'">
+					<div class="play-video-icon"></div>
+					<p class="download-example-files"><a href="https://www.dropbox.com/s/y1z0moj5cmujm3s/framer-inventory-3-uber-example.sketch?dl=0" target="_blank">Sketch File</a> | <a href="https://framer.cloud/tezXO/" target="_blank">Preview Prototype</a></p>
+				</div>
+				
+			</div>
+			
+			<div class="import-states-right">
+				<div class="import-states-move"></div>
+			</div>
+			
+			
+			<div class="import-states-features">
+				<div class="column-3 first-child">
+					<p>Pixels & Points</p>
+					<p>Design at @1x in Sketch & import to Framer the way you need.</p>
+					<div class="import-states-feature-1"></div>
+				</div>
+				
+				<div class="column-3">
+					<p>Image & Native Layers</p>
+					<p>Animate corners, borders, shadows & colors.</p>
+					<div class="import-states-feature-2"></div>
+				</div>
+				
+				<div class="column-3">
+					<p>Relative to Artboard or Group</p>
+					<p>Compose complex views with child-to-parent relationship.</p>
+					<div class="import-states-feature-3"></div>
+				</div>
+			</div>
+			
+					
+		</div>
+	</section>
+	
+	
+	
+	
+	
+	<section class="export-prototype-section">
+		<div class="container">
+			
+			<!-- <div class="info-container"> -->
+				
+				
+				<div class="export-prototype-left">
+					<h1>Export complete prototypes from Sketch to Framer</h1>
+					<h3>Export custom transitions between layers on artboards with automatically generated Framer prototypes
+	based on <a href="https://framer.com/getstarted/guide/#layers" target="_blank">Layers</a> with <a href="https://framer.com/getstarted/guide/#states" target="_blank">States</a>.</h3>
+
+				</div>
+		
+		
+
+				
+				
+				<div class="export-prototype-media">
+					<div class="export-prototype-video-left">
+						
+						<div class="buttons-group export-prototype-buttons first-child">
+							<div id="export-prototype-track-button-button" class="button export-prototype-button-watch" onclick="document.getElementById('export-prototype-video-container').style.display='block'">
+								<p>Watch Demo</p>
+							</div>
+
+							<div class="button export-prototype-button-read">
+								<a id="read-export-prototype-track-button" href="https://medium.com/@tilllur/export-prototype-with-framer-inventory-plugin-for-sketch-2f10f9397193" target="_blank">
+									<p>Read Guide</p>
+								</a>
+							</div>		
+						</div>
+						
+						<div id="export-prototype-track-button" class="video-block" onclick="document.getElementById('export-prototype-video-container').style.display='block'">
+							<div class="play-video-icon"></div>
+							<p class="download-example-files"><a href="https://www.dropbox.com/s/cpjyai5u3ivctml/framer-inventory-3-apple-music-example.sketch?dl=0" target="_blank">Sketch File</a> | <a href="https://framer.cloud/OGlWH/" target="_blank">Preview Prototype</a></p>
+						</div>
+					</div>
+					
+					<div class="export-prototype-video-right">
+						<div class="export-prototype-animation-item"></div>
+					</div>
+				</div>
+				
+				
+				<div class="export-prototype-how">
+					<h2>How to export Framer prototype</h2>
+					<h3>The new way to prototype transitions is just three easy steps from you.</h3>
+				</div>
+				
+				
+				<div class="export-prototype-features">
+					<div class="column-3 first-child">
+						<p>1. Include Layers</p>
+						<p>Make layers exportable in Sketch to include them in prototype.</p>
+						<div class="export-prototype-feature-1"></div>
+					</div>
+				
+					<div class="column-3">
+						<p>2. Choose Transition</p>
+						<p>Select artboards and get animations between layers.</p>
+						<div class="export-prototype-feature-2"></div>
+					</div>
+				
+					<div class="column-3">
+						<p>3. Paste code into Framer</p>
+						<p>Run & paste code from Clipboard, assets are auto exported.</p>
+						<div class="export-prototype-feature-3"></div>
+					</div>
+				</div>
+				
+				
+				<div class="export-prototype-reimport-left">
+					<p class="export-prototype-new">NEW</p>
+					<p class="export-prototype-reimport-title">Reimport Prototype</p>
+					<p class="export-prototype-reimport-text">Reimport from Sketch to update Layers & States with no harm to your prototype.</p>
+					
+					<div class="export-prototype-reimport-block">
+						<p>Views block</p>
+						<p class="export-prototype-reimport-small-description">Updates from Sketch</p>
+
+						<p>Custom block</p>
+						<p class="export-prototype-reimport-small-description">Stays same on Reimport</p>
+
+					</div>
+				</div>
+				
+				
+				<div class="export-prototype-reimport-right">
+				</div>
+				
+				<div class="export-prototype-reimport-clear">
+				</div>
+				
+			<!-- </div> -->
+		</div>
+	</section>
+	
+	
+	<section class="pro-section">
+		<div class="container">
+			<div class="pro-left">
+				<h1>PRO version</h1>
+				<h3>Download free version with limited runs per day or get a PRO version with unlimited actions.</h3>
+				
+				<div class="pro-features-free">
+					<p>Free version</p>
+					
+					<p class="pro-features-item">5 runs per day</p>
+					<p class="pro-features-item">50 runs on first day</p>
+					
+					<a id="pro-download-track-button" class="button pro-section-button-download" href="https://github.com/timurnurutdinov/Framer-Inventory-for-Sketch/archive/master.zip" download="Framer Inventory 3">
+						<p>Download</p>
+					</a>
+				</div>
+				
+				<div class="pro-features-pro">
+					<p>PRO version</p>
+					
+					<p class="pro-features-item">Unlimited runs per day<p>
+					<p class="pro-features-item">Unlimited runs on first day</p>
+					
+					<a id="pro-buy-track-button" class="button pro-section-button-buy" href='#' data-fsc-action="Add,Checkout" data-fsc-item-path-value="framer-inventory-plugin-for-sketch">
+						<p>Buy PRO</p>
+					</a>
+				</div>
+			</div>
+			
+			<div class="pro-right">
+			</div>
+			
+			<div class="pro-clear">
+			</div>
+		</div>
+	</section>
+	
 	
 	
 	
 	<footer>
-		<div class="mobile-container">
-			<h4>If Framer Inventory saved your time and you would like to <a href="https://github.com/timurnurutdinov/Framer-Inventory-for-Sketch/issues">share your idea</a> or improvement, you are welcome. If you are lazy you can share this page or donate with a Paypal :)</h4>
-			
-			
-			<div id="share-buttons">
-			
-			<div id="twitter-button">	
-				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bitly.com/framerinvetory" data-text="Framer Inventory for Sketch just makes your motion done. Check it out:" data-count="none">Tweet</a>
-			</div>
-			
-			<div id="facebook-button">
-				<div class="fb-share-button" data-href="http://bit.ly/framerinventory" data-layout="button"></div>
-			</div>
-			
-			<div id="paypal-button">
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="E9XQYGEE5X4U2">
-					<input id="test-paypal" type="image"  border="0" name="submit" src="https://dl.dropboxusercontent.com/s/r2odmuduk4qm9qj/small-paypal-button.png?dl=0" width="56">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-				</form>	
-			</div>
-			
-			
-			
-			</div>
-			
-			
-			
-			<h4 id="name">Timur Nurutdinov</h4>
-			<p>addleimb@gmail.com</p>
-		
-			<div id="social-links">
-			<a href="http://timurnurutdinov.github.io/timeline/" target="_blank">Timeline</a>
-			<a href="https://dribbble.com/tilllur" target="_blank">Dribbble</a>
-			<a href="https://ru.linkedin.com/pub/timur-nurutdinov/66/a43/252/" target="_blank">LinkedIn</a>
-			</div>
+		<div class="container">
+			<p>Started Framer Inventory on July 2015 for Sketch 3.4. Share, Like, Tweet. It really matters.</p>
+			<p><a href="https://timurnurutdinov.github.io/timeline/" target="_blank">Timur Nurutdinov</a><p>
 		</div>
 	</footer>
 	
-	<!-- facebook share -->
+	
+	<!-- twitter share -->
+	
+	
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 	</script>
 	
@@ -166,6 +363,152 @@
 	  ga('create', 'UA-58418174-3', 'auto');
 	  ga('send', 'pageview');
 	</script>
+
+
+
+
+	  <script>
+		  
+		  var analyticsLink = "https://www.google-analytics.com/collect?v=1&t=event&tid=UA-58418174-3"
+		  
+		  var composeLink = function(request) {
+		      return analyticsLink + "&cid=" + "557" + "&ec=" + request[0] + "&ea=" + request[1] + "&el=" + request[2] + "&ev=" + request[3]
+		  }
+
+		  var sendEvent = function(link) {
+		  	var xhttp = new XMLHttpRequest();
+		  	xhttp.onreadystatechange = function() {
+		  	    if (this.readyState == 4 && this.status == 200) {
+		  	       // alert("ok")
+		  	    }
+		  	};
+		  	xhttp.open("GET", link, true);
+		  	xhttp.send();
+		  }
+		  
+		  
+		  // DISTRIBUTION (7)
+
+		  var downloadEventHeader = ["distribution", "download", "message_header", "1"]
+		  var downloadEventWelcome = ["distribution", "download", "message_welcome", "1"]
+		  var downloadEventPro = ["distribution", "download", "message_pro", "1"]
+
+		  var buyEventWelcome = ["distribution", "buy", "message_welcome", "1"]
+		  var buyEventPro =["distribution", "buy", "message_pro", "1"]
+
+		  // var shareEventTwitter = ["distribution", "share", "twitter", "1"]
+// 		  var shareEventFacebook = ["distribution", "share", "facebook", "1"]
+
+		  // LEANING (7)
+
+		  var watchEventDemo = ["learn", "watch", "plugin_demo", "1"]
+		  var watchEventImportStates = ["learn", "watch", "import_states", "1"]
+		  var watchEventExportPrototype = ["learn", "watch", "export_prototype", "1"]
+		  var watchEventImportStatesButton = ["learn", "watch", "import_states_button", "1"]
+		  var watchEventExportPrototypeButton = ["learn", "watch", "export_prototype_button", "1"]
+
+		  var readEventImportStates = ["learn", "read", "import_states", "1"]
+		  var readEventExportPrototype = ["learn", "read", "export_prototype", "1"]
+
+		  // SUPPORT (1)
+
+		  var supportEvent = ["support", "contact", "message_header", "1"]
+
+
+		  
+		  var createTrackers = function() {
+			  
+			  
+			  // LEARN
+			  
+			  document.getElementById("welcome-watch-track-button").addEventListener("click", function(){
+				  var composedLink = composeLink(watchEventDemo);
+				  sendEvent(composedLink);
+			  });
+			  
+			  document.getElementById("import-states-track-button").addEventListener("click", function(){
+				  var composedLink = composeLink(watchEventImportStates);
+				  sendEvent(composedLink);
+			  });
+			  
+			  document.getElementById("export-prototype-track-button").addEventListener("click", function(){
+				  var composedLink = composeLink(watchEventExportPrototype);
+				  sendEvent(composedLink);
+			  });
+			  
+			  document.getElementById("import-states-track-button-button").addEventListener("click", function(){
+				  var composedLink = composeLink(watchEventImportStatesButton);
+				  sendEvent(composedLink);
+			  });
+			  
+			  document.getElementById("export-prototype-track-button-button").addEventListener("click", function(){
+				  var composedLink = composeLink(watchEventExportPrototypeButton);
+				  sendEvent(composedLink);
+			  });
+			  
+			  
+			  
+			  // DISTRIBUTION
+			  
+			  document.getElementById("download-header-track-button").addEventListener("click", function(){
+				  var composedLink = composeLink(downloadEventHeader);
+				  sendEvent(composedLink);
+			  });
+			  
+			  document.getElementById("welcome-download-track-button").addEventListener("click", function(){
+				  var composedLink = composeLink(downloadEventWelcome);
+				  sendEvent(composedLink);
+			  });
+			  
+			  document.getElementById("pro-download-track-button").addEventListener("click", function(){
+				  var composedLink = composeLink(downloadEventPro);
+				  sendEvent(composedLink);
+			  });
+			  
+			  
+			  
+			  document.getElementById("welcome-buy-track-button").addEventListener("click", function(){
+				  var composedLink = composeLink(buyEventWelcome);
+				  sendEvent(composedLink);
+			  });
+
+			  document.getElementById("pro-buy-track-button").addEventListener("click", function(){
+				  var composedLink = composeLink(buyEventPro);
+				  sendEvent(composedLink);
+			  });
+			  
+			  
+			  
+			  
+			  document.getElementById("read-import-states-track-button").addEventListener("click", function(){
+				  var composedLink = composeLink(readEventImportStates);
+				  sendEvent(composedLink);
+			  });
+
+			  document.getElementById("read-export-prototype-track-button").addEventListener("click", function(){
+				  var composedLink = composeLink(readEventExportPrototype);
+				  sendEvent(composedLink);
+			  });
+			  
+			  
+			  
+			  
+			  
+			  document.getElementById("learn-header-button").addEventListener("click", function(){
+				  var composedLink = composeLink(supportEvent);
+				  sendEvent(composedLink);
+			  });
+			  
+		  }
+		  
+		  document.onload = createTrackers()
+		  
+		  
+		 
+		  
+		  
+		  
+	  </script>
 
 
 </body>
