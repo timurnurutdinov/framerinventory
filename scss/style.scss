@@ -467,11 +467,30 @@ header {
 			margin: auto;
 		}
 		
-		#twitter-button {
+		#product-hunt-button {
 			float: right;
+			width: 72px;
+			height: 28px;
+			
+			background-image: url('img/product hunt icon.png');
+			background-repeat: no-repeat;
+		
+			@include hidpi {
+		  		background-image: url('img/product hunt icon@2x.png');
+		  		background-size: 72px 28px;
+			}
+			
+//			product hunt icon
+		}
+		
+		#twitter-button {
+//			color: #ACACAC;
+			float: right;
+			padding-right: 8px;
 		}
 		
 		#facebook-button {
+//			color: #ACACAC;
 			float: right;
 			padding-right: 8px;		
 		}	
