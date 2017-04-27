@@ -152,9 +152,13 @@
 						<p>Watch Demo</p>
 					</div>
 		
-					<a href="https://medium.com/@tilllur/import-states-with-framer-inventory-plugin-for-sketch-e9ad6ebfeae7" target="_blank"><div class="button import-states-button-read">
-						<p>Read Guide</p>
-					</a></div>		
+					
+						<div class="button import-states-button-read">
+							<a id="read-import-states-track-button" href="https://medium.com/@tilllur/import-states-with-framer-inventory-plugin-for-sketch-e9ad6ebfeae7" target="_blank">
+								<p>Read Guide</p>
+							</a>
+						</div>
+					
 				</div>
 				
 				
@@ -223,9 +227,11 @@
 								<p>Watch Demo</p>
 							</div>
 
-							<a href="https://medium.com/@tilllur/export-prototype-with-framer-inventory-plugin-for-sketch-2f10f9397193" target="_blank"><div class="button export-prototype-button-read">
-								<p>Read Guide</p>
-							</a></div>		
+							<div class="button export-prototype-button-read">
+								<a id="read-export-prototype-track-button" href="https://medium.com/@tilllur/export-prototype-with-framer-inventory-plugin-for-sketch-2f10f9397193" target="_blank">
+									<p>Read Guide</p>
+								</a>
+							</div>		
 						</div>
 						
 						<div id="export-prototype-track-button" class="video-block" onclick="document.getElementById('export-prototype-video-container').style.display='block'">
@@ -472,6 +478,17 @@
 			  });
 			  
 			  
+			  
+			  
+			  document.getElementById("read-import-states-track-button").addEventListener("click", function(){
+				  var composedLink = composeLink(readEventImportStates);
+				  sendEvent(composedLink);
+			  });
+
+			  document.getElementById("read-export-prototype-track-button").addEventListener("click", function(){
+				  var composedLink = composeLink(readEventExportPrototype);
+				  sendEvent(composedLink);
+			  });
 			  
 			  
 			  
