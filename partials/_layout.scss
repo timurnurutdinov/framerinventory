@@ -1,16 +1,14 @@
 // breakpoints
    
-$S:     480px;   
-$M:     640px;     
-$L:     980px;   
+//$S:     480px;
+$M:     720px;     
+$L:     960px;   
 
 // media queries
 
+
 @mixin MQ($canvas) {
-  @if $canvas == S {
-   @media only screen and (min-width: $S) { @content; } 
-  }
-  @else if $canvas == M {
+  @if $canvas == M {
    @media only screen and (min-width: $M) { @content; } 
   }
   @else if $canvas == L {

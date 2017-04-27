@@ -12,12 +12,24 @@ $color-pre-white: #EEE;
 $color-white: #FFF;
 
 $color-tint: #72C3F8;
+$color-tint-hover: #4796CB;
 $color-complementary: #F5A623;
+$color-complementary-hover: #DF900E;
 
+$color-orange: #F5A623;
+$color-dark-orange: #66430B;
+$color-orange-hover: #FCC66C;
+
+
+$color-blue-dream: #32C3FF;
+
+$isv: 0.28;
+$ixv: -154px;
+$iyv: -136px;
 
 
 // fonts 
-$primary-font: 'Josefin Sans', sans-serif;
+$primary-font: 'Roboto', sans-serif;
 
 html * {
 	-webkit-font-smoothing: antialiased;
@@ -25,144 +37,132 @@ html * {
 }
 
 
-h1 {
+.h0 {
 	font-family: $primary-font;
-	color: $color-white;
+//	color: $color-white;
+
 	line-height: 1.2;
-	font-weight: 700;
-	font-size: 2.8rem;		
-	
+	font-weight: 100;
+	font-size: 3.6rem;
+
 	@include MQ(M) {
-
-	}
-
-	@include MQ(L) {
-		font-size: 4.8rem;		
+		font-size: 6.4rem;
 	}
 }
 
 
+
+h1 {
+	font-family: $primary-font;
+//	color: $color-black;
+
+	line-height: 1.5;
+	font-weight: 300;
+	font-size: 2.8rem;
+
+	@include MQ(M) {
+		font-size: 4.8rem;
+		font-weight: 100;
+	}
+}
 
 h2 {
 	font-family: $primary-font;
-	color: $color-dark;
-	line-height: 1.2;
-	font-weight: 700;
-	font-size: 2.4rem;		
-	
+//	color: $color-black;
+
+	line-height: 1.4;
+	font-weight: 100;
+	font-size: 3.6rem;
+
 	@include MQ(M) {
-
-	}
-
-	@include MQ(L) {
-		font-family: $primary-font;
-		font-size: 3.6rem;		
+		font-size: 3.6rem;
 	}
 }
 
+h3 {
+	font-family: $primary-font;
+//	color: $color-pre-grey;
+	font-weight: 300;
+	font-size: 1.8rem;
+	line-height: 1.34;
+	letter-spacing: 0.2px;
+	
+	@include MQ(M) {
+		font-size: 2.4rem;
+	}
+}
 
 h4 {	
 	font-family: $primary-font;
-	color: $color-grey;
+//	color: $color-grey;
+	
 	line-height: 1.44;
-	font-weight: 700;
-	letter-spacing: 0.2px;
-	font-size: 1.4rem;	
+	font-weight: 500;
+	letter-spacing: 0.4px;
+	font-size: 1.4rem;
 	
 	@include MQ(M) {
 
 	}
 
 	@include MQ(L) {
-		font-size: 1.8rem;	
-		
+		font-size: 1.4rem;
 	}
 }
-
-
 
 
 h5 {	
 	font-family: $primary-font;
-	color: $color-grey;
+//	color: $color-dark-orange;
 	line-height: 1.3;
-	font-weight: 700;
-	font-size: 1.2rem;	
+	font-weight: 500;
+	font-size: 1.0rem;
+	letter-spacing: 0.3px;
+}
+
+
+
+p {
+	font-family: $primary-font;
+	color: $color-black;
 	
-	
+	line-height: 1.44;
+	font-weight: 500;
+	letter-spacing: 0.4px;
+	font-size: 1.8rem;
+
 	@include MQ(M) {
-
-	}
-
-	@include MQ(L) {
-		font-family: $primary-font;
-		font-size: 1.4rem;	
 		
 	}
 }
 
 
-p {
-	font-family: $primary-font;
-	color: $color-pre-grey;
-	line-height: 1.44;
-	font-weight: 700;
-	letter-spacing: 0.4px;
-	font-size: 1.4rem;
-	max-width: 430px;	
-	
-	@include MQ(M) {
-
-	}
-
-	@include MQ(L) {
-		font-family: $primary-font;
-		font-size: 2.2rem;	
-		line-height: 1.36;
-		max-width: 100%;
-		letter-spacing: 1px;
-	}
-}
 
 
 
 a {
 	font-family: $primary-font;
-	font-weight: 700;
 	text-decoration: none;
-	color: $color-tint;	
+	
+	line-height: 1.44;
+	font-weight: 500;
+	letter-spacing: 0.4px;
+	font-size: 1.8rem;
 }
 
 a:hover {
 	color: $color-complementary;
 }
 
-
-.button a {
-	font-family: $primary-font;
-	color: $color-white;
-	line-height: 1.2;
-	font-weight: 700;
-	letter-spacing: 1.2px;
-	text-transform: uppercase;
-	text-align: center;
-	vertical-align: middle;
-	font-size: 1rem;	
-	
-	@include MQ(M) {
-
-	}
-
-	@include MQ(L) {
-		font-family: $primary-font;
-		font-size: 1.2rem;	
-		
-	}
-}
-
-
-
-#header-links a:hover {
-	color: $color-white;
-}
-
+//
+//.button a {
+//	font-family: $primary-font;
+//	color: $color-white;
+//	line-height: 1.2;
+//	font-weight: 700;
+//	letter-spacing: 3px;
+//	text-transform: uppercase;
+//	text-align: center;
+//	vertical-align: middle;
+//	font-size: 1.2rem;
+//}
