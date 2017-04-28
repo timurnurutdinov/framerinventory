@@ -598,7 +598,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/partials\/_layout.css",
+		"oAP": "\/css\/_layout.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -611,7 +611,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/partials\/_mixins.css",
+		"oAP": "\/css\/_mixins.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -624,7 +624,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/partials\/_reset.css",
+		"oAP": "\/css\/_reset.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -637,7 +637,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/partials\/_variables.css",
+		"oAP": "\/css\/_variables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1688,7 +1688,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/scss\/style.css",
+		"oAP": "\/css\/style.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1976,7 +1976,7 @@
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
 	"buildFolderActive": 0,
-	"buildFolderName": "build",
+	"buildFolderName": "css",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
 		"arrow_spacing": {
@@ -3589,7 +3589,7 @@
 		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 2,
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,

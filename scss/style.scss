@@ -471,6 +471,9 @@ header {
 			float: right;
 			width: 72px;
 			height: 28px;
+			padding-right: 8px;
+//			margin-right: 8px;
+//			margin-left: 8px;
 			
 			background-image: url('img/product hunt icon.png');
 			background-repeat: no-repeat;
@@ -480,13 +483,24 @@ header {
 		  		background-size: 72px 28px;
 			}
 			
-//			product hunt icon
 		}
+		
+		#product-hunt-button:hover {
+			opacity: 0.9;
+		}
+		
+		
 		
 		#twitter-button {
 //			color: #ACACAC;
 			float: right;
-//			padding-right: 8px;
+			padding-right: 8px;
+			
+			
+			//a {
+//				padding-right: 8px;
+//			}
+//			margin-right: 8px;
 		}
 		
 		#facebook-button {
