@@ -1,0 +1,19 @@
+
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+	<channel>
+
+		<item>
+			<title>3.0.0</title>
+			<description>
+			  <![CDATA[
+			    <ul>
+			      <li>Framer Inventory v3</li>
+			    </ul>
+			  ]]>
+			</description>
+			<enclosure url="https://github.com/timurnurutdinov/Framer-Inventory-for-Sketch/archive/v3.0.zip" sparkle:version="3.0.0" />
+		</item>
+	  
+	  
+	</channel>
+</rss>
