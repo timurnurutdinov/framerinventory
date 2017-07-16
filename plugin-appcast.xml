@@ -14,7 +14,7 @@
 			<enclosure url="https://github.com/timurnurutdinov/Framer-Inventory-for-Sketch/archive/v3.0.zip" sparkle:version="3.0.0" />
 		</item>
 		
-		<!-- <item>
+		<item>
 			<title>3.0.4</title>
 			<description>
 			  <![CDATA[
@@ -27,7 +27,7 @@
 			  ]]>
 			</description>
 			<enclosure url="https://github.com/timurnurutdinov/Framer-Inventory-for-Sketch/archive/v3.0.4.zip" sparkle:version="3.0.4" />
-		</item> -->
+		</item>
 	  
 	  
 	</channel>
