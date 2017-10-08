@@ -13,22 +13,22 @@ body {
 	padding:0;
 }
 
-input, button { border: none; } 
+input, button { border: none; }
 button:focus { outline: 0; }
 
 
 #icon-logo {
 	width: 200px;
 	height: 200px;
-	
+
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
 	right: 0;
 	top: 30px;
-	
-	
+
+
 	background-image: url('img/icon logo.png');
 	background-repeat: no-repeat;
 
@@ -36,7 +36,7 @@ button:focus { outline: 0; }
   		background-image: url('img/icon logo@2x.png');
   		background-size: 200px 200px;
 	}
-	
+
 	@include MQ(M) {
 		top: 0;
 	}
@@ -46,12 +46,12 @@ button:focus { outline: 0; }
 
 header {
     width:100%;
-	
+
 	@include MQ(M) {
 		height:92px;
 	}
-	
-	
+
+
 	//#logo {
 //		width: 260px;
 //		height: 82px;
@@ -70,12 +70,12 @@ header {
 //		}
 //
 //	  }
-		
+
 	#header-links {
 		background-color: red;
 		width: 100%;
 		margin: auto;
-		
+
 		@include MQ(M) {
 			width: 100%;
 		}
@@ -89,7 +89,7 @@ header {
 		margin-right: 24px;
 		margin-top: 32px;
 		margin-left: 0;
-		
+
 		@include MQ(M) {
 			float: right;
 			margin-right: 32px;
@@ -103,14 +103,14 @@ header {
 		opacity: 0.8;
 	}
 
-	
+
 	#header-links a:first-child {
 		margin-right: 50px;
 		margin-left: 0;
 	}
-	
+
 	#header-links a:first-child:hover {
-		
+
 	}
 
 }
@@ -118,7 +118,7 @@ header {
 .container {
 	margin: auto;
 	width: 90%;
-	
+
 	@include MQ(L) {
 		width: 960px;
 	}
@@ -129,9 +129,10 @@ header {
 	width: 300px;
 //	float: left;
 	margin: auto;
+	margin-left: 0px;
 	padding-top: 60px;
 	max-width: 400px;
-	
+
 	@include MQ(L) {
 		float: left;
 		margin-left: 30px;
@@ -157,7 +158,7 @@ header {
 	height: 90px;
 	background-image: url('img/play video.png');
 	background-repeat: no-repeat;
-	
+
 	@include hidpi {
   		background-image: url('img/play video@2x.png');
   		background-size: 90px 90px;
@@ -172,27 +173,27 @@ header {
 .video-block {
 	width: 300px;
 	height: 200px;
-	
+
 	background-image: url('img/demo video image.png');
 	background-repeat: no-repeat;
-	
+
 	@include hidpi {
   		background-image: url('img/demo video image@2x.png');
   		background-size: 300px 200px;
 	}
-	
-	
+
+
 	.play-video-icon {
 		position: relative;
 		top: 54px;
 	}
-	
+
 	.download-example-files {
 //		background: red;
 		margin-top: 124px;
 		text-align: center;
 	}
-	
+
 	//h3 {
 //		color: $color-white;
 //		margin: auto;
@@ -223,13 +224,13 @@ header {
 	border: 1px solid rgba(0,0,0,0.4);
 	margin-left: 12px;
 	transition: all 0.3s;
-	
+
 	@include MQ(L) {
 		padding-left: 20px;
 		padding-right: 20px;
 		margin-left: 20px;
 	}
-	
+
 //	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.24);
 }
 
@@ -250,33 +251,33 @@ header {
 //	padding-bottom: 48px;
 	background: #EBEBEB;
 	padding-bottom: 36px;
-	
+
 	@include MQ(M) {
 		padding-bottom: 100px;
 	}
-	
+
 	h1 {
 		text-align: center;
 		opacity: 0.5;
 		width: 90%;
 		margin: auto;
-		
+
 		@include MQ(M) {
 			width: 100%;
 		}
 	}
-	
+
 	.plugin-title {
 //		background: green;
 		opacity: 1;
 		padding-top: 235px;
-		
+
 		@include MQ(M) {
 			padding-top: 114px;
 		}
 	}
-	
-	
+
+
 	.welcome-buttons {
 		display: block;
 		margin: auto;
@@ -284,7 +285,7 @@ header {
 //		height: 10px;
 		width: calc(312px - 4*12px);
 		margin-top: 32px;
-		
+
 		@include MQ(L) {
 			width: 312px;
 		}
@@ -295,29 +296,29 @@ header {
 			border-radius: 5px;
 			box-shadow: 0px 10px 48px 0px rgba(0,0,0,0.24);
 		}
-		
+
 		.welcome-button-download:hover {
 			box-shadow: 0px 20px 58px 0px rgba(0,0,0,0.34);
 		}
-		
+
 		.welcome-button-share {
 			background-image: linear-gradient(-180deg, #B2B2B2 0%, #878787 100%);
 			border: 1px solid #6F6F6F;
 			border-radius: 5px;
 			box-shadow: 0px 10px 48px 0px rgba(0,0,0,0.24);
 		}
-		
+
 		.welcome-button-share:hover {
 			box-shadow: 0px 20px 58px 0px rgba(0,0,0,0.34);
 		}
-		
+
 		p {
 			text-align: center;
 			color: white;
 		}
 	}
-	
-	
+
+
 	.welcome-video {
 		width: 100%;
 //		height: 188px;
@@ -329,13 +330,13 @@ header {
 			width: 960px;
 			height: 288px;
 		}
-		
+
 		.video-block {
 			width: 300px;
 			height: 188px;
 			margin: auto;
 			margin-top: 140px;
-			
+
 			box-shadow: 0px 7px 31px 0px rgba(0,0,0,0.36);
 
 			background-image: url('img/welcome video.png');
@@ -345,7 +346,7 @@ header {
 		  		background-image: url('img/welcome video@2x.png');
 		  		background-size: 460px 288px;
 			}
-			
+
 			@include MQ(M) {
 				width: 460px;
 				height: 288px;
@@ -353,30 +354,30 @@ header {
 
 			.play-video-icon {
 				top: 30px;
-				
+
 				@include MQ(M) {
 					top: 80px;
 				}
 			}
-		
+
 			h3 {
 				color: $color-white;
 				margin: auto;
 				text-align: center;
 				position: relative;
 				top: 48px;
-				
+
 				@include MQ(M) {
 					top: 124px;
 				}
 			}
-			
+
 		}
-		
-		
-		
-		
-		
+
+
+
+
+
 		@keyframes plugin-mode-change {
 			0% {
 		  		opacity: 0;
@@ -390,9 +391,9 @@ header {
 			100% {
 		  		opacity: 1;
 			}
-			
+
 		}
-		
+
 		.welcome-plugin {
 			height: 0;
 			position: relative;
@@ -400,10 +401,10 @@ header {
 			left: 600px;
 			display: none;
 //			background: red;
-			
+
 			width: 320px;
 			height: 200px;
-			
+
 			@include MQ(M) {
 				display: block;
 			}
@@ -417,29 +418,29 @@ header {
 //				background: green;
 				left: 40px;
 				top: 36px;
-				
+
 				box-shadow: 0px 10px 40px 0px rgba(0,0,0,0.50);
 				border-radius: 4px;
-				
+
 				background-image: url('img/welcome plugin.png');
 				background-repeat: no-repeat;
-				
+
 				@include hidpi {
 			  		background-image: url('img/welcome plugin@2x.png');
 			  		background-size: 235px 112px;
 				}
-				
-				
+
+
 				.welcome-plugin-preview-image-export-prototype {
 					width: 235px;
 					height: 112px;
 					position: relative;
 //					background: blue;
-					
-					
+
+
 					background-image: url('img/welcome plugin 2.png');
 					background-repeat: no-repeat;
-				
+
 					@include hidpi {
 				  		background-image: url('img/welcome plugin 2@2x.png');
 				  		background-size: 235px 112px;
@@ -454,7 +455,7 @@ header {
 			}
 		}
 	}
-	
+
 	.welcome-share-buttons {
 
 		padding-top: 16px;
@@ -466,7 +467,7 @@ header {
 			width: 460px;
 			margin: auto;
 		}
-		
+
 		#product-hunt-button {
 			float: right;
 			width: 72px;
@@ -474,43 +475,43 @@ header {
 			padding-right: 8px;
 //			margin-right: 8px;
 //			margin-left: 8px;
-			
+
 			background-image: url('img/product hunt icon.png');
 			background-repeat: no-repeat;
-		
+
 			@include hidpi {
 		  		background-image: url('img/product hunt icon@2x.png');
 		  		background-size: 72px 28px;
 			}
-			
+
 		}
-		
+
 		#product-hunt-button:hover {
 			opacity: 0.9;
 		}
-		
-		
-		
+
+
+
 		#twitter-button {
 //			color: #ACACAC;
 			float: right;
 			padding-right: 8px;
-			
-			
+
+
 			//a {
 //				padding-right: 8px;
 //			}
 //			margin-right: 8px;
 		}
-		
+
 		#facebook-button {
 //			color: #ACACAC;
 			float: right;
-			padding-right: 8px;		
-		}	
+			padding-right: 8px;
+		}
 	}
-	
-	
+
+
 }
 
 
@@ -520,22 +521,22 @@ header {
 .import-states-section {
 	background: #181818;
 	padding-bottom: 40px;
-	
+
 	@include MQ(L) {
 		padding-bottom: 120px;
-	}	
-	
+	}
+
 	.import-states-left {
 		width: 100%;
 //		max-width: 480px;
 		margin: auto;
 //		background: green;
-		
+
 		@include MQ(L) {
 			float: left;
 			width: 420px;
 		}
-		
+
 		h1 {
 			margin: 0;
 			padding-top: 40px;
@@ -543,7 +544,7 @@ header {
 			text-align: left;
 			width: 100%;
 			max-width: 400px;
-			
+
 			@include MQ(M) {
 				padding-top: 100px;
 				width: 100%;
@@ -552,7 +553,7 @@ header {
 				text-align: left;
 			}
 		}
-		
+
 		h3 {
 			margin: auto;
 //			margin-top: 10px;
@@ -561,14 +562,14 @@ header {
 //			width: 80%;
 //			background-color: red;
 			text-align: left;
-			
+
 			@include MQ(M) {
 //				width: 400px;
 				width: 100%;
 				margin-top: 10px;
 				text-align: left;
 			}
-			
+
 			a {
 				color: #30bcfc;
 				opacity: 1;
@@ -576,66 +577,66 @@ header {
 				font-size: 1.8rem;
 				line-height: 1.34;
 				letter-spacing: 0.2px;
-	
+
 				@include MQ(M) {
 					font-size: 2.4rem;
 				}
 			}
-			
+
 			a:hover {
 				color: #19a3e3;
 			}
 		}
 
-		
-		
+
+
 		.import-states-buttons {
 			display: block;
 //			margin: auto;
 			width: 330px;
 			margin-top: 32px;
-			
+
 //			@include MQ(M) {
 //				margin-left: 0;
 //			}
-				
+
 			.import-states-button-watch {
 				background: rgba(255,255,255,0.10);
 				border: 1px solid rgba(255,255,255,0.20);
 				border-radius: 5px;
 			}
-			
+
 			.import-states-button-watch:hover {
 				opacity: 0.7;
 				box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
 			}
-			
+
 			.import-states-button-read {
 				background: none;
 				border: 1px solid rgba(255,255,255,0.20);
 				border-radius: 5px;
 			}
-			
+
 			.import-states-button-read:hover {
 				opacity: 0.7;
 				box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
 			}
-			
-		
+
+
 			p {
 				text-align: center;
 				color: white;
 			}
-			
+
 			div:first-child {
 				margin-left: 0;
 			}
 		}
-		
+
 		.video-block {
 //			margin: auto;
 			margin-top: 114px;
-			
+
 			background-image: url('img/import states video.png');
 			background-repeat: no-repeat;
 
@@ -648,39 +649,39 @@ header {
 		  		background-image: url('img/import states video@2x.png');
 		  		background-size: 300px 200px;
 			}
-			
+
 			.download-example-files {
 				color: rgba(255,255,255,0.1);
 			}
-			
+
 			a {
 				color: rgba(255,255,255,0.3);
 			}
-			
+
 			a:first-child {
 				color: rgba(255,255,255,0.45);
 			}
-			
+
 			a:hover {
 				color: $color-blue-dream;
 			}
-			
+
 			a:first-child:hover {
 				color: $color-complementary;
 			}
 		}
-	
+
 	}
-	
+
 	.import-states-right {
 //		background: red;
 		width: 460px;
-		
+
 		display: none;
-		
+
 		margin-top: 100px;
 		margin-bottom: 120px;
-		
+
 		background-image: url('img/import states.png');
 		background-repeat: no-repeat;
 
@@ -695,15 +696,15 @@ header {
 	  		background-image: url('img/import states@2x.png');
 	  		background-size: 460px 560px;
 		}
-		
+
 		@keyframes example {
 		    0% {
 			    -ms-transform: scale(1, 1) translate(0, 0); /* IE 9 */
 			    -webkit-transform: scale(1, 1) translate(0, 0); /* Safari */
 			    transform: scale(1, 1) translate(0, 0);
-				
+
 				border-radius: 16px;
-				
+
 //				left: 312px;
 //				top: 252px;
 			}
@@ -711,9 +712,9 @@ header {
 			    -ms-transform: scale(1, 1) translate(0, 0); /* IE 9 */
 			    -webkit-transform: scale(1, 1) translate(0, 0); /* Safari */
 			    transform: scale(1, 1) translate(0, 0);
-				
+
 				border-radius: 16px;
-				
+
 //				left: 312px;
 //				top: 252px;
 			}
@@ -721,9 +722,9 @@ header {
 			    -ms-transform: scale($isv, $isv) translate($ixv, $iyv); /* IE 9 */
 			    -webkit-transform: scale($isv, $isv) translate($ixv, $iyv); /* Safari */
 			    transform: scale($isv, $isv) translate($ixv, $iyv);
-				
+
 				border-radius: 32px;
-				
+
 //				left: calc(312px - 43px);
 //				top: calc(252px - 43px);
 			}
@@ -731,23 +732,23 @@ header {
 			    -ms-transform: scale($isv, $isv) translate($ixv, $iyv); /* IE 9 */
 			    -webkit-transform: scale($isv, $isv) translate($ixv, $iyv); /* Safari */
 			    transform: scale($isv, $isv) translate($ixv, $iyv);
-				
+
 				border-radius: 32px;
-				
+
 //				left: calc(312px - 43px);
 //				top: calc(252px - 43px);
 			}
 		}
-		
+
 		.import-states-move {
 			position: relative;
 			width: 121px;
 			height: 121px;
 			left: 312px;
 			top: 266px;
-			
+
 			border-radius: 32px;
-			
+
 			background-color: #007DFF;
 			animation-name: example;
 			animation-duration: 2s;
@@ -756,46 +757,50 @@ header {
 			animation-timing-function: cubic-bezier(.56,.88,.85,.17);
 		}
 	}
-	
+
 	.import-states-features {
 		clear: both;
 		padding-top: 40px;
 		padding-bottom: 60px;
+		// background-color: "yellow";
+		// height: 100px;
 
 		@include MQ(L) {
 			height: 300px;
 			padding-top: 0px;
 			padding-bottom: 0px;
 		}
-		
+
 		.column-3 {
-			
+			// background-color: "green";
+
 			p {
 				color: white;
 			}
-			
+
 			p:first-child {
-				
+
 			}
-			
+
 			p:nth-child(2) {
 				opacity: 0.4;
 				padding-top: 6px;
 			}
-			
+
 			div {
 				width: 300px;
 				height: 200px;
 				background: black;
 				margin-top: 20px;
+				// background-color: "red";
 //				margin-bottom: 200px;
-				
+
 				@include hidpi {
 			  		background-size: 300px 200px;
 				}
 			}
-			
-			
+
+
 			.import-states-feature-1 {
 				background-image: url('img/import states feature 1.png');
 
@@ -803,7 +808,7 @@ header {
 			  		background-image: url('img/import states feature 1@2x.png');
 				}
 			}
-			
+
 			.import-states-feature-2 {
 				background-image: url('img/import states feature 2.png');
 
@@ -811,7 +816,7 @@ header {
 			  		background-image: url('img/import states feature 2@2x.png');
 				}
 			}
-			
+
 			.import-states-feature-3 {
 				background-image: url('img/import states feature 3.png');
 
@@ -820,14 +825,14 @@ header {
 				}
 			}
 		}
-		
+
 		.column-3:nth-child(2) {
 			p:nth-child(2) {
 				width: 280px;
 			}
 		}
-		
-		
+
+
 	}
 }
 
@@ -839,107 +844,107 @@ header {
 
 .export-prototype-section {
 	padding-bottom: 40px;
-	
+
 	@include MQ(L) {
 		padding-bottom: 140px;
 	}
-	
+
 	.export-prototype-left {
 //		float: left;
 		width: 100%;
-		
+
 		@include MQ(L) {
 			width: 580px;
 		}
-		
+
 		h1 {
 			margin-top: 40px;
-			
+
 			@include MQ(L) {
 				margin-top: 100px;
 			}
 		}
-		
+
 		h3 {
 			margin-top: 10px;
 			color: $color-pre-grey;
-			
+
 			a {
 				color: #30bcfc;
 				font-weight: 300;
 				font-size: 1.8rem;
 				line-height: 1.34;
 				letter-spacing: 0.2px;
-	
+
 				@include MQ(M) {
 					font-size: 2.4rem;
 				}
 			}
-			
+
 			a:hover {
 				color: #19a3e3;
 			}
 		}
-		
-		
-	}
-	
 
-	
+
+	}
+
+
+
 	.export-prototype-media {
 		background: red;
 		width: 100%;
 //		height: 200px;
 //		margin-top: 132px;
-		
-		
+
+
 		.export-prototype-video-left {
 			float: left;
 //			padding-top: 48px;
 			//width: 50%;
 //			background: green;
-			
-			
-			
+
+
+
 			.export-prototype-buttons {
 				background-color: red;
 				margin-top: 32px;
 				width: 100%;
-			
+
 				.export-prototype-button-watch {
 					background: rgba(0,0,0,0.02);
 					border: 1px solid rgba(0,0,0,0.20);
 					border-radius: 5px;
 				}
-			
+
 				.export-prototype-button-watch:hover {
 					box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.05);
 				}
-			
+
 				.export-prototype-button-read {
 					background: none;
 					border: 1px solid rgba(0,0,0,0.20);
 					border-radius: 5px;
 				}
-			
+
 				.export-prototype-button-read:hover {
 					box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.05);
 				}
-		
+
 				div:first-child {
 					margin-left: 0;
-				
+
 				}
-			
+
 				div:nth-child(2) {
 //					margin-left: 0;
 				}
 			}
-			
-		
+
+
 			.video-block {
 				margin-top: 132px;
-				
+
 				background-image: url('img/export prototype video.png');
 				background-repeat: no-repeat;
 
@@ -947,29 +952,29 @@ header {
 			  		background-image: url('img/export prototype video@2x.png');
 			  		background-size: 300px 200px;
 				}
-				
+
 				.download-example-files {
 					color: rgba(0,0,0,0.1);
 				}
-			
+
 				a {
 					color: rgba(0,0,0,0.3);
 				}
-			
+
 				a:first-child {
 					color: rgba(0,0,0,0.45);
 				}
-			
+
 				a:hover {
 					color: $color-blue-dream;
 				}
-			
+
 				a:first-child:hover {
 					color: $color-complementary;
 				}
 			}
 		}
-		
+
 		.export-prototype-video-right {
 			float: right;
 			margin-top: 43px;
@@ -981,7 +986,7 @@ header {
 			@include MQ(L) {
 				display: block;
 			}
-			
+
 			background-image: url('img/export prototype image.png');
 			background-repeat: no-repeat;
 
@@ -989,9 +994,9 @@ header {
 		  		background-image: url('img/export prototype image@2x.png');
 		  		background-size: 540px 320px;
 			}
-			
-			
-			
+
+
+
 			@keyframes export-prototype-animation {
 				0% {
 			  		height: 30px;
@@ -1017,10 +1022,10 @@ header {
 			  		height: 30px;
 					top: 228px;
 				}
-			
+
 			}
-			
-			
+
+
 			.export-prototype-animation-item {
 				width: 93px;
 				height: 30px;
@@ -1028,7 +1033,7 @@ header {
 				left: 396px;
 				border-radius: 3px;
 				background: $color-complementary;
-				
+
 				animation-name: export-prototype-animation;
 				animation-duration: 3.2s;
 				animation-iteration-count: infinite;
@@ -1037,59 +1042,67 @@ header {
 			}
 		}
 	}
-	
+
 	.export-prototype-how {
 //		background: green;
 		clear: both;
 		padding-top: 60px;
 		padding-bottom: 20px;
 		width: 100%;
-		
+
 		@include MQ(L) {
 			width: 630px;
 			padding-top: 140px;
 			padding-bottom: 60px;
 		}
-		
+
+		h2 {
+				padding-top: 60px;
+
+				@include MQ(L) {
+					padding-top: 0px;
+				}
+		}
+
 		h3 {
 			color: $color-pre-grey;
 			padding-top: 10px;
-			
+
 			@include MQ(L) {
 //				background-color: red;
 				width: 400px;
 			}
 		}
 	}
-	
+
 	.export-prototype-features {
 //		height: 300px;
 		margin-bottom: 40px;
-		
+
 		@include MQ(L) {
 			height: 300px;
 			margin-bottom: 140px;
 		}
-		
+
 		.column-3 {
 			p:nth-child(2) {
 				opacity: 0.6;
 				padding-top: 6px;
 			}
-			
+
 			div {
 				width: 300px;
 				height: 200px;
 				margin-top: 20px;
 				background-repeat: no-repeat;
-				
+
 				@include hidpi {
 					background-size: 300px 200px;
 				}
 //				background: black;
 			}
 		}
-		
+
 		.export-prototype-feature-1 {
 			background-image: url('img/export prototype feature 1.png');
 
@@ -1097,7 +1110,7 @@ header {
 		  		background-image: url('img/export prototype feature 1@2x.png');
 			}
 		}
-		
+
 		.export-prototype-feature-2 {
 			background-image: url('img/export prototype feature 2.png');
 
@@ -1105,7 +1118,7 @@ header {
 		  		background-image: url('img/export prototype feature 2@2x.png');
 			}
 		}
-		
+
 		.export-prototype-feature-3 {
 			background-image: url('img/export prototype feature 3.png');
 
@@ -1113,31 +1126,31 @@ header {
 		  		background-image: url('img/export prototype feature 3@2x.png');
 			}
 		}
-		
+
 	}
-	
+
 	.export-prototype-reimport-left {
 		float: left;
 		width: 300px;
 		padding-top: 40px;
-		
+
 //		@include MQ(L) {
 //			padding-top: 40px;
 //		}
-		
+
 		.export-prototype-new {
 			color: $color-blue-dream;
 		}
-		
+
 		.export-prototype-reimport-title {
 			padding-top: 16px;
 		}
-		
+
 		.export-prototype-reimport-text {
 			padding-top: 6px;
 			opacity: 0.4;
 		}
-		
+
 		.export-prototype-reimport-block {
 			margin-top: 28px;
 //			margin-left: 20px;
@@ -1147,12 +1160,12 @@ header {
 			padding-left: 20px;
 			padding-top: 16px;
 			border: 1px solid rgba(0,0,0,0.08);
-			
+
 			p {
 				opacity: 0.9;
 				font-size: 16px;
 			}
-			
+
 			.export-prototype-reimport-small-description {
 				font-size: 13px;
 				padding-top: 2px;
@@ -1162,16 +1175,16 @@ header {
 			}
 		}
 	}
-	
+
 	.export-prototype-reimport-right {
 		display: none;
 		float: left;
 		width: 280px;
 		height: 180px;
-		
+
 		background-image: url('img/reimport.png');
 		background-repeat: no-repeat;
-		
+
 		@include MQ(L) {
 			display: block;
 			float: right;
@@ -1182,17 +1195,17 @@ header {
 		@include hidpi {
 	  		background-image: url('img/reimport@2x.png');
 			background-size: 280px 180px;
-			
+
 			@include MQ(L) {
 				background-size: 630px 400px;
 			}
 		}
 	}
-	
+
 	.export-prototype-reimport-clear {
 		clear: both;
 	}
-	
+
 }
 
 
@@ -1201,81 +1214,81 @@ header {
 	padding-bottom: 40px;
 	background: #EBEBEB;
 	box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,0.10);
-	
+
 	@include MQ(L) {
 		padding-bottom: 100px;
 	}
-	
+
 	.pro-left {
 		float: left;
 		width: 100%;
-		
+
 		@include MQ(L) {
 			width: 630px;
 		}
-		
+
 		h1 {
 			padding-top: 40px;
-			
+
 			@include MQ(L) {
 				padding-top: 100px;
 			}
 		}
-		
+
 		h3 {
 			padding-top: 7px;
 			color: $color-pre-grey;
 //			margin-bottom: 64px;
 		}
-		
+
 		.pro-features-item {
 			opacity: 0.4;
 		}
-		
+
 		.pro-features-free {
 			float: left;
 			width: 240px;
 			padding-top: 64px;
-			
+
 			a {
 				margin-left: 0;
 				margin-top: 30px;
-				
+
 				background: rgba(0,0,0,0.02);
 				border: 1px solid rgba(0,0,0,0.20);
 				border-radius: 5px;
 			}
-			
+
 			a:hover {
 				box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.16);
 			}
 		}
-		
+
 		.pro-features-pro {
 			float: left;
 			width: 240px;
 			padding-top: 64px;
-			
+
 			a {
 				margin-left: 0;
 				margin-top: 30px;
-				
+
 				background: rgba(0,0,0,0.02);
 				border: 1px solid rgba(0,0,0,0.20);
 				border-radius: 5px;
 			}
-			
+
 			a:hover {
 				box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.16);
 			}
 		}
 	}
-	
+
 	.pro-right {
 		float: right;
 		width: 300px;
 	}
-	
+
 	.pro-clear {
 		clear: both;
 	}
@@ -1286,34 +1299,34 @@ footer {
 	background: #EBEBEB;
 	padding-top: 64px;
 	padding-bottom: 72px;
-	
+
 	.container {
 		width: 90%;
 		margin: auto;
-		
+
 		@include MQ(L) {
 			width: 960px;
 		}
-	
+
 		p {
 			width: 80%;
-		
+
 			@include MQ(L) {
 				width: 460px;
 			}
 		}
-	
+
 		p:first-child {
 			margin-bottom: 24px;
 			opacity: 0.6;
 		}
-		
+
 		a {
 			color: $color-blue-dream;
 		}
 	}
-	
-	
+
+
 }
 
 
@@ -1337,7 +1350,7 @@ footer {
 	height: 90%;
 	margin: auto;
 	margin-top: 4%;
-	
+
 	//@include MQ(M) {
 //		width: 580px;
 //		height: 363px;

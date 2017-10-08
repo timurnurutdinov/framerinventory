@@ -184,6 +184,7 @@ header {
 .column-3 {
   width: 300px;
   margin: auto;
+  margin-left: 0px;
   padding-top: 60px;
   max-width: 400px; }
   @media only screen and (min-width: 960px) {
@@ -731,6 +732,11 @@ header {
         width: 630px;
         padding-top: 140px;
         padding-bottom: 60px; } }
+    .export-prototype-section .export-prototype-how h2 {
+      padding-top: 60px; }
+      @media only screen and (min-width: 960px) {
+        .export-prototype-section .export-prototype-how h2 {
+          padding-top: 0px; } }
     .export-prototype-section .export-prototype-how h3 {
       color: #666;
       padding-top: 10px; }
