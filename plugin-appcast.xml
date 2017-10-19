@@ -1,0 +1,34 @@
+
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+	<channel>
+
+		<item>
+			<title>3.0.0</title>
+			<description>
+			  <![CDATA[
+			    <ul>
+			      <li>Framer Inventory v3</li>
+			    </ul>
+			  ]]>
+			</description>
+			<enclosure url="https://github.com/timurnurutdinov/Framer-Inventory-for-Sketch/archive/v3.0.zip" sparkle:version="3.0.0" />
+		</item>
+		
+		<item>
+			<title>3.1.2</title>
+			<description>
+			  <![CDATA[
+			    <ul>
+			      <li>added camelCase support</li>
+				  <li>removed "*retina" way to import layers because Framer v90+ relies on points</li>
+				  <li>removed plugin-updater to respect Sketch auto-updater</li>
+				  <li>small tweaks in Settings</li>
+			    </ul>
+			  ]]>
+			</description>
+			<enclosure url="https://github.com/timurnurutdinov/Framer-Inventory-for-Sketch/archive/v3.1.2.zip" sparkle:version="3.1.2" />
+		</item>
+	  
+	  
+	</channel>
+</rss>
